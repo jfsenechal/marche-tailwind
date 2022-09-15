@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
     content: [
         "./index.html",
@@ -6,6 +7,11 @@ module.exports = {
     ],
     theme: {
         extend: {
+            fontFamily: {
+                'montserrat': ['Montserrat', ...defaultTheme.fontFamily.sans],
+                'montserratbold': ['montserratbold', ...defaultTheme.fontFamily.sans],
+                'montserratextrabold': ['montserratextrabold', ...defaultTheme.fontFamily.sans],
+            },
             colors: {
                 admin: '#82786FFF',
                 citoyen: '#FF7200FF',
@@ -16,6 +22,9 @@ module.exports = {
                 sport: '#98C02DFF',
                 social: '#CB0044FF',
                 tourisme: '#8A5A9DFF',
+                blue: {
+                    light: '#4ae0c7'
+                },
             },
         },
         plugins: [],
