@@ -9,8 +9,8 @@ module.exports = {
         extend: {
             fontFamily: {
                 'montserrat': ['Montserrat', ...defaultTheme.fontFamily.sans],
-                'montserratbold': ['montserratbold', ...defaultTheme.fontFamily.sans],
-                'montserratextrabold': ['montserratextrabold', ...defaultTheme.fontFamily.sans],
+                'montserrat-bold': ['montserratbold', ...defaultTheme.fontFamily.sans],
+                'montserrat-extra-bold': ['montserratextrabold', ...defaultTheme.fontFamily.sans],
             },
             colors: {
                 admin: '#82786FFF',
