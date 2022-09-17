@@ -25,6 +25,10 @@ module.exports = {
                 blue: {
                     light: '#4ae0c7'
                 },
+                cta: {
+                    light: '#4ae0c7',
+                    dark: '#487F89FF'
+                }
             },
         },
         plugins: [],

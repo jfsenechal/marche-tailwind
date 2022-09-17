@@ -1,23 +1,45 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  html {
-    font-family: "montserrat", system-ui, sans-serif;
-  }
+    html {
+        font-family: "montserrat", system-ui, sans-serif;
+    }
+    body {
+        @apply antialiased text-gray-800;
+    }
+    img {
+        @apply object-cover w-full
+    }
+}
+
+@layer components {
+    li.nav-top {
+        @apply p-3 text-cta-dark
+        transition-shadow duration-300 ease-in-out
+        hover:shadow-zeze
+    }
+    .icon {
+        @apply mx-1 w-6 h-6 bg-cta-dark text-white rounded-full hover:bg-cta-light;
+    }
+    i.fa {
+        @apply text-sm;
+    }
 }
 
 @font-face {
-  font-family: "montserrat";
-  src: url("../public/Montserrat/static/Montserrat-Medium.ttf");
+    font-family: "montserrat";
+    src: url("../public/Montserrat/static/Montserrat-Medium.ttf");
 }
 
 @font-face {
-  font-family: "montserratbold";
-  src: url("../public/Montserrat/static/Montserrat-Bold.ttf");
+    font-family: "montserratbold";
+    src: url("../public/Montserrat/static/Montserrat-Bold.ttf");
 }
+
 @font-face {
-  font-family: "montserratextrabold";
-  src: url("../public/Montserrat/static/Montserrat-ExtraBold.ttf");
+    font-family: "montserratextrabold";
+    src: url("../public/Montserrat/static/Montserrat-ExtraBold.ttf");
 }
