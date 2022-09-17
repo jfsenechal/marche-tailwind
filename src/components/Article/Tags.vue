@@ -5,6 +5,7 @@
   <div class="w-12 py-4">
     <ul class="flex">
       <li><a href="https://www.marche.be/./actualites/">Actualités</a></li>
+      <li><a href="https://www.marche.be/./infos-travaux/">Infos Travaux</a></li>
     </ul>
   </div>
 </template>

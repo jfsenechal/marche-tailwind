@@ -31,12 +31,12 @@
 
 @font-face {
     font-family: "montserrat";
-    src: url("../public/Montserrat/static/Montserrat-Medium.ttf");
+    src: url("../Montserrat/static/Montserrat-Medium.ttf");
 }
 
 @font-face {
     font-family: "montserratbold";
-    src: url("../public/Montserrat/static/Montserrat-Bold.ttf");
+    src: url("../Montserrat/static/Montserrat-Bold.ttf");
 }
 
 @font-face {

@@ -1,13 +1,14 @@
 <script setup>
-import Share from "./Share.vue";
+import Share from "@/components/Article/Share.vue";
+import Image from "@/components/Article/Image.vue";
+import SeeAlso from "@/components/Article/SeeAlso.vue";
 </script>
 <template>
   <div class="flex items-start w-full mt-12">
-    <div class="w-2/3 mr-4">
-      <img src="../../../images/Pietonnier-renovation.jpg" alt="img" class="w-66660">
-    </div>
+    <Image/>
     <div class="w-1/3 mt-5">
       <Share/>
+      <SeeAlso/>
     </div>
   </div>
 </template>
