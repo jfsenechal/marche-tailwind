@@ -2,14 +2,14 @@
 
 </script>
 <template>
-  <div class="my-6">
+  <div class="mt-6">
     <h4 class="text-cta-dark font-montserrat-bold">Consultez aussi</h4>
     <div class="mt-6">
       <ul role="list" class="mt-3">
         <li class="rounded-md shadow-sm group">
           <a href="#" class="flex">
             <div
-                class="flex-shrink-0 flex items-center justify-center rounded-l-md  group-hover:opacity-75">
+                class="flex-shrink-0 flex items-center justify-center rounded-l-md  group-hover:opacity-75 transition-all duration-500">
               <img src="../../../images/BEA-r_long.jpg" alt="img" class="w-28 h-28"/>
             </div>
             <div

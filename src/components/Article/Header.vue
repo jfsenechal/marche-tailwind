@@ -5,10 +5,10 @@ import SeeAlso from "@/components/Article/SeeAlso.vue";
 </script>
 <template>
   <div class="flex items-start w-full mt-12">
-    <Image/>
-    <div class="w-1/3 mt-5">
-      <Share/>
-      <SeeAlso/>
+      <Image/>
+      <div class="w-1/3 flex flex-col justify-between h-80">
+        <Share/>
+        <SeeAlso/>
+      </div>
     </div>
-  </div>
 </template>
