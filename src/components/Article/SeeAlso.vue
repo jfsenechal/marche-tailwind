@@ -6,7 +6,7 @@
     <h4 class="text-cta-dark font-montserrat-bold">Consultez aussi</h4>
     <div class="mt-6">
       <ul role="list" class="mt-3">
-        <li class="rounded-md shadow-sm group">
+        <li class="rounded-md shadow-lg group">
           <a href="#" class="flex">
             <div
                 class="flex-shrink-0 flex items-center justify-center rounded-l-md  group-hover:opacity-75 transition-all duration-500">
