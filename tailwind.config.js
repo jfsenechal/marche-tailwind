@@ -10,6 +10,9 @@ module.exports = {
             fontFamily: {
                 'montserrat': ['Montserrat', ...defaultTheme.fontFamily.sans],
                 'montserrat-bold': ['montserratbold', ...defaultTheme.fontFamily.sans],
+                'montserrat-thin': ['montserratthin', ...defaultTheme.fontFamily.sans],
+                'montserrat-light': ['montserratlight', ...defaultTheme.fontFamily.sans],
+                'montserrat-regular': ['montserratregular', ...defaultTheme.fontFamily.sans],
                 'montserrat-extra-bold': ['montserratextrabold', ...defaultTheme.fontFamily.sans],
             },
             colors: {
@@ -30,6 +33,9 @@ module.exports = {
                     dark: '#487F89FF',
                     body: '#487f89'
                 }
+            },
+            boxShadow: {
+                menutop: '0 -3px 0 0 #4ae0c7 inset',
             },
         },
         plugins: [],

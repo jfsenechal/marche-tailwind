@@ -1,0 +1,16 @@
+<template>
+  <div>
+    <h4 class="font-montserrat-bold">Raccourcis</h4>
+    <ul class="text-sm grid grid-cols-2 leading-6	">
+      <li class="px-2"><a href="">Piscine</a></li>
+      <li class="px-2"><a href="">Environnement</a></li>
+      <li class="px-2"><a href="">Travaux</a></li>
+      <li class="px-2"><a href="">Arrêtés de police</a></li>
+      <li class="px-2"><a href="">Enfant-Stage</a></li>
+      <li class="px-2"><a href="">Plan de la ville</a></li>
+      <li class="px-2"><a href="">CPAS</a></li>
+      <li class="px-2"><a href="">Tourisme</a></li>
+      <li class="px-2"><a href="">Mon mail</a></li>
+    </ul>
+  </div>
+</template>
