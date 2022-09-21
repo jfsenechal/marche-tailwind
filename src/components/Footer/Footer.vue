@@ -1,11 +1,12 @@
 <script setup>
 import ShortCut from "@/components/Footer/ShortCut.vue";
 import Copyright from "@/components/Footer/Copyright.vue";
+import IconesSocial from "@/components/Footer/IconesSocial.vue";
 </script>
 <template>
   <footer class="font-montserrat-light p-5 bg-cta-body text-white grid grid-cols-4 justify-between">
     <div>
-      <img src="public/images/img_logo_white.png" class="w-20" alt="logo">
+      <img src="images/img_logo_white.png" class="w-20" alt="logo">
     </div>
     <div class="border-l border-l-white/50 px-3">
       <h4 class="font-montserrat-bold">Découvrez</h4>
@@ -24,6 +25,7 @@ import Copyright from "@/components/Footer/Copyright.vue";
         Du lundi au jeudi : de 8h à 12h et de 13h à 17h<br>
         Vendredi : de 8h à 12h et de 13h à 15h<br>
       </div>
+      <IconesSocial/>
     </div>
     <Copyright/>
   </footer>

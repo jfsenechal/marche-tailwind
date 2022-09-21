@@ -20,7 +20,7 @@
 
     section {
         padding: 1.5rem 2rem;
-       /* min-height: 100vh;*/
+        /* min-height: 100vh;*/
         color: white;
     }
 
@@ -32,6 +32,10 @@
 @layer components {
     i.fa {
         @apply text-sm;
+    }
+
+    .icon {
+        @apply mx-1 w-6 h-6 bg-cta-dark text-white rounded-full hover:bg-cta-light;
     }
 }
 
