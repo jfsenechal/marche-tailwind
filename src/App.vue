@@ -1,6 +1,6 @@
 <script setup>
 import Article from "@/components/Article/Article.vue";
-import Header from "@/components/Inside/Header.vue";
+import Header from "@/components/Header/Inside/Header.vue";
 import Footer from "@/components/Footer/Footer.vue";
 </script>
 

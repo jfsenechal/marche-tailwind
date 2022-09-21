@@ -1,15 +1,8 @@
 <script setup>
 
 </script>
-<style>
-li.nav-top {
-  @apply p-3 text-cta-dark
-  transition-shadow duration-300 ease-in-out
-  hover:shadow-menutop
-}
-</style>
 <template>
-  <ul class="lg:flex">
+  <ul class="lg:flex ml-auto">
     <li class="nav-top">
       <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 inline" fill="none" viewBox="0 0 24 24"
            stroke="currentColor">
@@ -39,3 +32,10 @@ li.nav-top {
     </svg>
   </div>
 </template>
+<style>
+li.nav-top {
+  @apply p-3 text-cta-dark
+  transition-shadow duration-300 ease-in-out
+  hover:shadow-menutop
+}
+</style>
