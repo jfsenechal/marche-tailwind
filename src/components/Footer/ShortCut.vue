@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="border-l border-l-white/50 px-3">
     <h4 class="font-montserrat-bold">Raccourcis</h4>
     <ul class="text-sm grid grid-cols-2 leading-6	">
       <li class="px-2"><a href="">Piscine</a></li>
