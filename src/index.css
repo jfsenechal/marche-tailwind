@@ -37,6 +37,9 @@
     .icon {
         @apply mx-1 w-6 h-6 bg-cta-dark text-white rounded-full hover:bg-cta-light;
     }
+    .bghome{
+        background: linear-gradient(90deg, rgba(1, 31, 22, 0.38), rgba(0, 75, 142, 0.38));
+    }
 }
 
 @font-face {
