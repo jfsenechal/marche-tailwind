@@ -62,7 +62,7 @@ function onSelect(person) {
           <!-- Active: "bg-indigo-600 text-white" -->
           <li v-for="people in peoples"
               :id="'option-'+people.id"
-              class="cursor-default select-none rounded-md px-4 py-2"
+              class="cursor-default select-none rounded-md px-4 py-2 hover:bg-indigo-600 hover:text-white"
               role="option"
               tabindex="-1">
             {{ people.name }}
