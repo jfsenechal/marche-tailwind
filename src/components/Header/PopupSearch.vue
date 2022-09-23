@@ -1,21 +1,32 @@
+<script setup>
+//https://tailwindui.com/components/application-ui/navigation/command-palettes
+import {computed, ref} from 'vue'
+
+const peoples = [
+  {id: 1, name: 'Leslie Alexander', url: '#'},
+  {id: 2, name: 'Bar Simpson', url: '#'},
+  {id: 3, name: 'Homer Simpson', url: '#'},
+  {id: 4, name: 'Marge Simpson', url: '#'},
+  {id: 5, name: 'Maguy Simpson', url: '#'},
+  {id: 5, name: 'Lisa Simpson', url: '#'},
+  {id: 5, name: 'Habraham Simpson', url: '#'},
+]
+
+const open = ref(true)
+const query = ref('')
+const filteredPeople = computed(() =>
+    query.value === ''
+        ? []
+        : people.filter((person) => {
+          return person.name.toLowerCase().includes(query.value.toLowerCase())
+        })
+)
+
+function onSelect(person) {
+  window.location = person.url
+}
+</script>
 <template>
-  <!--
-  https://tailwindui.com/components/application-ui/navigation/command-palettes
-  This example requires Tailwind CSS v3.0+
-
-  This example requires some changes to your config:
-
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
   <div class="relative z-10" role="dialog" aria-modal="true">
     <!--
       Background backdrop, show/hide based on modal state.
@@ -49,20 +60,12 @@
         <!-- Results, show/hide based on command palette state. -->
         <ul class="-mb-2 max-h-72 scroll-py-2 overflow-y-auto py-2 text-sm text-gray-800" id="options" role="listbox">
           <!-- Active: "bg-indigo-600 text-white" -->
-          <li class="cursor-default select-none rounded-md px-4 py-2" id="option-1" role="option" tabindex="-1">Leslie
-            Alexander
-          </li>
-          <li class="cursor-default select-none rounded-md px-4 py-2" id="option-2" role="option" tabindex="-1">Michael
-            Foster
-          </li>
-          <li class="cursor-default select-none rounded-md px-4 py-2" id="option-3" role="option" tabindex="-1">Dries
-            Vincent
-          </li>
-          <li class="cursor-default select-none rounded-md px-4 py-2" id="option-4" role="option" tabindex="-1">Lindsay
-            Walton
-          </li>
-          <li class="cursor-default select-none rounded-md px-4 py-2" id="option-5" role="option" tabindex="-1">Courtney
-            Henry
+          <li v-for="people in peoples"
+              :id="'option-'+people.id"
+              class="cursor-default select-none rounded-md px-4 py-2"
+              role="option"
+              tabindex="-1">
+            {{ people.name }}
           </li>
         </ul>
 
