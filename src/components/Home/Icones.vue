@@ -18,7 +18,7 @@ const icones = [
         <i
             class="mx-auto block h-14 w-14 rounded-full
             bg-white bg-[length:2.25rem_2.25rem] bg-center bg-no-repeat shadow-xl hover:text-white group-hover:bg-blue-light"
-            :class="item.icon+' group-hover:'+item.icon+'-white'">
+            :class="item.icon + ' group-hover:' + item.icon + '-white'">
         </i>
         <span class="mx-auto inline-block pt-3 font-montserrat-bold leading-4 text-white">{{ item.title }}</span>
       </a>
