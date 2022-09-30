@@ -1,10 +1,11 @@
 <template>
-
-  <a class="group shadow-xl mx-1 w-12 h-12 bg-white hover:bg-blue-light text-white rounded-full inline-flex justify-center items-center"
-     href="#">
-    <i class="text-2xl fa w-8 h-8 i-swimmer group-hover:i-swimmer-white bg-no-repeat bg-center"></i>
+  <a class="mx-1 w-12 h-12 bg-gray-700 text-white rounded-full inline-flex justify-center items-center" href="#">
+    <i class="text-2xl fa fa-twitte2r w-8 h-8 i-swimmer-white bg-no-repeat bg-center"></i>
   </a>
-
+  <p> </p>
+  <a class="mx-1 w-12 h-12 bg-gray-700 text-white rounded-full inline-flex justify-center items-center" href="#">
+    <i class="text-2xl fa i-swimmer-white bg-no-repeat bg-center bg-contain w-fit h-fit"></i>
+  </a>
   <ul class="w-full flex ">
     <li class="flex flex-grow-0 flex-shrink-0 justify-center basis-1/4 text-center group">
       <a href="/sport/piscine-communale" class="icon_custom">
