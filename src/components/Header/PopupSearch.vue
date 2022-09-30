@@ -1,15 +1,15 @@
 <script setup>
 //https://tailwindui.com/components/application-ui/navigation/command-palettes
-import {computed, ref} from 'vue'
+import {computed, ref, watch} from 'vue'
 
 const peoples = [
   {id: 1, name: 'Leslie Alexander', url: '#'},
-  {id: 2, name: 'Bar Simpson', url: '#'},
+  {id: 2, name: 'Bart Simpson', url: '#'},
   {id: 3, name: 'Homer Simpson', url: '#'},
   {id: 4, name: 'Marge Simpson', url: '#'},
-  {id: 5, name: 'Maguy Simpson', url: '#'},
+  {id: 5, name: 'Maggie Simpson', url: '#'},
   {id: 5, name: 'Lisa Simpson', url: '#'},
-  {id: 5, name: 'Habraham Simpson', url: '#'},
+  {id: 5, name: 'Abraham Simpson', url: '#'},
 ]
 
 const open = ref(true)
@@ -17,7 +17,7 @@ const query = ref('')
 const filteredPeople = computed(() =>
     query.value === ''
         ? []
-        : people.filter((person) => {
+        : peoples.filter((person) => {
           return person.name.toLowerCase().includes(query.value.toLowerCase())
         })
 )
@@ -54,14 +54,17 @@ function onSelect(person) {
       <div
           class="mx-auto max-w-xl transform rounded-xl bg-white p-2 shadow-2xl ring-1 ring-black ring-opacity-5 transition-all">
         <input type="text"
+               @change="query = $event.target.value"
+
                class="w-full rounded-md border-0 bg-gray-100 px-4 py-2.5 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm"
                placeholder="Search..." role="combobox" aria-expanded="false" aria-controls="options">
 
         <!-- Results, show/hide based on command palette state. -->
         <ul class="-mb-2 max-h-72 scroll-py-2 overflow-y-auto py-2 text-sm text-gray-800" id="options" role="listbox">
           <!-- Active: "bg-indigo-600 text-white" -->
-          <li v-for="people in peoples"
+          <li v-for="people in filteredPeople"
               :id="'option-'+people.id"
+              :value="people"
               class="cursor-default select-none rounded-md px-4 py-2 hover:bg-indigo-600 hover:text-white"
               role="option"
               tabindex="-1">
@@ -70,7 +73,9 @@ function onSelect(person) {
         </ul>
 
         <!-- Empty state, show/hide based on command palette state. -->
-        <div class="py-14 px-4 text-center sm:px-14">
+        <div
+            v-if="query !== '' && filteredPeople.length === 0"
+            class="py-14 px-4 text-center sm:px-14">
           <!-- Heroicon name: outline/users -->
           <svg class="mx-auto h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                stroke-width="1.5" stroke="currentColor" aria-hidden="true">
