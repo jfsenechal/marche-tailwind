@@ -1,25 +1,10 @@
 <template>
-
-  <a class="group shadow-xl mx-1 w-12 h-12 bg-white hover:bg-blue-light text-white rounded-full inline-flex justify-center items-center"
-     href="#">
-    <i class="text-2xl fa w-8 h-8 i-swimmer group-hover:i-swimmer-white bg-no-repeat bg-center"></i>
-  </a>
-
   <ul class="w-full flex ">
     <li class="flex flex-grow-0 flex-shrink-0 justify-center basis-1/4 text-center group">
       <a href="/sport/piscine-communale" class="icon_custom">
         <i
-            class="block w-20 h-20 shadow-xl mx-auto rounded-full i-swimmer group-hover:i-swimmer-white bg-white bg-no-repeat bg-center
-          group-hover:bg-blue-light hover:text-white i-bg-color-transition bg-[length:36px_36px]"></i>
-        <span
-            class=" mx-auto inline-block text-black font-montserrat-bold leading-4 pt-3">Piscine</span>
-      </a>
-    </li>
-    <li class="flex flex-grow-0 flex-shrink-0 justify-center basis-1/4 text-center group">
-      <a href="/sport/piscine-communale" class="icon_custom">
-        <i
-            class="block w-20 h-20 shadow-xl mx-auto rounded-full i-swimmer bg-white bg-no-repeat bg-center
-          group-hover:bg-blue-light hover:text-white i-bg-color-transition p-4"></i>
+            class="block w-14 h-14 shadow-xl mx-auto rounded-full i-swimmer group-hover:i-swimmer-white bg-white bg-no-repeat bg-center
+          group-hover:bg-blue-light hover:text-white i-bg-color-transition bg-[length:2.25rem_2.25rem]"></i>
         <span
             class=" mx-auto inline-block text-black font-montserrat-bold leading-4 pt-3">Piscine</span>
       </a>
