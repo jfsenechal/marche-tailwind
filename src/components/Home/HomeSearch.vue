@@ -2,7 +2,7 @@
 import Icones from "@/components/Home/Icones.vue";
 </script>
 <template>
-  <section class="w-full p-40 bghome-image bghome-linear bg-no-repeat bg-cover bg-top h-full">
+  <section class="flex flex-col justify-center items-center w-full p-40 bghome-image bg-no-repeat bg-cover bg-bottom h-full">
     <h1 class="text-xl text-center text-white font-montserrat-bold pb-5">Bienvenue à Marche-en-Famenne</h1>
     <form name="searching" class="flex max-w-3xl mx-auto">
       <label class="block" for="search">
