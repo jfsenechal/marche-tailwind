@@ -1,7 +1,7 @@
 <script setup>
 import IconeItem from "@/components/Home/IconeItem.vue";</script>
 <template>
-  <ul class="mt-8 w-[32rem] grid grid-cols-[repeat(4,minmax(7rem,7rem))] gap-6">
+  <ul class="mt-8 w-[32rem] grid grid-cols-[repeat(4,minmax(7rem,7rem))] gap-6 justify-center items-start">
     <IconeItem title="Piscine" :icon="'i-swimmer'" :iconHover="'i-swimmer-white'"/>
     <IconeItem title="Environnement Déchet" :icon="'i-leaf'" :iconHover="'i-leaf-white'"/>
     <IconeItem title="Travaux Arrêtés de Police" :icon="'i-traffic-cone'" :iconHover="'i-traffic-cone-white'"/>
