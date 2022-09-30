@@ -4,8 +4,8 @@ import Icones from "@/components/Home/Icones.vue";
 
 <template>
   <main>
-    <section class="container mx-auto px-4 place-content-center h-screen">
-      <Icones/>
+    <section class="container mx-auto h-screen place-content-center px-4">
+      <Icones />
     </section>
   </main>
 </template>

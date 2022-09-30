@@ -7,81 +7,84 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-        font-family: "montserratregular", system-ui, sans-serif;
-        @apply scroll-pt-3 scroll-smooth;
-        /* see https://www.getrevue.co/profile/shrutibalasa/issues/did-you-know-about-scroll-padding-easy-solution-to-fixed-header-problem-1325973 */
-    }
+  html {
+    font-family: "montserratregular", system-ui, sans-serif;
+    @apply scroll-pt-3 scroll-smooth;
+    /* see https://www.getrevue.co/profile/shrutibalasa/issues/did-you-know-about-scroll-padding-easy-solution-to-fixed-header-problem-1325973 */
+  }
 
-    body {
-        @apply antialiased text-gray-800 min-h-screen grid;
-        grid-template-rows: 1fr auto;
-    }
+  body {
+    @apply grid min-h-screen text-gray-800 antialiased;
+    grid-template-rows: 1fr auto;
+  }
 
-    img {
-        @apply object-cover w-full
-    }
+  img {
+    @apply w-full object-cover;
+  }
 
-    section {
-        padding: 1.5rem 2rem;
-        /* min-height: 100vh;*/
-        color: white;
-    }
+  section {
+    padding: 1.5rem 2rem;
+    /* min-height: 100vh;*/
+    color: white;
+  }
 
-    main {
-        padding: 2rem;
-    }
+  main {
+    padding: 2rem;
+  }
 }
 
 @layer components {
-    i.fa {
-        @apply text-sm;
-    }
+  i.fa {
+    @apply text-sm;
+  }
 
-    .icon {
-        @apply mx-1 w-6 h-6 bg-cta-dark text-white rounded-full hover:bg-cta-light;
-    }
+  .icon {
+    @apply mx-1 h-6 w-6 rounded-full bg-cta-dark text-white hover:bg-cta-light;
+  }
 
-    .bghome {
-        background: linear-gradient(90deg, rgba(1, 31, 22, 0.38), rgba(0, 75, 142, 0.38));
-    }
+  .bghome {
+    background: linear-gradient(
+      90deg,
+      rgba(1, 31, 22, 0.38),
+      rgba(0, 75, 142, 0.38)
+    );
+  }
 
-    .i-swimmer {
-        background-image: url(../images/svg/icon_swimmer_primary.svg);
-    }
+  .i-swimmer {
+    background-image: url(../images/svg/icon_swimmer_primary.svg);
+  }
 
-    .i-swimmer-white {
-        background-image: url(../images/svg/icon_swimmer_white.svg);
-    }
-
+  .i-swimmer-white {
+    background-image: url(../images/svg/icon_swimmer_white.svg);
+  }
 }
 
 @font-face {
-    font-family: "montserratlight";
-    src: url("../Montserrat/static/Montserrat-Light.ttf");
+  font-family: "montserratlight";
+  src: url("../Montserrat/static/Montserrat-Light.ttf");
 }
 
 @font-face {
-    font-family: "montserratthin";
-    src: url("../Montserrat/static/Montserrat-Thin.ttf");
+  font-family: "montserratthin";
+  src: url("../Montserrat/static/Montserrat-Thin.ttf");
 }
 
 @font-face {
-    font-family: "montserratregular";
-    src: url("../Montserrat/static/Montserrat-Regular.ttf");
+  font-family: "montserratregular";
+  src: url("../Montserrat/static/Montserrat-Regular.ttf");
 }
 
 @font-face {
-    font-family: "montserrat";
-    src: url("../Montserrat/static/Montserrat-Medium.ttf");
+  font-family: "montserrat";
+  src: url("../Montserrat/static/Montserrat-Medium.ttf");
 }
 
 @font-face {
-    font-family: "montserratbold";
-    src: url("../Montserrat/static/Montserrat-Bold.ttf");
+  font-family: "montserratbold";
+  src: url("../Montserrat/static/Montserrat-Bold.ttf");
 }
 
 @font-face {
-    font-family: "montserratextrabold";
-    src: url("../Montserrat/static/Montserrat-ExtraBold.ttf");
+  font-family: "montserratextrabold";
+  src: url("../Montserrat/static/Montserrat-ExtraBold.ttf");
 }

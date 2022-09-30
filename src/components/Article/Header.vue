@@ -5,12 +5,12 @@ import SeeAlso from "@/components/Article/SeeAlso.vue";
 import Tags from "@/components/Article/Tags.vue";
 </script>
 <template>
-  <div class="flex items-start w-full mt-12">
-      <Image/>
-      <div class="w-1/3 flex flex-col justify-between h-80">
-        <Share/>
-        <Tags/>
-        <SeeAlso/>
-      </div>
+  <div class="mt-12 flex w-full items-start">
+    <Image />
+    <div class="flex h-80 w-1/3 flex-col justify-between">
+      <Share />
+      <Tags />
+      <SeeAlso />
     </div>
+  </div>
 </template>

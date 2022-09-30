@@ -1,29 +1,29 @@
 <script setup>
 //https://tailwindui.com/components/application-ui/navigation/command-palettes
-import {computed, ref, watch} from 'vue'
+import { computed, ref, watch } from "vue";
 
 const peoples = [
-  {id: 1, name: 'Leslie Alexander', url: '#'},
-  {id: 2, name: 'Bart Simpson', url: '#'},
-  {id: 3, name: 'Homer Simpson', url: '#'},
-  {id: 4, name: 'Marge Simpson', url: '#'},
-  {id: 5, name: 'Maggie Simpson', url: '#'},
-  {id: 5, name: 'Lisa Simpson', url: '#'},
-  {id: 5, name: 'Abraham Simpson', url: '#'},
-]
+  { id: 1, name: "Leslie Alexander", url: "#" },
+  { id: 2, name: "Bart Simpson", url: "#" },
+  { id: 3, name: "Homer Simpson", url: "#" },
+  { id: 4, name: "Marge Simpson", url: "#" },
+  { id: 5, name: "Maggie Simpson", url: "#" },
+  { id: 5, name: "Lisa Simpson", url: "#" },
+  { id: 5, name: "Abraham Simpson", url: "#" },
+];
 
-const open = ref(true)
-const query = ref('')
+const open = ref(true);
+const query = ref("");
 const filteredPeople = computed(() =>
-    query.value === ''
-        ? []
-        : peoples.filter((person) => {
-          return person.name.toLowerCase().includes(query.value.toLowerCase())
-        })
-)
+  query.value === ""
+    ? []
+    : peoples.filter((person) => {
+        return person.name.toLowerCase().includes(query.value.toLowerCase());
+      })
+);
 
 function onSelect(person) {
-  window.location = person.url
+  window.location = person.url;
 }
 </script>
 <template>
@@ -38,7 +38,9 @@ function onSelect(person) {
         From: "opacity-100"
         To: "opacity-0"
     -->
-    <div class="fixed inset-0 bg-gray-500 bg-opacity-25 transition-opacity"></div>
+    <div
+      class="fixed inset-0 bg-gray-500 bg-opacity-25 transition-opacity"
+    ></div>
 
     <div class="fixed inset-0 z-10 overflow-y-auto p-4 sm:p-6 md:p-20">
       <!--
@@ -52,37 +54,61 @@ function onSelect(person) {
           To: "opacity-0 scale-95"
       -->
       <div
-          class="mx-auto max-w-xl transform rounded-xl bg-white p-2 shadow-2xl ring-1 ring-black ring-opacity-5 transition-all">
-        <input type="text"
-               @change="query = $event.target.value"
-
-               class="w-full rounded-md border-0 bg-gray-100 px-4 py-2.5 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm"
-               placeholder="Search..." role="combobox" aria-expanded="false" aria-controls="options">
+        class="mx-auto max-w-xl transform rounded-xl bg-white p-2 shadow-2xl ring-1 ring-black ring-opacity-5 transition-all"
+      >
+        <input
+          type="text"
+          @change="query = $event.target.value"
+          class="w-full rounded-md border-0 bg-gray-100 px-4 py-2.5 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm"
+          placeholder="Search..."
+          role="combobox"
+          aria-expanded="false"
+          aria-controls="options"
+        />
 
         <!-- Results, show/hide based on command palette state. -->
-        <ul class="-mb-2 max-h-72 scroll-py-2 overflow-y-auto py-2 text-sm text-gray-800" id="options" role="listbox">
+        <ul
+          class="-mb-2 max-h-72 scroll-py-2 overflow-y-auto py-2 text-sm text-gray-800"
+          id="options"
+          role="listbox"
+        >
           <!-- Active: "bg-indigo-600 text-white" -->
-          <li v-for="people in filteredPeople"
-              :id="'option-'+people.id"
-              :value="people"
-              class="cursor-default select-none rounded-md px-4 py-2 hover:bg-indigo-600 hover:text-white"
-              role="option"
-              tabindex="-1">
+          <li
+            v-for="people in filteredPeople"
+            :id="'option-' + people.id"
+            :value="people"
+            class="cursor-default select-none rounded-md px-4 py-2 hover:bg-indigo-600 hover:text-white"
+            role="option"
+            tabindex="-1"
+          >
             {{ people.name }}
           </li>
         </ul>
 
         <!-- Empty state, show/hide based on command palette state. -->
         <div
-            v-if="query !== '' && filteredPeople.length === 0"
-            class="py-14 px-4 text-center sm:px-14">
+          v-if="query !== '' && filteredPeople.length === 0"
+          class="py-14 px-4 text-center sm:px-14"
+        >
           <!-- Heroicon name: outline/users -->
-          <svg class="mx-auto h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-               stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/>
+          <svg
+            class="mx-auto h-6 w-6 text-gray-400"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"
+            />
           </svg>
-          <p class="mt-4 text-sm text-gray-900">No people found using that search term.</p>
+          <p class="mt-4 text-sm text-gray-900">
+            No people found using that search term.
+          </p>
         </div>
       </div>
     </div>

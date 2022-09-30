@@ -1,6 +1,6 @@
-import { createApp } from 'vue'
-import Home from './Home.vue'
+import { createApp } from "vue";
+import Home from "./Home.vue";
 
-import './index.css'
+import "./index.css";
 
-createApp(Home).mount('#app')
+createApp(Home).mount("#app");

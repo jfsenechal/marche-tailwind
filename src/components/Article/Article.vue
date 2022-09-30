@@ -4,7 +4,7 @@ import Header from "@/components/Article/Header.vue";
 import Body from "@/components/Article/Body.vue";
 </script>
 <template>
-  <Titre/>
-  <Header/>
-  <Body/>
+  <Titre />
+  <Header />
+  <Body />
 </template>
