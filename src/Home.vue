@@ -1,11 +1,10 @@
 <script setup>
 import Icones from "@/components/Home/Icones.vue";
+import HomeSearch from "@/components/Home/HomeSearch.vue";
 </script>
 
 <template>
-  <main>
-    <section class="container mx-auto h-screen place-content-center px-4">
-      <Icones />
-    </section>
-  </main>
+  <!--<main class="w-full mx-auto h-screen grid place-content-center">-->
+      <HomeSearch/>
+  <!--</main>-->
 </template>

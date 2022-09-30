@@ -1,7 +1,10 @@
+<script setup>
+import Icones from "@/components/Home/Icones.vue";
+</script>
 <template>
-  <div class="w-full p-40 bghome-image bghome-linear bg-no-repeat bg-cover bg-top h-full">
+  <section class="w-full p-40 bghome-image bghome-linear bg-no-repeat bg-cover bg-top h-full">
     <h1 class="text-xl text-center text-white font-montserrat-bold pb-5">Bienvenue à Marche-en-Famenne</h1>
-    <form name="searching" class="flex max-w-3xl">
+    <form name="searching" class="flex max-w-3xl mx-auto">
       <label class="block" for="search">
         <span class="sr-only">Rechercher</span>
       </label>
@@ -19,5 +22,8 @@
               class="relative right-12 top-2 pl-4 w-6 h-6 i-search bg-no-repeat bg-cover p-2">
       </button>
     </form>
-  </div>
+
+    <Icones/>
+
+  </section>
 </template>
