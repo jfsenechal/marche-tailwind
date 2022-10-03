@@ -20,25 +20,26 @@ const widgets = [
     'id': 3
   },
   {
-    'title': 'Plateforme de volontariat', 'intro': 'Offres et demandes du tissu associatif',
+    'title': 'Plateforme de volontariat',
+    'intro': 'Offres et demandes du tissu associatif',
     'img': '',
     'url': '/', 'id': 4
   },
   {
-    'title': 'Avis de décès', 'intro': 'Annonces nécrologiques de notre commune', 'img': '',
+    'title': 'Avis de décès',
+    'intro': 'Annonces nécrologiques de notre commune', 'img': '',
     'url': '/', 'id': 5
   },
 ]
 </script>
 <template>
   <ul class="pt-10 grid grid-cols-[repeat(5,1fr)] gap-2 place-items-center ">
-    <li v-for="item in widgets" :id="item.id" class="bg-linear55 opacity-60 flex items-center h-32 mlp-4">
-      <a :href="item.url" class="text-white bg-img-widgets-1 bg-cover filter-grey ">
-        <h3 class="">
+    <li v-for="item in widgets" :id="item.id" class="zizi b5g-opacity-60 flex items-center h-32">
+      <a :href="item.url" class="text-white b45g-img-widgets-1 bg-c54over filter-grey ">
+        <h3 class="2xl">
           {{ item.title }}
         </h3>
       </a>
     </li>
   </ul>
 </template>
-
