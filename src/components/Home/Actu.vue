@@ -3,36 +3,42 @@ const actus = [
   {
     'title': 'Course cycliste Famenne Ardenne Classic',
     'category': 'Sport',
+    'url': '/',
     'img': 'https://www.marche.be/wp-content/uploads/2022/09/cropped-Couverture-web-2022-4-1.jpg',
     'id': 1
   },
   {
     'title': 'Conseil communal le lundi 3 octobre (19h)',
     'category': 'Administration',
+    'url': '/',
     'img': 'https://www.marche.be/wp-content/uploads/2022/06/290691837_570566464561460_7215536464221442591_n.jpg',
     'id': 2
   },
   {
     'title': 'Nuit de l\'obscurité (7 et 8 oct)',
     'category': 'Citoyen',
+    'url': '/',
     'img': 'https://www.marche.be/wp-content/uploads/2022/09/Nuit-obscurite-2-event-FB.jpg',
     'id': 3
   },
   {
     'title': 'Semaine du commerce équitable',
-    'category': '',
+    'category': 'Santé',
+    'url': '/',
     'img': 'https://www.marche.be/sante/files/2022/09/Banner-semaine-du-CE-2022.jpg',
     'id': 4
   },
   {
     'title': 'Grande Donnerie au complexe St-François',
-    'category': '',
+    'category': 'Social',
+    'url': '/',
     'img': 'https://www.marche.be/wp-content/uploads/2022/09/Donnerie-oct-r.jpg',
     'id': 5
   },
   {
     'title': 'Vente de bois de chauffage',
-    'category': '',
+    'category': 'Citoyen',
+    'url': '/',
     'img': 'https://www.marche.be/wp-content/uploads/2022/09/PUBLICATION-VALVES_01-scaled.jpg',
     'id': 6
   }
@@ -41,16 +47,20 @@ const actus = [
 <template>
   <div class="p-4">
     <h2 class="text-2xl text-cta-dark font-montserrat-bold p-4">Actualités</h2>
-    <div class="container grid grid-cols-[repeat(auto-fit,minmax(16rem,1fr))] gap-8">
-      <div v-for="item in actus" :id="item.id" class="rounded-lg shadow-2xl">
-        <img :src="item.img" alt="" class="w-full h-48 object-cover rounded-t-lg"/>
-        <div class="p-6">
-          <h3 class="font-bold text-xl">{{ item.title }}</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo assumenda porro inventore repellendus
-            ipsum.</p>
-          <a href="#">Read more</a>
-        </div>
-      </div>
-    </div>
+    <ul class="grid grid-cols-[repeat(3,minmax(0,1fr))] gap-2  ">
+      <li v-for="item in actus" :id="item.id" class="rounded-lg shadow-xl overflow-hidden bg-linear ">
+        <a href="{{item.url}}" class="group overflow-hidden ">
+          <img :src="item.img" alt="" class="w-full h-40 object-cover rounded-t-lg opacity-50 group-hover:scale-100 group-hover:opacity-60 transition-all duration-700"/>
+          <div class="p-3">
+            <span class="block text-citoyen font-montserrat-bold my-1">{{ item.category }}</span>
+            <h3 class="font-montserrat-bold text-base text-cta-dark group-hover:text-blue-light">{{ item.title }}</h3>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <a href="/" class="block mt-4 text-blue-light font-montserrat-bold ml-auto mr-2 w-48">
+      Plus d'actualités
+      <i class="fas fa-angle-right d-none d-ls-md-inline pl-12px fs-basic d-md-inline"></i>
+    </a>
   </div>
 </template>
