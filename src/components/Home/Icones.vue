@@ -11,7 +11,7 @@ const icones = [
 ]
 </script>
 <template>
-  <ul class="mt-8 w-[32rem] grid grid-cols-[repeat(4,minmax(7rem,7rem))] gap-6 justify-center items-start">
+  <ul class="mt-8 w-[32rem] grid grid-cols-[repeat(4,minmax(7rem,7rem))] gap-6 justify-center items-start mb-8">
     <li v-for="item in icones" :id="item.id"
         class="group flex flex-shrink-0 flex-grow-0 basis-1/4 justify-center text-center">
       <a :href="item.url" class="icon_custom">

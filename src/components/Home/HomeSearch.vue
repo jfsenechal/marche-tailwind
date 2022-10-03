@@ -1,10 +1,12 @@
 <script setup>
 import Icones from "@/components/Home/Icones.vue";
+import Wave from "@/components/Home/Wave.vue";
 </script>
 <template>
-  <section class="flex flex-col justify-center items-center w-full p-40 bghome-image bg-no-repeat bg-cover bg-bottom h-full">
-    <h1 class="text-xl text-center text-white font-montserrat-bold pb-5">Bienvenue à Marche-en-Famenne</h1>
-    <form name="searching" class="flex max-w-3xl mx-auto">
+  <section
+      class="flex flex-col justify-center items-center w-full bghome-image bg-no-repeat bg-cover bg-bottom overflow-hidden">
+    <h1 class="text-2xl text-center text-white font-montserrat-bold pb-5">Bienvenue à Marche-en-Famenne</h1>
+    <form name="searching" class="flex max-w-5xl mx-auto">
       <label class="block" for="search">
         <span class="sr-only">Rechercher</span>
       </label>
@@ -24,6 +26,6 @@ import Icones from "@/components/Home/Icones.vue";
     </form>
 
     <Icones/>
-
+    <Wave/>
   </section>
 </template>
