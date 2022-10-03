@@ -48,9 +48,11 @@ const actus = [
   <div class="p-4">
     <h2 class="text-2xl text-cta-dark font-montserrat-bold p-4">Actualités</h2>
     <ul class="grid grid-cols-[repeat(3,minmax(0,1fr))] gap-2  ">
-      <li v-for="item in actus" :id="item.id" class="rounded-lg shadow-xl overflow-hidden bg-linear ">
+      <li v-for="item in actus" :id="item.id" class="rounded-lg shadow-lg overflow-hidden">
         <a href="{{item.url}}" class="group overflow-hidden ">
-          <img :src="item.img" alt="" class="w-full h-40 object-cover rounded-t-lg opacity-50 group-hover:scale-100 group-hover:opacity-60 transition-all duration-700"/>
+          <div class="bg-linear55">
+          <img :src="item.img" alt="" class="w-full h-40 object-cover rounded-t-lg opacity-100 group-hover:scale-105 group-hover:opacity-60 transition-all duration-700"/>
+          </div>
           <div class="p-3">
             <span class="block text-citoyen font-montserrat-bold my-1">{{ item.category }}</span>
             <h3 class="font-montserrat-bold text-base text-cta-dark group-hover:text-blue-light">{{ item.title }}</h3>
@@ -58,7 +60,7 @@ const actus = [
         </a>
       </li>
     </ul>
-    <a href="/" class="block mt-4 text-blue-light font-montserrat-bold ml-auto mr-2 w-48">
+    <a href="/" class="block mt-4 text-blue-light font-montserrat-bold ml-auto mr-2 w-48 hover:mr-8 transition-all duration-700">
       Plus d'actualités
       <i class="fas fa-angle-right d-none d-ls-md-inline pl-12px fs-basic d-md-inline"></i>
     </a>
