@@ -4,7 +4,7 @@ import { ArrowLeftIcon } from "@heroicons/vue/24/solid";
 <template>
   <div class="flex items-center">
     <ArrowLeftIcon class="mr-4 h-6 w-6 text-blue-500" />
-    <a href="/" class="font-montserrat-bold text-blue-light"
+    <a href="/" class="font-montserrat-bold text-cta-light"
       >Retour à Actualités</a
     >
   </div>

@@ -65,7 +65,7 @@ const actus = [
               item.category
             }}</span>
             <h3
-              class="font-montserrat-semi-bold text-md text-cta-dark group-hover:text-blue-light"
+              class="font-montserrat-semi-bold text-md text-cta-dark group-hover:text-cta-light"
             >
               {{ item.title }}
             </h3>
@@ -75,7 +75,7 @@ const actus = [
     </ul>
     <a
       href="/"
-      class="mt-4 ml-auto mr-2 block w-48 font-montserrat-semi-bold text-blue-light transition-all duration-700 hover:mr-8"
+      class="mt-4 ml-auto mr-2 block w-48 font-montserrat-semi-bold text-cta-light transition-all duration-700 hover:mr-8"
     >
       Plus d'actualités
       <i

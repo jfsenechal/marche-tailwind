@@ -16,7 +16,7 @@ const icones = [
 </script>
 <template>
   <ul
-    class="mt-8 mb-8 grid w-[32rem] grid-cols-[repeat(4,minmax(7rem,7rem))] items-start justify-center gap-6"
+    class="mt-8 mb-8 grid w-[38rem] grid-cols-[repeat(4,minmax(9rem,9rem))] items-start justify-center gap-3"
   >
     <li
       v-for="item in icones"
@@ -26,7 +26,7 @@ const icones = [
     >
       <a :href="item.url" class="icon_custom">
         <i
-          class="mx-auto block h-14 w-14 rounded-full bg-white bg-[length:2.25rem_2.25rem] bg-center bg-no-repeat shadow-xl hover:text-white group-hover:bg-blue-light"
+          class="mx-auto block h-14 w-14 rounded-full bg-white bg-[length:2.25rem_2.25rem] bg-center bg-no-repeat shadow-xl hover:text-white group-hover:bg-cta-light"
           :class="item.icon + ' group-hover:' + item.icon + '-white'"
         >
         </i>

@@ -25,15 +25,11 @@ module.exports = {
                 sport: "#98C02DFF",
                 social: "#CB0044FF",
                 tourisme: "#8A5A9DFF",
-                blue: {
-                    light: "#4ae0c7",
-                },
                 cta: {
                     light: "#4ae0c7",
                     dark: "#487F89FF",
-                    body: "#487f89",
                 },
-                borderjf: "#dee2e6",
+                greylight: "#dee2e6",
             },
             boxShadow: {
                 menutop: "0 -3px 0 0 #4ae0c7 inset",

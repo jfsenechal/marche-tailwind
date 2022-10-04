@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <section class="my-8 text-cta-body">
+  <section class="my-8 text-cta-dark">
     La création du piétonnier remonte à plus de 30 ans et la volonté de la Ville
     est de lui redonner un coup de neuf pour qu’il reste un élément attractif du
     centre-ville.<br />

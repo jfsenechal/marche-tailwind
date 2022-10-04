@@ -56,7 +56,7 @@ const events = [
         <li v-for="item in events" :id="item.id" class="">
           <a
             href="#"
-            class="group my-2 grid grid-cols-[10rem,1fr] rounded-lg border border-borderjf/50 text-cta-dark transition-all duration-700 hover:border-blue-light"
+            class="group my-2 grid grid-cols-[10rem,1fr] rounded-lg border border-greylight/50 text-cta-dark transition-all duration-700 hover:border-cta-light"
           >
             <div
               class="flex flex-col items-center justify-center border-x transition-all duration-700 group-hover:bg-cta-light group-hover:text-white"
@@ -76,7 +76,7 @@ const events = [
       </ul>
     <a
       href="/"
-      class="mt-4 ml-auto mr-2 block w-48 font-montserrat-semi-bold text-blue-light transition-all duration-700 hover:mr-8"
+      class="mt-4 ml-auto mr-2 block w-48 font-montserrat-semi-bold text-cta-light transition-all duration-700 hover:mr-8"
     >
       Tout l'agenda
       <i

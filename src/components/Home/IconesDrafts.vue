@@ -1,6 +1,6 @@
 <template>
   <a
-    class="group mx-1 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white text-white shadow-xl hover:bg-blue-light"
+    class="group mx-1 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white text-white shadow-xl hover:bg-cta-light"
     href="#"
   >
     <i
@@ -31,7 +31,7 @@
     >
       <a href="/sport/piscine-communale" class="icon_custom">
         <i
-          class="i-swimmer group-hover:i-swimmer-white i-bg-color-transition mx-auto block h-20 w-20 rounded-full bg-white bg-[length:36px_36px] bg-center bg-no-repeat shadow-xl hover:text-white group-hover:bg-blue-light"
+          class="i-swimmer group-hover:i-swimmer-white i-bg-color-transition mx-auto block h-20 w-20 rounded-full bg-white bg-[length:36px_36px] bg-center bg-no-repeat shadow-xl hover:text-white group-hover:bg-cta-light"
         ></i>
         <span
           class="mx-auto inline-block pt-3 font-montserrat-bold leading-4 text-black"
@@ -44,7 +44,7 @@
     >
       <a href="/sport/piscine-communale" class="icon_custom">
         <i
-          class="i-swimmer i-bg-color-transition mx-auto block h-20 w-20 rounded-full bg-white bg-center bg-no-repeat p-4 shadow-xl hover:text-white group-hover:bg-blue-light"
+          class="i-swimmer i-bg-color-transition mx-auto block h-20 w-20 rounded-full bg-white bg-center bg-no-repeat p-4 shadow-xl hover:text-white group-hover:bg-cta-light"
         ></i>
         <span
           class="mx-auto inline-block pt-3 font-montserrat-bold leading-4 text-black"
@@ -57,7 +57,7 @@
     <li class="flex w-[20%] items-center justify-center text-center">
       <a href="#">
         <img
-          class="mx-auto h-14 w-14 rounded-full bg-white hover:bg-blue-light"
+          class="mx-auto h-14 w-14 rounded-full bg-white hover:bg-cta-light"
           src="https://www.marche.be/wp-content/themes/marchebe/assets/tartine/rsc/svg/icon_swimmer_primary.svg"
           alt="patrimoine"
         />
