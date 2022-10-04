@@ -21,6 +21,7 @@ const icones = [
     <li
       v-for="item in icones"
       :id="item.id"
+      :key="item.id"
       class="group flex flex-shrink-0 flex-grow-0 basis-1/4 justify-center text-center"
     >
       <a :href="item.url" class="icon_custom">

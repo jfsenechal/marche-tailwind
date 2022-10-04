@@ -6,10 +6,10 @@ import Wave from "@/components/Home/Wave.vue";
   <section
     class="bghome-image flex w-full flex-col items-center justify-center overflow-hidden bg-cover bg-bottom bg-no-repeat"
   >
-    <h1 class="pb-5 text-center font-montserrat-bold text-2xl text-white">
+    <h1 class="pb-8 text-center font-montserrat-semi-bold text-3xl text-white">
       Bienvenue à Marche-en-Famenne
     </h1>
-    <form name="searching" class="mx-auto flex max-w-5xl">
+    <form name="searching" class="mx-auto flex w-[35rem]">
       <label class="block" for="search">
         <span class="sr-only">Rechercher</span>
       </label>
