@@ -50,7 +50,7 @@ const actus = [
     <ul class="grid grid-cols-[repeat(3,minmax(0,1fr))] gap-2  ">
       <li v-for="item in actus" :id="item.id" class="rounded-lg shadow-lg overflow-hidden">
         <a href="{{item.url}}" class="group overflow-hidden ">
-          <div class="bg-linear55">
+          <div class="bg-linear">
           <img :src="item.img" alt="" class="w-full h-40 object-cover rounded-t-lg opacity-100 group-hover:scale-105 group-hover:opacity-60 transition-all duration-700"/>
           </div>
           <div class="p-3">
