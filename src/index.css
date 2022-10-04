@@ -9,101 +9,122 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    font-family: "montserratregular", system-ui, sans-serif;
-    @apply scroll-pt-3 scroll-smooth;
-    /* see https://www.getrevue.co/profile/shrutibalasa/issues/did-you-know-about-scroll-padding-easy-solution-to-fixed-header-problem-1325973 */
-  }
+    html {
+        font-family: "montserratregular", system-ui, sans-serif;
+        @apply scroll-pt-3 scroll-smooth;
+        /* see https://www.getrevue.co/profile/shrutibalasa/issues/did-you-know-about-scroll-padding-easy-solution-to-fixed-header-problem-1325973 */
+    }
 
-  * {
-    outline: red dotted 1px;
-  }
+    * {
 
-  body {
-    @apply grid min-h-screen text-gray-800 antialiased;
-    grid-template-rows: 1fr auto;
-  }
+    }
 
-  img {
-    @apply w-full object-cover;
-  }
+    body {
+        @apply grid min-h-screen text-gray-800 antialiased;
+        grid-template-rows: 1fr auto;
+    }
 
-  section {
-    /* padding: 1.5rem 2rem;*/
-    /* min-height: 100vh;*/
-    /* color: white;*/
-  }
+    img {
+        @apply w-full object-cover;
+    }
 
-  main {
-    padding: 2rem;
-  }
+    section {
+        /* padding: 1.5rem 2rem;*/
+        /* min-height: 100vh;*/
+        /* color: white;*/
+    }
+
+    main {
+        padding: 2rem;
+    }
 }
 
 @layer components {
-  i.fa {
-    @apply text-sm;
-  }
+    i.fa {
+        @apply text-sm;
+    }
 
-  .icon {
-    @apply mx-1 h-6 w-6 rounded-full bg-cta-dark text-white hover:bg-cta-light;
-  }
+    .icon {
+        @apply mx-1 h-6 w-6 rounded-full bg-cta-dark text-white hover:bg-cta-light;
+    }
 
-  .bghome-image {
-    background-image: linear-gradient(
-        90deg,
-        rgba(1, 31, 22, 0.38),
-        rgba(0, 75, 142, 0.38)
-      ),
-      url(../images/bh_home.jpg);
-  }
+    .bghome-image {
+        background-image: linear-gradient(
+                90deg,
+                rgba(1, 31, 22, 0.38),
+                rgba(0, 75, 142, 0.38)
+        ),
+        url(../images/bh_home.jpg);
+    }
 
-  .bg-linear {
-    background-color: rgba(74, 224, 199, 0.55);
-  }
+    .bg-lighter {
+        background-color: #ededec;
+    }
 
-  .bg-widget-color {
-    background-image: linear-gradient(
-      90deg,
-      rgba(74, 224, 199, 0.55),
-      rgba(74, 224, 199, 0.55)
-    );
-  }
+    .bg-linear {
+        background-color: rgba(74, 224, 199, 0.55);
+    }
 
-  .bg-widget-color-hov {
-    background-color: rgba(72, 127, 137, 0.75);
-  }
+    .bg-widget-color {
+        background-image: linear-gradient(
+                90deg,
+                rgba(74, 224, 199, 0.55),
+                rgba(74, 224, 199, 0.55)
+        );
+    }
 
-  .bg-widget-image {
-    background-image: url("../images/img/img_widget02.jpg");
-  }
+    .bg-widget-color-hov {
+        background-color: rgba(72, 127, 137, 0.75);
+    }
+
+    .bg-img-widgets-1 {
+        background-image: url("../images/img/img_widget01.jpg");
+    }
+
+    .bg-img-widgets-2 {
+        background-image: url("../images/img/img_widget02.jpg");
+    }
+
+    .bg-img-widgets-3 {
+        background-image: url("../images/img/img_widget03.jpg");
+    }
+
+    .bg-img-widgets-4 {
+        background-image: url("../images/img/img_widget04.jpg");
+    }
+
+    .bg-img-widgets-5 {
+        background-image: url("../images/img/img_widget05.jpg");
+    }
+
 }
 
 @font-face {
-  font-family: "montserratlight";
-  src: url("../Montserrat/static/Montserrat-Light.ttf");
+    font-family: "montserratlight";
+    src: url("../Montserrat/static/Montserrat-Light.ttf");
 }
 
 @font-face {
-  font-family: "montserratthin";
-  src: url("../Montserrat/static/Montserrat-Thin.ttf");
+    font-family: "montserratthin";
+    src: url("../Montserrat/static/Montserrat-Thin.ttf");
 }
 
 @font-face {
-  font-family: "montserratregular";
-  src: url("../Montserrat/static/Montserrat-Regular.ttf");
+    font-family: "montserratregular";
+    src: url("../Montserrat/static/Montserrat-Regular.ttf");
 }
 
 @font-face {
-  font-family: "montserrat";
-  src: url("../Montserrat/static/Montserrat-Medium.ttf");
+    font-family: "montserrat";
+    src: url("../Montserrat/static/Montserrat-Medium.ttf");
 }
 
 @font-face {
-  font-family: "montserratbold";
-  src: url("../Montserrat/static/Montserrat-Bold.ttf");
+    font-family: "montserratbold";
+    src: url("../Montserrat/static/Montserrat-Bold.ttf");
 }
 
 @font-face {
-  font-family: "montserratextrabold";
-  src: url("../Montserrat/static/Montserrat-ExtraBold.ttf");
+    font-family: "montserratextrabold";
+    src: url("../Montserrat/static/Montserrat-ExtraBold.ttf");
 }

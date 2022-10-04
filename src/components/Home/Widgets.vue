@@ -39,14 +39,15 @@ const widgets = [
 ];
 </script>
 <template>
-  <div class="grid grid-cols-[repeat(5,1fr)] gap-2 pt-10">
+  <div class="grid grid-cols-[repeat(5,1fr)] gap-2 pt-6">
     <div
       v-for="item in widgets"
       :id="item.id"
+      :key="item.id"
       class="relative flex items-center justify-center overflow-hidden"
     >
       <i
-        class="bg-widget-image absolute inset-0 block h-32 border-2 border-red-400 bg-center bg-no-repeat grayscale"
+        :class="'absolute inset-0 block h-32 border-2 border-red-400 bg-center bg-no-repeat grayscale jfs' + item.id"
       ></i>
       <a
         :href="item.url"

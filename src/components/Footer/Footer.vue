@@ -5,7 +5,7 @@ import IconesSocial from "@/components/Footer/IconesSocial.vue";
 </script>
 <template>
   <footer
-    class="mt-12 grid grid-cols-4 justify-between bg-cta-body p-5 font-montserrat-light text-white"
+    class="grid grid-cols-4 justify-between bg-cta-body p-5 font-montserrat-light text-white"
   >
     <div>
       <img src="images/img_logo_white.png" class="w-20" alt="logo" />
