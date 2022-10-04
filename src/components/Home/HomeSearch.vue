@@ -1,5 +1,5 @@
 <script setup>
-import Icones from "@/components/Home/Icones.vue";
+import Icons from "@/components/Home/Icones.vue";
 import Wave from "@/components/Home/Wave.vue";
 </script>
 <template>
@@ -27,7 +27,7 @@ import Wave from "@/components/Home/Wave.vue";
       ></button>
     </form>
 
-    <Icones />
+    <Icons />
     <Wave />
   </section>
 </template>

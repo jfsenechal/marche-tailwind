@@ -51,8 +51,6 @@ const events = [
 ];
 </script>
 <template>
-  <div>
-    <div class="self-star45t p-4 shadow-lg">
       <h2 class="p-4 font-montserrat-bold text-2xl text-cta-dark">Agenda</h2>
       <ul>
         <li v-for="item in events" :id="item.id" class="">
@@ -63,11 +61,11 @@ const events = [
             <div
               class="flex flex-col items-center justify-center border-x transition-all duration-700 group-hover:bg-cta-light group-hover:text-white"
             >
-              <span class="font-montserrat-extra-bold text-xl">{{
+              <span class="font-montserrat-semi-bold text-xl">{{
                 item.day
               }}</span>
-              <span class="font-montserrat-regular">{{ item.month }}</span>
-              <span class="font-montserrat-regular">{{ item.year }}</span>
+              <span class="">{{ item.month }}</span>
+              <span class="">{{ item.year }}</span>
             </div>
             <div class="flex flex-col items-start justify-center px-8">
               <span>{{ item.title }}</span>
@@ -76,15 +74,13 @@ const events = [
           </a>
         </li>
       </ul>
-    </div>
     <a
       href="/"
-      class="mt-4 ml-auto mr-2 block w-48 font-montserrat-bold text-blue-light transition-all duration-700 hover:mr-8"
+      class="mt-4 ml-auto mr-2 block w-48 font-montserrat-semi-bold text-blue-light transition-all duration-700 hover:mr-8"
     >
-      Plus d'actualités
+      Tout l'agenda
       <i
         class="fas fa-angle-right d-none d-ls-md-inline pl-12px fs-basic d-md-inline"
       ></i>
     </a>
-  </div>
 </template>

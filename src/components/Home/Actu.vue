@@ -45,7 +45,6 @@ const actus = [
 ];
 </script>
 <template>
-  <div class="p-4">
     <h2 class="p-4 font-montserrat-bold text-2xl text-cta-dark">Actualités</h2>
     <ul class="grid grid-cols-[repeat(3,minmax(0,1fr))] gap-2">
       <li
@@ -62,11 +61,11 @@ const actus = [
             />
           </div>
           <div class="p-3">
-            <span class="my-1 block font-montserrat-bold text-citoyen">{{
+            <span class="my-1 block font-montserrat-medium text-citoyen">{{
               item.category
             }}</span>
             <h3
-              class="font-montserrat-bold text-base text-cta-dark group-hover:text-blue-light"
+              class="font-montserrat-semi-bold text-md text-cta-dark group-hover:text-blue-light"
             >
               {{ item.title }}
             </h3>
@@ -76,12 +75,11 @@ const actus = [
     </ul>
     <a
       href="/"
-      class="mt-4 ml-auto mr-2 block w-48 font-montserrat-bold text-blue-light transition-all duration-700 hover:mr-8"
+      class="mt-4 ml-auto mr-2 block w-48 font-montserrat-semi-bold text-blue-light transition-all duration-700 hover:mr-8"
     >
       Plus d'actualités
       <i
         class="fas fa-angle-right d-none d-ls-md-inline pl-12px fs-basic d-md-inline"
       ></i>
     </a>
-  </div>
 </template>

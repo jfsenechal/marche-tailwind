@@ -10,7 +10,7 @@
 
 @layer base {
     html {
-        font-family: "montserratregular", system-ui, sans-serif;
+        font-family: "montserrat-regular", system-ui, sans-serif;
         @apply scroll-pt-3 scroll-smooth;
         /* see https://www.getrevue.co/profile/shrutibalasa/issues/did-you-know-about-scroll-padding-easy-solution-to-fixed-header-problem-1325973 */
     }
@@ -100,31 +100,41 @@
 }
 
 @font-face {
-    font-family: "montserratlight";
+    font-family: "montserrat-light";
     src: url("../Montserrat/static/Montserrat-Light.ttf");
 }
 
 @font-face {
-    font-family: "montserratthin";
+    font-family: "montserrat-extra-light";
+    src: url("../Montserrat/static/Montserrat-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "montserrat-thin";
     src: url("../Montserrat/static/Montserrat-Thin.ttf");
 }
 
 @font-face {
-    font-family: "montserratregular";
+    font-family: "montserrat-regular";
     src: url("../Montserrat/static/Montserrat-Regular.ttf");
 }
 
 @font-face {
-    font-family: "montserrat";
+    font-family: "montserrat-medium";
     src: url("../Montserrat/static/Montserrat-Medium.ttf");
 }
 
 @font-face {
-    font-family: "montserratbold";
+    font-family: "montserrat-bold";
     src: url("../Montserrat/static/Montserrat-Bold.ttf");
 }
 
 @font-face {
-    font-family: "montserratextrabold";
+    font-family: "montserrat-semi-bold";
+    src: url("../Montserrat/static/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "montserrat-extra-bold";
     src: url("../Montserrat/static/Montserrat-ExtraBold.ttf");
 }

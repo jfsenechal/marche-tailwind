@@ -10,9 +10,13 @@ import Partners from "@/components/Home/Partners.vue";
 <template>
   <!--<main class="w-full mx-auto h-screen grid place-content-center">-->
   <HomeSearch/>
-  <section class="mx-40 mx-auto grid grid-cols-[60%,40%] py-16">
-    <Actu/>
-    <Agenda/>
+  <section class="mx-40 mx-auto grid grid-cols-[60%,40%]">
+    <div>
+      <Actu/>
+    </div>
+    <div class="shadow-lg">
+      <Agenda/>
+    </div>
   </section>
   <section>
     <Widgets/>

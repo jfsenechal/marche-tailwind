@@ -9,7 +9,7 @@
 -->
 <template>
   <svg
-    class="h-full w-full"
+    class="w-full"
     viewBox="0 0 16001 1392"
     style="
       fill-rule: evenodd;

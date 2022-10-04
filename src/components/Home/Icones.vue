@@ -30,7 +30,7 @@ const icones = [
         >
         </i>
         <span
-          class="mx-auto inline-block pt-3 font-montserrat-bold leading-4 text-white"
+          class="mx-auto inline-block pt-3 font-montserrat-semi-bold leading-4 text-white"
           >{{ item.title }}</span
         >
       </a>

@@ -13,7 +13,7 @@ import { ArrowLeftIcon } from "@heroicons/vue/24/solid";
     Rénovation piétonnier centre-ville
   </h2>
 
-  <span class="block pt-4 font-montserrat-extra-bold text-citoyen">
+  <span class="block pt-4 font-montserrat-semi-bold text-citoyen">
     Citoyen
   </span>
 </template>
