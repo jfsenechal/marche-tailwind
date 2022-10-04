@@ -8,14 +8,14 @@ import Footer from "@/components/Footer/Footer.vue";
 
 <template>
   <!--<main class="w-full mx-auto h-screen grid place-content-center">-->
-  <HomeSearch/>
+  <HomeSearch />
   <section class="mx-40 mx-auto grid grid-cols-[60%,40%] py-16">
-    <Actu/>
-    <Agenda/>
+    <Actu />
+    <Agenda />
   </section>
   <section>
-    <Widgets/>
+    <Widgets />
   </section>
-  <Footer/>
+  <Footer />
   <!--</main>-->
 </template>

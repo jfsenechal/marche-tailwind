@@ -1,6 +1,4 @@
-<script setup>
-
-</script>
+<script setup></script>
 <template>
   <div class="mr-4 h-80 w-2/3 overflow-hidden">
     <picture>
