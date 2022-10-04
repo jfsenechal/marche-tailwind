@@ -33,13 +33,18 @@ const widgets = [
 ]
 </script>
 <template>
-  <ul class="pt-10 grid grid-cols-[repeat(5,1fr)] gap-2 place-items-center ">
-    <li v-for="item in widgets" :id="item.id" class="zizi b5g-opacity-60 flex items-center h-32">
-      <a :href="item.url" class="text-white b45g-img-widgets-1 bg-c54over filter-grey ">
-        <h3 class="2xl">
+  <div class="pt-10 grid grid-cols-[repeat(5,1fr)] gap-2">
+    <div v-for="item in widgets" :id="item.id" class="relative flex w-96 items-center justify-center overflow-hidden">
+      <i class="bg-widget-image absolute inset-0 block h-32 w-96 border-2 border-red-400 bg-center bg-no-repeat grayscale"></i>
+      <a :href="item.url"
+         class="bg-widget-color hover:bg-widget-color-ho group relative flex h-32 w-96 flex-col items-center justify-center text-white transition-all duration-700">
+        <h3 class="2xl relative top-6 transition-all duration-700 group-hover:top-0 group-hover:ease-in-out">
           {{ item.title }}
         </h3>
+        <span class="relative -bottom-20 pt-4 text-white transition-all delay-300 duration-700 group-hover:bottom-0">
+          Infos pratiques, <br/>commerces locaux...
+        </span>
       </a>
-    </li>
-  </ul>
+    </div>
+  </div>
 </template>
