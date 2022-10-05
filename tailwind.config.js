@@ -16,7 +16,7 @@ module.exports = {
                 "montserrat-extra-bold": ["montserrat-extra-bold", ...defaultTheme.fontFamily.sans,],
             },
             colors: {
-                admin: "#82786FFF",
+                administration: "#82786FFF",
                 citoyen: "#FF7200FF",
                 culture: "#002F2FFF",
                 economie: "#0098DBFF",
