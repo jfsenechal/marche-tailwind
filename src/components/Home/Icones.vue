@@ -27,7 +27,7 @@ const icones = [
       <a :href="item.url" class="icon_custom">
         <i
             class="mx-auto block h-14 w-14 rounded-full bg-white bg-[length:2.25rem_2.25rem] bg-center bg-no-repeat shadow-xl hover:text-white group-hover:bg-cta-light"
-            :class="item.icon + '' + item.iconHover"
+            :class="item.icon + ' ' + item.iconHover"
         >
         </i>
         <span
