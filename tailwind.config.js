@@ -35,6 +35,6 @@ module.exports = {
                 menutop: "0 -3px 0 0 #4ae0c7 inset",
             },
         },
-        plugins: [require("@tailwindcss/forms")],
+        plugins: [require("@tailwindcss/forms")]
     },
 };
