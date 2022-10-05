@@ -2,8 +2,14 @@
 import Article from "@/components/Article/Article.vue";
 import Header from "@/components/Header/Inside/Header.vue";
 import Footer from "@/components/Footer/Footer.vue";
+import PopupSearch from "@/components/Header/PopupSearch.vue";
 </script>
 
+<template>
+  <PopupSearch />
+</template>
+
+<!--
 <template>
   <Header/>
   <main>
@@ -13,3 +19,4 @@ import Footer from "@/components/Footer/Footer.vue";
   </main>
  <Footer/>
 </template>
+-->
