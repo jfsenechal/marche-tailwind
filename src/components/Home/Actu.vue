@@ -74,7 +74,7 @@ const actus = [
       </li>
     </ul>
    <a
-      class="mt-4 ml-auto mr-2 block w-56 font-montserrat-semi-bold text-cta-light transition-all duration-700 hover:mr-8
+      class="pt-4 ml-auto mr-2 block w-56 font-montserrat-semi-bold text-cta-light transition-all duration-700 hover:mr-8
        block items-center justify-center"
       href="/"
       title="Plus d'actualités"
