@@ -1,24 +1,13 @@
 <script setup>
 import NavigationItems from "@/components/Header/Home/NavigationItems.vue";
+import IconMenuVivreSvg from "@/components/Header/Home/IconMenuVivreSvg.vue";
 </script>
 <template>
   <ul class="ml-auto lg:flex">
-    <li class="nav-top font-montserrat-semi-bold">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="inline h-6 w-6"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M4 6h16M4 12h16M4 18h16"
-        ></path>
-      </svg>
+    <li class="nav-top font-montserrat-semi-bold displaymenu transition-all duration-500 ">
+      <IconMenuVivreSvg />
       <a href="#">Vivre à Marche</a>
+      <NavigationItems />
     </li>
     <li class="nav-top text-cta-dark font-montserrat-semi-bold">
       <a href="#">E-guichet</a>
@@ -36,22 +25,6 @@ import NavigationItems from "@/components/Header/Home/NavigationItems.vue";
       <a href="#">Inondation</a>
     </li>
   </ul>
-  <div class="flex lg:hidden">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="h-6 w-6"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M4 6h16M4 12h16M4 18h16"
-      ></path>
-    </svg>
-  </div>
 </template>
 <style>
 li.nav-top {

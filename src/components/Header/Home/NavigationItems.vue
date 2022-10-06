@@ -10,8 +10,7 @@ function setActive(id) {
 </script>
 
 <template>
-  <div class="grid grid-cols-2 bg-cta-dark" id="menu">
-
+  <div class="fixed z-10 top-14 left-0 right-0 bottom-0 grid grid-cols-2 bg-cta-dark transition-all hidden duration-500 showme" id="menuVivre">
     <div class="py-4">
       <ul class="flex flex-col items-start ">
         <li v-for="item in items"

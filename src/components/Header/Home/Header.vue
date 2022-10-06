@@ -9,7 +9,4 @@ import NavigationItems from "@/components/Header/Home/NavigationItems.vue";
     <Navigation />
     <IconesSocial />
   </header>
-  <div class="bg-cta-dark w-full h-80">
-    <NavigationItems/>
-  </div>
 </template>
