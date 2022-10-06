@@ -1,59 +1,42 @@
 <script setup>
-const events = [
-  {
-    title: "Concert d'automne par l'Harmonie Communale",
-    year: 2022,
-    month: 10,
-    day: "01",
-    locality: "Marche-en-Famenne",
-    id: 1
-  },
-  {
-    title: "Exposition (peintures): Nadine Debailleul",
-    year: 2022,
-    month: 10,
-    day: 10,
-    locality: "Aye",
-    id: 2
-  },
-  {
-    title: "Visite du jardin la clé du temps",
-    year: 2022,
-    month: 10,
-    day: 13,
-    locality: "Champlon",
-    id: 3
-  },
-  {
-    title: "Course cycliste: DH Famenne Ardenne Classic",
-    year: 2022,
-    month: 10,
-    day: 20,
-    locality: "Marche-en-Famenne",
-    id: 4
-  },
-  {
-    title: "Brocante Annuelle",
-    year: 2022,
-    month: 10,
-    day: 23,
-    locality: "Marloie",
-    id: 5
-  },
-  {
-    title: "Kermesse hivernale",
-    year: 2022,
-    month: 10,
-    day: 28,
-    locality: "Grimbièmont",
-    id: 6
-  }
-];
+import { onMounted, ref } from "vue";
+
+const events = ref([]);
+
+function getEvents() {
+
+  fetch("https://www.marche.be/api/events.php").then(function(response) {
+    // The API call was successful!
+    return response.json();
+  }).then(function(data) {
+    // This is the JSON from our response
+    events.value = data;
+  }).catch(function(err) {
+    // There was an error
+    console.warn("Something went wrong.", err);
+  });
+}
+
+onMounted(() => {
+  getEvents();
+});
+
+function formatDate(dateObject) {
+  console.log("date: " + dateObject.date);
+  let date = new Date(dateObject.date);
+  console.log("object" + date);
+  return "01";
+}
+
+function formatLocality() {
+
+  return "Marche-en-Famenne";
+}
 </script>
 <template>
   <h2 class="p-4 font-montserrat-bold text-2xl text-cta-dark">Agenda</h2>
   <ul>
-    <li v-for="item in events" :id="item.id" class="">
+    <li v-for="item in events.slice(0,5)" class="">
       <a
         href="#"
         class="group my-2 grid grid-cols-[10rem,1fr] rounded-lg border border-greylight/50 text-cta-dark transition-all duration-700 hover:border-cta-light"
@@ -61,14 +44,14 @@ const events = [
         <div
           class="flex flex-col items-center justify-center border-x transition-all duration-700 group-hover:bg-cta-light group-hover:text-white"
         >
-              <span class="font-montserrat-semi-bold text-xl">{{
-                  item.day
-                }}</span>
-          <span class="">{{ item.month }}</span>
-          <span class="">{{ item.year }}</span>
+              <span class="font-montserrat-semi-bold text-xl">
+                {{ item.dateEvent["day"] }}
+              </span>
+          <span class="">{{ item.dateEvent["month"] }}</span>
+          <span class="">{{ item.dateEvent["year"] }}</span>
         </div>
         <div class="flex flex-col items-start justify-center px-8">
-          <span>{{ item.title }}</span>
+          <span>{{ item.nom }}</span>
           <span class="text-sm text-gray-500">{{ item.locality }}</span>
         </div>
       </a>
