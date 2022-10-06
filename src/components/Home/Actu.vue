@@ -1,84 +1,65 @@
 <script setup>
-const actus = [
-  {
-    title: "Course cycliste Famenne Ardenne Classic",
-    category: "Sport",
-    url: "/",
-    img: "https://www.marche.be/wp-content/uploads/2022/09/cropped-Couverture-web-2022-4-1.jpg",
-    id: 1,
-  },
-  {
-    title: "Conseil communal le lundi 3 octobre (19h)",
-    category: "Administration",
-    url: "/",
-    img: "https://www.marche.be/wp-content/uploads/2022/06/290691837_570566464561460_7215536464221442591_n.jpg",
-    id: 2,
-  },
-  {
-    title: "Nuit de l'obscurité (7 et 8 oct)",
-    category: "Citoyen",
-    url: "/",
-    img: "https://www.marche.be/wp-content/uploads/2022/09/Nuit-obscurite-2-event-FB.jpg",
-    id: 3,
-  },
-  {
-    title: "Semaine du commerce équitable",
-    category: "Santé",
-    url: "/",
-    img: "https://www.marche.be/sante/files/2022/09/Banner-semaine-du-CE-2022.jpg",
-    id: 4,
-  },
-  {
-    title: "Grande Donnerie au complexe St-François",
-    category: "Social",
-    url: "/",
-    img: "https://www.marche.be/wp-content/uploads/2022/09/Donnerie-oct-r.jpg",
-    id: 5,
-  },
-  {
-    title: "Vente de bois de chauffage",
-    category: "Citoyen",
-    url: "/",
-    img: "https://www.marche.be/wp-content/uploads/2022/09/PUBLICATION-VALVES_01-scaled.jpg",
-    id: 6,
-  },
-];
+import { onMounted, ref } from "vue";
+
+const actus = ref([]);
+
+function getNews() {
+
+  fetch("https://www.marche.be/api/actus.php").then(function(response) {
+    // The API call was successful!
+    return response.json();
+  }).then(function(data) {
+    // This is the JSON from our response
+    console.log(data);
+    actus.value = data;
+  }).catch(function(err) {
+    // There was an error
+    console.warn("Something went wrong.", err);
+  });
+
+  console.log(actus.value);
+}
+
+onMounted(() => {
+  getNews();
+});
 </script>
 <template>
-    <h2 class="p-4 font-montserrat-bold text-2xl text-cta-dark">Actualités</h2>
-    <ul class="grid grid-cols-[repeat(3,minmax(0,1fr))] gap-2">
-      <li
-        v-for="item in actus"
-        :id="item.id"
-        class="overflow-hidden rounded-lg shadow-lg"
-      >
-        <a href="{{item.url}}" class="group overflow-hidden">
-          <div class="bg-linear">
-            <img
-              :src="item.img"
-              alt=""
-              class="h-40 w-full rounded-t-lg object-cover opacity-100 transition-all duration-700 group-hover:scale-105 group-hover:opacity-60"
-            />
-          </div>
-          <div class="p-3">
+  <h2 class="p-4 font-montserrat-bold text-2xl text-cta-dark">Actualités</h2>
+  <ul class="grid grid-cols-[repeat(3,minmax(0,1fr))] gap-2">
+    <li
+      v-for="item in actus.slice(0,6)"
+      :id="item.ID"
+      :key="item.ID"
+      class="overflow-hidden rounded-lg shadow-lg"
+    >
+      <a href="{{item.url}}" class="group overflow-hidden">
+        <div class="bg-linear">
+          <img
+            :src="item.post_thumbnail_url"
+            alt=""
+            class="h-40 w-full rounded-t-lg object-cover opacity-100 transition-all duration-700 group-hover:scale-105 group-hover:opacity-60"
+          />
+        </div>
+        <div class="p-3">
             <span class="my-1 block font-montserrat-medium text-citoyen">{{
-              item.category
-            }}</span>
-            <h3
-              class="font-montserrat-semi-bold text-md text-cta-dark group-hover:text-cta-light"
-            >
-              {{ item.title }}
-            </h3>
-          </div>
-        </a>
-      </li>
-    </ul>
-   <a
-      class="pt-4 ml-auto mr-2 block w-56 font-montserrat-semi-bold text-cta-light transition-all duration-700 hover:mr-8
+                item.blog
+              }}</span>
+          <h3
+            class="font-montserrat-semi-bold text-md text-cta-dark group-hover:text-cta-light"
+          >
+            {{ item.post_title }}
+          </h3>
+        </div>
+      </a>
+    </li>
+  </ul>
+  <a
+    class="pt-4 ml-auto mr-2 block w-56 font-montserrat-semi-bold text-cta-light transition-all duration-700 hover:mr-8
        block items-center justify-center"
-      href="/"
-      title="Plus d'actualités"
-    > Plus d'actualités
-      <i class="ml-4 h-16 w-16 fa fa-chevron-right" aria-hidden="true"></i>
-    </a>
+    href="/"
+    title="Plus d'actualités"
+  > Plus d'actualités
+    <i class="ml-4 h-16 w-16 fa fa-chevron-right" aria-hidden="true"></i>
+  </a>
 </template>
