@@ -4,9 +4,11 @@ import IconMenuVivreSvg from "@/components/Header/Home/IconMenuVivreSvg.vue";
 </script>
 <template>
   <ul class="ml-auto lg:flex">
-    <li class="nav-top font-montserrat-semi-bold displaymenu transition-all duration-500 ">
-      <IconMenuVivreSvg />
-      <a href="#">Vivre à Marche</a>
+    <li class="nav-top font-montserrat-semi-bold displaymenu transition-all duration-500">
+      <a href="#">
+        <IconMenuVivreSvg />
+        Vivre à Marche
+      </a>
       <NavigationItems />
     </li>
     <li class="nav-top text-cta-dark font-montserrat-semi-bold">
