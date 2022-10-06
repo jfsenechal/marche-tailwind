@@ -17,8 +17,12 @@
         /* see https://www.getrevue.co/profile/shrutibalasa/issues/did-you-know-about-scroll-padding-easy-solution-to-fixed-header-problem-1325973 */
     }
 
-    #widgets * {
+    #menu22 * {
         outline: red 1px solid;
+    }
+
+    .displaymenu:hover .showme {
+        display: grid;
     }
 
     body {
