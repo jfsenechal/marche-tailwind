@@ -12,7 +12,7 @@ import Header from "@/components/Header/Home/Header.vue";
   <!--<main class="w-full mx-auto h-screen grid place-content-center">-->
   <Header/>
   <HomeSearch/>
-  <section class="mx-40 mx-auto grid grid-cols-[60%,40%]">
+  <section class="mx-40 mx-auto grid grid-cols-[60%,40%] gap-4">
     <div>
       <Actu/>
     </div>

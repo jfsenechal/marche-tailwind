@@ -73,13 +73,12 @@ const actus = [
         </a>
       </li>
     </ul>
-    <a
+   <a
+      class="mt-4 ml-auto mr-2 block w-56 font-montserrat-semi-bold text-cta-light transition-all duration-700 hover:mr-8
+       block items-center justify-center"
       href="/"
-      class="mt-4 ml-auto mr-2 block w-48 font-montserrat-semi-bold text-cta-light transition-all duration-700 hover:mr-8"
-    >
-      Plus d'actualités
-      <i
-        class="fas fa-angle-right d-none d-ls-md-inline pl-12px fs-basic d-md-inline"
-      ></i>
+      title="Plus d'actualités"
+    > Plus d'actualités
+      <i class="ml-4 h-16 w-16 fa fa-chevron-right" aria-hidden="true"></i>
     </a>
 </template>
