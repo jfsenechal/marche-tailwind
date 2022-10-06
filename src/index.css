@@ -2,7 +2,9 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.2.0/css/fork-awesome.min.css");
 */
 
-@import "icones.css";
+@import "assets/fonts.css";
+@import "assets/icones.css";
+@import "assets/widgets.css";
 
 @tailwind base;
 @tailwind components;
@@ -15,8 +17,8 @@
         /* see https://www.getrevue.co/profile/shrutibalasa/issues/did-you-know-about-scroll-padding-easy-solution-to-fixed-header-problem-1325973 */
     }
 
-    * {
-
+    #widgets * {
+        outline: red 1px solid;
     }
 
     body {
@@ -64,77 +66,4 @@
     .bg-linear {
         background-color: rgba(74, 224, 199, 0.55);
     }
-
-    .bg-widget-color {
-        background-image: linear-gradient(
-                90deg,
-                rgba(74, 224, 199, 0.55),
-                rgba(74, 224, 199, 0.55)
-        );
-    }
-
-    .bg-widget-color-hov {
-        background-color: rgba(72, 127, 137, 0.75);
-    }
-
-    .bg-img-widgets-1 {
-        background-image: url("../images/img/img_widget01.jpg");
-    }
-
-    .bg-img-widgets-2 {
-        background-image: url("../images/img/img_widget02.jpg");
-    }
-
-    .bg-img-widgets-3 {
-        background-image: url("../images/img/img_widget03.jpg");
-    }
-
-    .bg-img-widgets-4 {
-        background-image: url("../images/img/img_widget04.jpg");
-    }
-
-    .bg-img-widgets-5 {
-        background-image: url("../images/img/img_widget05.jpg");
-    }
-
-}
-
-@font-face {
-    font-family: "montserrat-light";
-    src: url("../Montserrat/static/Montserrat-Light.ttf");
-}
-
-@font-face {
-    font-family: "montserrat-extra-light";
-    src: url("../Montserrat/static/Montserrat-ExtraLight.ttf");
-}
-
-@font-face {
-    font-family: "montserrat-thin";
-    src: url("../Montserrat/static/Montserrat-Thin.ttf");
-}
-
-@font-face {
-    font-family: "montserrat-regular";
-    src: url("../Montserrat/static/Montserrat-Regular.ttf");
-}
-
-@font-face {
-    font-family: "montserrat-medium";
-    src: url("../Montserrat/static/Montserrat-Medium.ttf");
-}
-
-@font-face {
-    font-family: "montserrat-bold";
-    src: url("../Montserrat/static/Montserrat-Bold.ttf");
-}
-
-@font-face {
-    font-family: "montserrat-semi-bold";
-    src: url("../Montserrat/static/Montserrat-SemiBold.ttf");
-}
-
-@font-face {
-    font-family: "montserrat-extra-bold";
-    src: url("../Montserrat/static/Montserrat-ExtraBold.ttf");
 }
