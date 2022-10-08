@@ -1,7 +1,8 @@
 <script setup>
+defineEmits(["open-search"]);
+
 import NavigationVivre from "@/components/Header/Home/NavigationVivre.vue";
-import IconMenuVivreSvg from "@/components/Header/Home/IconMenuVivreSvg.vue";
-</script>
+import IconMenuVivreSvg from "@/components/Header/Home/IconMenuVivreSvg.vue";</script>
 <template>
   <ul class="ml-auto flex" id="navigationTop">
     <li class="nav-top font-montserrat-semi-bold displaymenu transition-all duration-500">
@@ -25,6 +26,9 @@ import IconMenuVivreSvg from "@/components/Header/Home/IconMenuVivreSvg.vue";
     </li>
     <li class="nav-top font-montserrat-semi-bold">
       <a href="#">Inondation</a>
+    </li>
+    <li class="nav-top font-montserrat-semi-bold">
+      <button @click="$emit('open-search')"><i class="fa fa-search"></i></button>
     </li>
   </ul>
 </template>
