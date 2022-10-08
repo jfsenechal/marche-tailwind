@@ -12,7 +12,7 @@ import PopupSearch from "@/components/Header/PopupSearch.vue";
 const searchIsOpen = ref(false);
 
 function updateSearch() {
-  searchIsOpen.value = true;
+  searchIsOpen.value = !searchIsOpen.value;
 }
 </script>
 <template>
