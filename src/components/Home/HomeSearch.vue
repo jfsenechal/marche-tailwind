@@ -1,3 +1,4 @@
+<!-- https://play.tailwindcss.com/SvBc6xaRWJ -->
 <script setup>
 import Icons from "@/components/Home/Icones.vue";
 import Wave from "@/components/Home/Wave.vue";
