@@ -28,7 +28,7 @@ function onSelect(person) {
 }
 </script>
 <template>
-  <div class="z-10 transition-all"
+  <div class="z-10 transition-all "
        :class="searchIsOpen ? 'relative opacity-100 ease-in duration-200 ':'hidden opacity-0 ease-out duration-300'"
        role="dialog" aria-modal="true">
     <!--
@@ -42,7 +42,7 @@ function onSelect(person) {
         To: "opacity-0"
     -->
     <div
-      class="fixed inset-0 bg-gray-500 bg-opacity-25 transition-opacity"
+      class="fixed inset-0 bg-gray-500 bg-opacity-25 transition-opacity backdrop-blur"
     ></div>
 
     <div class="fixed inset-0 z-10 overflow-y-auto p-4 sm:p-6 md:p-20"
