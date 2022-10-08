@@ -1,5 +1,5 @@
 <script setup>
-import NavigationItems from "@/components/Header/Home/NavigationItems.vue";
+import NavigationVivre from "@/components/Header/Home/NavigationVivre.vue";
 import IconMenuVivreSvg from "@/components/Header/Home/IconMenuVivreSvg.vue";
 </script>
 <template>
@@ -9,7 +9,7 @@ import IconMenuVivreSvg from "@/components/Header/Home/IconMenuVivreSvg.vue";
         <IconMenuVivreSvg />
         Vivre à Marche
       </a>
-      <NavigationItems />
+      <NavigationVivre />
     </li>
     <li class="nav-top text-cta-dark font-montserrat-semi-bold">
       <a href="#">E-guichet</a>
