@@ -1,6 +1,6 @@
 <script setup>
 //https://tailwindui.com/components/application-ui/navigation/command-palettes
-import { computed, ref, watch } from "vue";
+import { computed, ref, defineProps } from "vue";
 
 const peoples = [
   { id: 1, name: "Leslie Alexander", url: "#" },
@@ -9,17 +9,18 @@ const peoples = [
   { id: 4, name: "Marge Simpson", url: "#" },
   { id: 5, name: "Maggie Simpson", url: "#" },
   { id: 5, name: "Lisa Simpson", url: "#" },
-  { id: 5, name: "Abraham Simpson", url: "#" },
+  { id: 5, name: "Abraham Simpson", url: "#" }
 ];
 
-const open = ref(true);
+const { searchIsOpen } = defineProps(["searchIsOpen"]);
+
 const query = ref("");
 const filteredPeople = computed(() =>
   query.value === ""
     ? []
     : peoples.filter((person) => {
-        return person.name.toLowerCase().includes(query.value.toLowerCase());
-      })
+      return person.name.toLowerCase().includes(query.value.toLowerCase());
+    })
 );
 
 function onSelect(person) {
@@ -27,7 +28,9 @@ function onSelect(person) {
 }
 </script>
 <template>
-  <div class="relative z-10" role="dialog" aria-modal="true">
+  <div class="z-10 transition-all"
+       :class="searchIsOpen ? 'relative opacity-100 ease-in duration-200 ':'hidden opacity-0 ease-out duration-300'"
+       role="dialog" aria-modal="true">
     <!--
       Background backdrop, show/hide based on modal state.
 
@@ -42,7 +45,9 @@ function onSelect(person) {
       class="fixed inset-0 bg-gray-500 bg-opacity-25 transition-opacity"
     ></div>
 
-    <div class="fixed inset-0 z-10 overflow-y-auto p-4 sm:p-6 md:p-20">
+    <div class="fixed inset-0 z-10 overflow-y-auto p-4 sm:p-6 md:p-20"
+         :class="searchIsOpen ? 'ease-in duration-200 opacity-100 scale-100':'ease-out duration-300 opacity-0 scale-95'"
+    >
       <!--
         Command palette, show/hide based on modal state.
 
@@ -58,7 +63,7 @@ function onSelect(person) {
       >
         <input
           type="text"
-          @change="query = $event.target.value"
+          v-model="query"
           class="w-full rounded-md border-0 bg-gray-100 px-4 py-2.5 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm"
           placeholder="Search..."
           role="combobox"
