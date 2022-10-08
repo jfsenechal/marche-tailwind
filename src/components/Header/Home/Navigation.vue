@@ -3,7 +3,7 @@ import NavigationItems from "@/components/Header/Home/NavigationItems.vue";
 import IconMenuVivreSvg from "@/components/Header/Home/IconMenuVivreSvg.vue";
 </script>
 <template>
-  <ul class="ml-auto lg:flex">
+  <ul class="ml-auto flex" id="navigationTop">
     <li class="nav-top font-montserrat-semi-bold displaymenu transition-all duration-500">
       <a href="#">
         <IconMenuVivreSvg />

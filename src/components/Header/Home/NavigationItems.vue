@@ -11,7 +11,7 @@ function setActive(id) {
 
 <template>
   <div
-    class="fixed overflow-hidden z-10 top-[3.3rem] left-0 right-0 bottom-auto grid grid-cols-2 bg-cta-dark transition-all hidden duration-500 showme"
+    class="fixed overflow-hidden z-10 top-[4.3rem] left-0 right-0 bottom-auto grid grid-cols-2 bg-cta-dark transition-all hidden duration-500 showme"
     id="menuVivre">
     <div class="py-4">
       <ul class="flex flex-col items-start ">
