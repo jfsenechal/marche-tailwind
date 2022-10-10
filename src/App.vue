@@ -1,22 +1,13 @@
 <script setup>
 import Article from "@/components/Article/Article.vue";
 import Header from "@/components/Header/Inside/Header.vue";
-import Footer from "@/components/Footer/Footer.vue";
-import PopupSearch from "@/components/Header/PopupSearch.vue";
-</script>
-
+import Footer from "@/components/Footer/Footer.vue";</script>
 <template>
-  <PopupSearch />
-</template>
-
-<!--
-<template>
-  <Header/>
+  <Header />
   <main>
     <section class="container mx-auto px-4 place-content-center h-screen">
-      <Article/>
+      <Article />
     </section>
   </main>
- <Footer/>
+  <Footer />
 </template>
--->
