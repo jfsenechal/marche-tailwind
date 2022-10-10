@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+
 const shortCutOpen = ref(false);
 </script>
 <template>
@@ -29,9 +30,14 @@ const shortCutOpen = ref(false);
           <span class="text-menu-mobile">Horaires-Contacts</span>
         </a>
       </li>
-      <li class="grid group ">
-        <ul v-if="shortCutOpen===true" class="fixed group-hover:fixed  p-8 col-start-1 col-end-2 row-start-1 row-end-2 bg-pink-200 flex flex-col justify-center items-start
-        bottom-20 right-auto">
+      <li>
+        <a href="#" id="shortcutlink" @click.prevent="shortCutOpen = !shortCutOpen"
+           class="icon-menu-mobile">
+            <i style="font-size: 1.5rem;" class="fa fa-plane" aria-hidden="true"></i>
+            <span class="text-menu-mobile">Raccourcis</span>
+        </a>
+        <ul class="absolute -ml-4 bottom-24 p-0 bg-pink-200 flex flex-col justify-center items-start
+         transition-all duration-700 max-h-0 overflow-hidden">
           <li>
             <a href="/" class="leading-8">E-guichet</a>
           </li>
@@ -45,11 +51,6 @@ const shortCutOpen = ref(false);
             <a href="/" class="leading-8">Prendre Rdv</a>
           </li>
         </ul>
-        <a href="#" @click.prevent="shortCutOpen = !shortCutOpen"
-           class="col-start-1 col-end-2 row-start-1 row-end-2 icon-menu-mobile">
-          <i style="font-size: 1.5rem;" class="fa fa-plane" aria-hidden="true"></i>
-          <span class="text-menu-mobile">Raccourcis</span>
-        </a>
       </li>
     </ul>
   </nav>
@@ -61,6 +62,14 @@ const shortCutOpen = ref(false);
 
 .text-menu-mobile {
   @apply text-base
+}
+
+#shortcutlink:hover ~ ul {
+  @apply max-h-60 p-8;
+}
+
+#checkbox:checked ~ ul {
+  @apply max-h-60 p-8;
 }
 
 </style>
