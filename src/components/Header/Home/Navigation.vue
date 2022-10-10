@@ -28,7 +28,9 @@ import IconMenuVivreSvg from "@/components/Header/Home/IconMenuVivreSvg.vue";</s
       <a href="#">Inondation</a>
     </li>
     <li class="nav-top font-montserrat-semi-bold">
-      <button @click="$emit('open-search')"><i class="fa fa-search"></i></button>
+      <a href="/" @click.prevent="$emit('open-search')">
+        <i class="fa fa-search"></i>
+      </a>
     </li>
   </ul>
 </template>
