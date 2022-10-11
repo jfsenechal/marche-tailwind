@@ -35,7 +35,7 @@ onMounted(() => {
           <img
             :src="item.post_thumbnail_url"
             alt=""
-            class="h-40 w-full rounded-t-lg object-cover opacity-100 transition-all duration-700 group-hover:scale-105 group-hover:opacity-60"
+            class="h-40 w-full rounded-t-lg opacity-100 transition-all duration-700 group-hover:scale-105 group-hover:opacity-60"
           />
         </div>
         <div class="p-3">
