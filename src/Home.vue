@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import HomeSearch from "@/components/Home/HomeSearch.vue";
-import Actu from "@/components/Home/Actu.vue";
+import News from "@/components/Home/News.vue";
 import Agenda from "@/components/Home/Agenda.vue";
 import Widgets from "@/components/Home/Widgets.vue";
 import Footer from "@/components/Footer/Footer.vue";
@@ -22,7 +22,7 @@ function updateSearch() {
   <main>
     <section class="mx-2 xl:mx-40 mx-auto grid grid-cols-1 xl:grid-cols-[60%,40%] xl:gap-4">
       <div>
-        <Actu />
+        <News />
       </div>
       <div class="shadow-lg">
         <Agenda />
