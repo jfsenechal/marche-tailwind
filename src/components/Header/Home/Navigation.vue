@@ -5,7 +5,7 @@ import IconMenuVivreSvg from "@/components/Header/Home/IconMenuVivreSvg.vue";
 defineEmits(["open-search"]);
 </script>
 <template>
-  <ul class="ml-auto flex" id="navigationTop">
+  <ul class="hidden xl:flex" id="navigationTop">
     <li class="nav-top font-montserrat-semi-bold displaymenu transition-all duration-500">
       <a href="#">
         <IconMenuVivreSvg />

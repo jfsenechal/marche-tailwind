@@ -11,7 +11,7 @@ function updateOpenSearch() {
 </script>
 <template>
   <header class="flex h-20 w-full items-center justify-end p-6 shadow-xl z-10 relative" id="headerTop">
-    <img src="images/img_logo.png" alt="logo" class="h-14 w-24" />
+    <img src="images/img_logo.png" alt="logo" class="h-14 w-24 mr-auto" />
     <Navigation @open-search="updateOpenSearch" />
     <IconesSocial />
   </header>
