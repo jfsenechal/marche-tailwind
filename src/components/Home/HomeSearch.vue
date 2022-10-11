@@ -1,6 +1,6 @@
 <!-- https://play.tailwindcss.com/SvBc6xaRWJ -->
 <script setup>
-import FormSearch from "@/components/Home/FormSearch.vue"
+import FormSearch from "@/components/Home/FormSearch.vue";
 import Icons from "@/components/Home/Icones.vue";
 import Wave from "@/components/Home/Wave.vue";
 </script>
@@ -9,14 +9,20 @@ import Wave from "@/components/Home/Wave.vue";
     class="bghome-image flex w-full flex-col items-center justify-center overflow-hidden bg-cover bg-bottom bg-no-repeat"
   >
     <h1 class="pb-8 pt-24 text-center font-montserrat-semi-bold text-2xl text-white">
-      Bienvenue à Marche-en-Famenne
+      Bienvenue <span class="lg:hidden"><br /></span> à Marche-en-Famenne
     </h1>
-    <FormSearch/>
+    <FormSearch />
     <Icons />
-    <Wave />
   </section>
 </template>
 <style>
+.bghome-image3 {
+  background-image: linear-gradient(
+    rgba(1, 31, 22, 0.7),
+    rgba(0, 75, 142, 0.7)
+  ),
+  url(../images/bh_home.jpg);
+}
 .bghome-image {
   background-image: linear-gradient(
     90deg,
