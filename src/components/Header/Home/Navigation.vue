@@ -43,4 +43,7 @@ li.nav-top {
   transition-shadow duration-300 ease-in-out
   hover:shadow-menutop;
 }
+.displaymenu:hover .showme {
+  display: grid;
+}
 </style>

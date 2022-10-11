@@ -12,17 +12,8 @@
 
 @layer base {
     html {
-        font-family: "montserrat-regular", system-ui, sans-serif;
-        @apply scroll-pt-3 scroll-smooth;
+        @apply scroll-pt-3 scroll-smooth font-montserrat-regular text-base;
         /* see https://www.getrevue.co/profile/shrutibalasa/issues/did-you-know-about-scroll-padding-easy-solution-to-fixed-header-problem-1325973 */
-    }
-
-    #menu22 * {
-        outline: red 1px solid;
-    }
-
-    .displaymenu:hover .showme {
-        display: grid;
     }
 
     body {
@@ -34,40 +25,20 @@
         @apply w-full object-cover;
     }
 
-    section {
-        /* padding: 1.5rem 2rem;*/
-        /* min-height: 100vh;*/
-        /* color: white;*/
-    }
+    /*   #headerTop  {
+           outline: red 1px solid;
+       }
 
-    main {
-        padding: 2rem;
-    }
+       #menuVivre  {
+           outline: green 1px solid;
+       }
+
+       #navigationTop  {
+           outline: blue 1px solid;
+       }*/
+
 }
 
 @layer components {
-    i.fa {
-        @apply text-sm;
-    }
 
-    .icon {
-        @apply mx-1 h-6 w-6 rounded-full bg-cta-dark text-white hover:bg-cta-light;
-    }
-
-    .bghome-image {
-        background-image: linear-gradient(
-                90deg,
-                rgba(1, 31, 22, 0.38),
-                rgba(0, 75, 142, 0.38)
-        ),
-        url(../images/bh_home.jpg);
-    }
-
-    .bg-lighter {
-        background-color: #ededec;
-    }
-
-    .bg-linear {
-        background-color: rgba(74, 224, 199, 0.55);
-    }
 }

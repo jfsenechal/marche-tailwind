@@ -66,3 +66,8 @@ onMounted(() => {
     <i class="ml-4 h-16 w-16 fa fa-chevron-right" aria-hidden="true"></i>
   </a>
 </template>
+<style>
+.bg-linear {
+  background-color: rgba(74, 224, 199, 0.55);
+}
+</style>
