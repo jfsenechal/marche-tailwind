@@ -45,11 +45,11 @@ onMounted(() => {
           />
         </div>
         <div class="flex flex-col justify-center items-start ml-2 xl:p-4">
-            <span :class="'my-1 block font-montserrat-medium ' + item.colorTailwind">
+            <span :class="'my-1 block font-montserrat-medium text-xs ' + item.colorTailwind">
               {{ item.blog.capitalize() }}
             </span>
           <h3
-            class="font-montserrat-semi-bold text-md text-cta-dark group-hover:text-cta-light"
+            class="font-montserrat-semi-bold text-sm text-cta-dark group-hover:text-cta-light"
           >
             {{ item.post_title }}
           </h3>
