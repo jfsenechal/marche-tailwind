@@ -10,7 +10,7 @@ import Wave from "@/components/Home/Wave.vue";
     <h1 class="pb-8 pt-24 text-center font-montserrat-semi-bold text-2xl text-white">
       Bienvenue à Marche-en-Famenne
     </h1>
-    <form name="searching" class="mx-auto flex w-[35rem]">
+    <form name="searching" class="mx-auto hidden lg:flex lg:w-[35rem]">
       <label class="block" for="search">
         <span class="sr-only">Rechercher</span>
       </label>

@@ -23,7 +23,7 @@ onMounted(() => {
 </script>
 <template>
   <h2 class="p-4 font-montserrat-bold text-2xl text-cta-dark">Actualités</h2>
-  <ul class="grid grid-cols-[repeat(3,minmax(0,1fr))] gap-2">
+  <ul class="grid grid-cols-1 xl:grid-cols-[repeat(3,minmax(0,1fr))] xl:gap-2">
     <li
       v-for="item in actus.slice(0,6)"
       :id="item.ID"

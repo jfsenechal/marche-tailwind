@@ -12,7 +12,7 @@ const partners = [
 <template>
 
   <div class="bg-lighter">
-    <div class="flex items-center justify-between mx-auto">
+    <div class="flex flex-wrap items-center justify-between mx-auto">
       <a v-for="item in partners" :id="item.id" :key="item.id" :href="item.url"
          class="cursor-pointer py-3 px-2 text-center ">
         <img :src="item.img" :alt="item.alt"

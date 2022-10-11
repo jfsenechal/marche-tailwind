@@ -16,24 +16,24 @@ function updateSearch() {
 }
 </script>
 <template>
-  <!--<main class="w-full mx-auto h-screen grid place-content-center">-->
   <Header @open-search="updateSearch" />
   <PopupSearch :searchIsOpen="searchIsOpen" />
   <HomeSearch />
-  <section class="mx-40 mx-auto grid grid-cols-[60%,40%] gap-4">
-    <div>
-      <Actu />
-    </div>
-    <div class="shadow-lg">
-      <Agenda />
-    </div>
-  </section>
-  <section>
-    <Widgets />
-  </section>
-  <section>
-    <Partners />
-  </section>
+  <main>
+    <section class="mx-2 xl:mx-40 mx-auto grid grid-cols-1 xl:grid-cols-[60%,40%] xl:gap-4">
+      <div>
+        <Actu />
+      </div>
+      <div class="shadow-lg">
+        <Agenda />
+      </div>
+    </section>
+    <section>
+      <Widgets />
+    </section>
+    <section>
+      <Partners />
+    </section>
+  </main>
   <Footer />
-  <!--</main>-->
 </template>

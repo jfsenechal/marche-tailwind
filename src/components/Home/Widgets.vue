@@ -39,7 +39,7 @@ const widgets = [
 ];
 </script>
 <template>
-  <div class="grid grid-cols-[repeat(5,1fr)] gap-2 pt-6" id="widgets">
+  <div class="grid grid-cols-1 xl:grid-cols-[repeat(5,1fr)] gap-2 pt-6" id="widgets">
     <div
       v-for="item in widgets"
       :id="item.id"
