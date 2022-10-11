@@ -34,7 +34,7 @@ function formatLocality() {
 }
 </script>
 <template>
-  <h2 class="p-4 font-montserrat-bold text-2xl text-cta-dark">Agenda</h2>
+  <h2 class="text-center lg:text-left p-4 font-montserrat-bold text-2xl text-cta-dark">Agenda</h2>
   <ul>
     <li v-for="item in events.slice(0,5)" class="">
       <a
