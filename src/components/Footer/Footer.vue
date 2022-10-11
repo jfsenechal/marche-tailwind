@@ -1,7 +1,7 @@
 <script setup>
 import ShortCut from "@/components/Footer/ShortCut.vue";
 import Copyright from "@/components/Footer/Copyright.vue";
-import IconesSocial from "@/components/Footer/IconesSocial.vue";
+import IconesSocial from "@/components/Header/Home/IconesSocial.vue";
 </script>
 <template>
   <footer
@@ -22,7 +22,7 @@ import IconesSocial from "@/components/Footer/IconesSocial.vue";
     <ShortCut />
     <div class="border-l border-l-white/50 px-3">
       <h4 class="font-montserrat-semi-bold">Contact</h4>
-      <div class="text-sm leading-6">
+      <div class="text-sm leading-6 mb-2">
         Contactez l' Hôtel de ville<br />
         Du lundi au jeudi : de 8h à 12h et de 13h à 17h<br />
         Vendredi : de 8h à 12h et de 13h à 15h<br />

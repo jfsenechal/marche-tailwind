@@ -1,6 +1,6 @@
 <script setup>
 import Navigation from "@/components/Header/Inside/Navigation.vue";
-import IconesSocial from "@/components/Header/Inside/IconesSocial.vue";
+import IconesSocial from "@/components/Header/Home/IconesSocial.vue";
 </script>
 <template>
   <header class="flex h-14 w-full items-center justify-end p-6 shadow-2xl">
