@@ -26,19 +26,19 @@ const shortCutOpen = ref(false);
       </li>
       <li>
         <input type="checkbox" id="checkboxShortCut">
-        <ul class="absolute -ml-4 bottom-16 p-0 bg-pink-200 flex flex-col justify-center items-start
+        <ul class="absolute -ml-8 bottom-16 p-0 bg-white shadow-2xl flex flex-col justify-center items-start
          transition-all duration-700 max-h-0 overflow-hidden">
           <li>
-            <a href="/" class="leading-8 inline-block">E-guichet</a>
+            <a href="/" class="text-cta-dark leading-8 inline-block">E-guichet</a>
           </li>
           <li>
-            <a href="/" class="leading-8">Actualités</a>
+            <a href="/" class="text-cta-dark leading-8">Actualités</a>
           </li>
           <li>
-            <a href="/" class="leading-8">Agenda</a>
+            <a href="/" class="text-cta-dark leading-8">Agenda</a>
           </li>
           <li>
-            <a href="/" class="leading-8">Prendre Rdv</a>
+            <a href="/" class="text-cta-dark leading-8">Prendre Rdv</a>
           </li>
         </ul>
         <label for="checkboxShortCut" class="icon-menu-mobile cursor-pointer">
@@ -59,11 +59,11 @@ const shortCutOpen = ref(false);
 }
 
 #shortcutlink:hover ~ ul {
-  @apply max-h-60 p-8;
+  @apply max-h-52 p-4;
 }
 
 #checkboxShortCut:checked ~ ul {
-  @apply max-h-60 p-8;
+  @apply max-h-52 p-4;
 }
 
 .musshadow {
