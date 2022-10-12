@@ -16,7 +16,7 @@ const icones = [
 </script>
 <template>
   <ul
-    class="batman mt-8 mb-8 grid grid-cols-[repeat(2,minmax(0,auto))] xl:w-[38rem] xl:grid-cols-[repeat(4,minmax(9rem,9rem))] items-start justify-center gap-2"
+    class="icones-short-cut mt-8 mb-8 grid grid-cols-[repeat(2,minmax(0,auto))] xl:w-[38rem] xl:grid-cols-[repeat(12,minmax(3rem,5rem))] items-start justify-center gap-2"
   >
     <li
       v-for="item in icones"
@@ -39,9 +39,16 @@ const icones = [
   </ul>
 </template>
 <style>
-.batman li:last-child {
-  @apply justify-self-center;
-  border: red 1px solid;
-  grid-column:1/3;
+
+.icones-short-cut li:nth-child(-n+4) {
+  @apply xl:border xl:border-red-500 xl:col-span-3;
+}
+
+.icones-short-cut li:nth-child(n+5) {
+  @apply xl:border xl:border-green-600 xl:justify-self-stretch xl:self-end xl:col-span-4;
+}
+
+.icones-short-cut li:last-child {
+  @apply justify-self-center col-span-2;
 }
 </style>
