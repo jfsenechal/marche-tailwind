@@ -1,9 +1,9 @@
 <script setup>
 const icones = [
   { title: "Piscine", icon: "i-swimmer", iconHover: "group-hover:i-swimmer-white", id: 1, url: "/" },
-  { title: "Environnement Déchet", icon: "i-leaf", iconHover: "group-hover:i-leaf-white", id: 2, url: "/" },
+  { title: "Environnement <br/>Déchet", icon: "i-leaf", iconHover: "group-hover:i-leaf-white", id: 2, url: "/" },
   {
-    title: "Travaux Arrêtés de Police", icon: "i-traffic-cone",
+    title: "Travaux <br/>Arrêtés de Police", icon: "i-traffic-cone",
     iconHover: "group-hover:i-traffic-cone-white",
     id: 3,
     url: "/"
@@ -16,13 +16,13 @@ const icones = [
 </script>
 <template>
   <ul
-    class="icones-short-cut mt-8 mb-8 grid grid-cols-[repeat(2,minmax(0,auto))] xl:grid-cols-[repeat(12,minmax(3rem,3rem))] items-start justify-center gap-2"
+    class="my-8 flex flex-wrap justify-center gap-2"
   >
     <li
       v-for="item in icones"
       :id="item.id"
       :key="item.id"
-      class="group flex flex-shrink-0 flex-grow-0 basis-1/4 justify-center text-center "
+      class="group flex flex-shrink-0 flex-grow-0 basis-1/5 justify-center text-center border border-red-500"
     >
       <a :href="item.url" class="icon_custom">
         <i
@@ -32,7 +32,8 @@ const icones = [
         </i>
         <span
           class="text-sm xl:text-base mx-auto inline-block pt-3 font-montserrat-semi-bold xl:leading-4 text-white"
-        >{{ item.title }}</span
+          v-html="item.title"
+        ></span
         >
       </a>
     </li>
