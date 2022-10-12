@@ -15,8 +15,8 @@ const partners = [
 ];
 </script>
 <template>
-  <div class="bg-lighter">
-    <div class="flex flex-wrap items-center justify-between mx-auto">
+  <div class="bg-partner">
+    <div class="flex flex-wrap items-center justify-between mx-auto gap-2">
       <a v-for="item in partners" :id="item.id" :key="item.id" :href="item.url"
          class="cursor-pointer py-3 px-2 text-center ">
         <img :src="item.img" :alt="item.alt"
@@ -26,7 +26,7 @@ const partners = [
   </div>
 </template>
 <style>
-.bg-lighter {
+.bg-partner {
   background-color: #ededec;
 }
 </style>
