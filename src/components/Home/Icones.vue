@@ -11,7 +11,7 @@ const icones = [
   { title: "Enfance Jeunesse", icon: "i-beach-ball", iconHover: "group-hover:i-beach-ball-white", id: 4, url: "/" },
   { title: "Carte dynamique", icon: "i-map", iconHover: "group-hover:i-map-white", id: 5, url: "/" },
   { title: "CPAS", icon: "i-handshake", iconHover: "group-hover:i-handshake-white", id: 6, url: "/" },
-  { title: "Mon adresse e-mail", icon: "i-envelope", iconHover: "group-hover:i-envelope-white", id: 7, url: "/" }
+  { title: "@Marche.be", icon: "i-envelope", iconHover: "group-hover:i-envelope-white", id: 7, url: "/" }
 ];
 </script>
 <template>
@@ -22,7 +22,7 @@ const icones = [
       v-for="item in icones"
       :id="item.id"
       :key="item.id"
-      class="group flex flex-shrink-0 flex-grow-0 basis-1/5 justify-center text-center border border-red-500"
+      class="group flex flex-shrink-0 flex-grow-0 basis-1/5 justify-center text-center"
     >
       <a :href="item.url" class="icon_custom">
         <i
@@ -39,17 +39,3 @@ const icones = [
     </li>
   </ul>
 </template>
-<style>
-
-.icones-short-cut li:nth-child(-n+4) {
-  @apply xl:border xl:border-red-500 xl:col-span-3 xl:justify-self-center;
-}
-
-.icones-short-cut li:nth-child(n+5) {
-  @apply xl:border xl:border-green-600 xl:justify-self-center xl:self-end xl:col-span-4;
-}
-
-.icones-short-cut li:last-child {
-  @apply justify-self-center col-span-2 xl:col-span-4 xl:justify-self-center;
-}
-</style>
