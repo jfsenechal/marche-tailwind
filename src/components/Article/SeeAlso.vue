@@ -10,7 +10,7 @@
               class="flex flex-shrink-0 items-center justify-center rounded-l-md transition-all duration-500 group-hover:opacity-75"
             >
               <img
-                src="../../../images/BEA-r_long.jpg"
+                src="images/BEA-r_long.jpg"
                 alt="img"
                 class="h-28 w-28"
               />
