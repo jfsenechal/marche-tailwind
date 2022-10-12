@@ -8,7 +8,7 @@ const icones = [
     id: 3,
     url: "/"
   },
-  { title: "Enfance Jeunesse", icon: "i-beach-ball", iconHover: "group-hover:i-beach-ball-white", id: 4, url: "/" },
+  { title: "Enfance<br/>Jeunesse", icon: "i-beach-ball", iconHover: "group-hover:i-beach-ball-white", id: 4, url: "/" },
   { title: "Carte dynamique", icon: "i-map", iconHover: "group-hover:i-map-white", id: 5, url: "/" },
   { title: "CPAS", icon: "i-handshake", iconHover: "group-hover:i-handshake-white", id: 6, url: "/" },
   { title: "@Marche.be", icon: "i-envelope", iconHover: "group-hover:i-envelope-white", id: 7, url: "/" }
