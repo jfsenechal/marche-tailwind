@@ -4,18 +4,12 @@ import { ref } from "vue";
 const shortCutOpen = ref(false);
 </script>
 <template>
-  <nav class="fixed bottom-0 top-auto right-0 left-0">
+  <nav class="fixed bottom-0 top-auto right-0 left-0 mus xl:hidden">
     <ul class="flex justify-evenly items-center bg-cta-dark text-white">
       <li class="">
         <a href="/" class="icon-menu-mobile">
           <i style="font-size: 1.5rem;" class="fa fa-home" aria-hidden="true"></i>
           <span class="text-menu-mobile">Accueil</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" id="btn-open-search" class="icon-menu-mobile">
-          <i style="font-size: 1.5rem;" class="fa fa-search"></i>
-          <span class="text-menu-mobile">Rechercher</span>
         </a>
       </li>
       <li>
@@ -27,7 +21,7 @@ const shortCutOpen = ref(false);
       <li>
         <a href="/administration/contacter-la-commune/" class="icon-menu-mobile">
           <i style="font-size: 1.5rem;" class="fa fa-phone" aria-hidden="true"></i>
-          <span class="text-menu-mobile">Horaires-Contacts</span>
+          <span class="text-menu-mobile">La Commune</span>
         </a>
       </li>
       <li>
@@ -61,7 +55,7 @@ const shortCutOpen = ref(false);
 }
 
 .text-menu-mobile {
-  @apply text-base
+  @apply text-xs
 }
 
 #shortcutlink:hover ~ ul {
@@ -70,6 +64,10 @@ const shortCutOpen = ref(false);
 
 #checkboxShortCut:checked ~ ul {
   @apply max-h-60 p-8;
+}
+
+.mus {
+  box-shadow: 0 -0.125rem .45rem rgba(0, 0, 0, .75) !important;
 }
 
 #checkboxShortCut {
