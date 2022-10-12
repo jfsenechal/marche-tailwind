@@ -8,7 +8,7 @@ import Wave from "@/components/Home/Wave.vue";
   <section
     class="bghome-image flex w-full flex-col items-center justify-center overflow-hidden bg-cover bg-bottom bg-no-repeat"
   >
-    <h1 class="pb-8 pt-24 text-center font-montserrat-semi-bold text-2xl text-white">
+    <h1 class="pb-6 xl:pb-8 pt-16 xl:pt-24 text-center font-montserrat-semi-bold text-2xl text-white">
       Bienvenue <span class="lg:hidden"><br /></span> à Marche-en-Famenne
     </h1>
     <FormSearch />
