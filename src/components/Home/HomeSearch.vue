@@ -1,7 +1,7 @@
 <!-- https://play.tailwindcss.com/SvBc6xaRWJ -->
 <script setup>
 import FormSearch from "@/components/Home/FormSearch.vue";
-import Icons from "@/components/Home/Icones.vue";
+import IconsShortCut from "@/components/Home/IconsShortCut.vue";
 import Wave from "@/components/Home/Wave.vue";
 </script>
 <template>
@@ -12,7 +12,7 @@ import Wave from "@/components/Home/Wave.vue";
       Bienvenue <span class="lg:hidden"><br /></span> à Marche-en-Famenne
     </h1>
     <FormSearch />
-    <Icons />
+    <IconsShortCut />
   </section>
 </template>
 <style>
