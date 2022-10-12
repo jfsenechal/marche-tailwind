@@ -55,6 +55,9 @@
 li.nav-top {
   @apply p-3 text-cta-dark
   transition-shadow duration-300 ease-in-out
-  hover:shadow-menutop;
 }
+li.nav-top:hover {
+  box-shadow: 0 -3px 0 0 #4ae0c7 inset;
+}
+
 </style>

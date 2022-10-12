@@ -4,7 +4,7 @@ import { ref } from "vue";
 const shortCutOpen = ref(false);
 </script>
 <template>
-  <nav class="fixed bottom-0 top-auto right-0 left-0 mus xl:hidden">
+  <nav class="fixed bottom-0 top-auto right-0 left-0 musshadow xl:hidden">
     <ul class="flex justify-evenly items-center bg-cta-dark text-white">
       <li class="">
         <a href="/" class="icon-menu-mobile">
@@ -66,8 +66,8 @@ const shortCutOpen = ref(false);
   @apply max-h-60 p-8;
 }
 
-.mus {
-  box-shadow: 0 -0.125rem .45rem rgba(0, 0, 0, .75) !important;
+.musshadow {
+  box-shadow: 0 -0.125rem .45rem rgba(0, 0, 0, .75);
 }
 
 #checkboxShortCut {

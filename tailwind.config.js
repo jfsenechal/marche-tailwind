@@ -30,9 +30,6 @@ module.exports = {
           dark: "#487F89FF"
         },
         greylight: "#dee2e6"
-      },
-      boxShadow: {
-        menutop: "0 -3px 0 0 #4ae0c7 inset"
       }
     },
     plugins: [
