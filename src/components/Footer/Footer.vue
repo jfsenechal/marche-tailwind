@@ -12,7 +12,7 @@ import IconesSocial from "@/components/Header/Home/IconesSocial.vue";
     </div>
     <div class="border-l border-l-white/50 px-3">
       <h4 class="font-montserrat-semi-bold">Découvrez</h4>
-      <ul class="p-2 text-sm leading-6">
+      <ul class="grid grid-cols-2 p-2 xl:grid-cols-1 text-sm leading-6">
         <li class="px-2"><a href="">E-Guichet</a></li>
         <li class="px-2"><a href="">Horaires-Contact</a></li>
         <li class="px-2"><a href="">Actualités</a></li>
