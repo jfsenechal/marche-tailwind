@@ -31,6 +31,9 @@ module.exports = {
         },
         greylight: "#dee2e6"
       },
+      boxShadow: {
+        menutop: "0 -3px 0 0 #4ae0c7 inset"
+      }
     },
     plugins: [
       require("@tailwindcss/forms"),
