@@ -18,7 +18,7 @@ function updateSearch() {
 </script>
 <template>
   <Header @open-search="updateSearch" />
-  <PopupSearch :searchIsOpen="searchIsOpen" />
+  <PopupSearch  @open-search="updateSearch" :searchIsOpen="searchIsOpen" />
   <HomeSearch />
   <main>
     <section

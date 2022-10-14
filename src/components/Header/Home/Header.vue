@@ -18,8 +18,8 @@ function updateOpenSearch() {
   >
     <img src="images/img_logo.png" alt="logo" class="mr-auto h-10 w-16 xl:h-14 xl:w-24" />
     <Navigation @open-search="updateOpenSearch" />
-    <HeaderMobile />
+    <HeaderMobile @open-search="updateOpenSearch" />
     <IconesSocial />
   </header>
-  <HeaderMobileSearch/>
+  <HeaderMobileSearch />
 </template>
