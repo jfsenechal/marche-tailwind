@@ -21,7 +21,9 @@ function updateSearch() {
   <PopupSearch :searchIsOpen="searchIsOpen" />
   <HomeSearch />
   <main>
-    <section class="mx-2 xl:mx-40 mx-auto grid grid-cols-1 xl:grid-cols-[60%,40%] xl:gap-4">
+    <section
+      class="mx-2 mx-auto grid grid-cols-1 xl:mx-40 xl:grid-cols-[60%,40%] xl:gap-4"
+    >
       <div>
         <News />
       </div>
@@ -37,5 +39,5 @@ function updateSearch() {
     </section>
   </main>
   <Footer />
-  <MenuMobile/>
+  <MenuMobile />
 </template>

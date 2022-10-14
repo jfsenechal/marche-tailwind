@@ -9,8 +9,8 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
-      "images": fileURLToPath(new URL("./public/images", import.meta.url))
-    }
+      images: fileURLToPath(new URL("./public/images", import.meta.url)),
+    },
   },
   build: {
     assetsDir: "zeze",
@@ -18,8 +18,8 @@ export default defineConfig({
       input: {
         // main: dirname(fileURLToPath(import.meta.url + "index.html")),
         main: new URL("index.html", import.meta.url).pathname,
-        home: new URL("home.html", import.meta.url).pathname
-      }
-    }
-  }
+        home: new URL("home.html", import.meta.url).pathname,
+      },
+    },
+  },
 });

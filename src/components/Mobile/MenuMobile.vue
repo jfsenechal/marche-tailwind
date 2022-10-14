@@ -4,46 +4,70 @@ import { ref } from "vue";
 const shortCutOpen = ref(false);
 </script>
 <template>
-  <nav class="fixed bottom-0 top-auto right-0 left-0 musshadow xl:hidden">
-    <ul class="grid grid-cols-4 justify-evenly items-center bg-cta-dark text-white zer">
+  <nav class="musshadow fixed bottom-0 top-auto right-0 left-0 xl:hidden">
+    <ul
+      class="zer grid grid-cols-4 items-center justify-evenly bg-cta-dark text-white"
+    >
       <li>
         <a href="/" class="icon-menu-mobile">
-          <i style="font-size: 1.5rem;" class="fa fa-home" aria-hidden="true"></i>
+          <i
+            style="font-size: 1.5rem"
+            class="fa fa-home"
+            aria-hidden="true"
+          ></i>
           <span class="text-menu-mobile">Accueil</span>
         </a>
       </li>
       <li>
         <a href="#" for="more" class="icon-menu-mobile">
-          <i style="font-size: 1.5rem;" class="fa fa-bars" aria-hidden="true"></i>
+          <i
+            style="font-size: 1.5rem"
+            class="fa fa-bars"
+            aria-hidden="true"
+          ></i>
           <span class="text-menu-mobile">Menu</span>
         </a>
       </li>
       <li>
-        <a href="/administration/contacter-la-commune/" class="icon-menu-mobile">
-          <i style="font-size: 1.5rem;" class="fa fa-phone" aria-hidden="true"></i>
+        <a
+          href="/administration/contacter-la-commune/"
+          class="icon-menu-mobile"
+        >
+          <i
+            style="font-size: 1.5rem"
+            class="fa fa-phone"
+            aria-hidden="true"
+          ></i>
           <span class="text-menu-mobile">Ma Commune</span>
         </a>
       </li>
       <li>
-        <input type="checkbox" id="checkboxShortCut">
-        <ul class="absolute -ml-8 bottom-16 p-0 bg-white shadow-2xl flex flex-col justify-center items-start
-         transition-all duration-700 max-h-0 overflow-hidden">
+        <input type="checkbox" id="checkboxShortCut" />
+        <ul
+          class="absolute bottom-16 -ml-8 flex max-h-0 flex-col items-start justify-center overflow-hidden bg-white p-0 shadow-2xl transition-all duration-700"
+        >
           <li>
-            <a href="/" class="text-cta-dark leading-8 inline-block">E-guichet</a>
+            <a href="/" class="inline-block leading-8 text-cta-dark"
+              >E-guichet</a
+            >
           </li>
           <li>
-            <a href="/" class="text-cta-dark leading-8">Actualités</a>
+            <a href="/" class="leading-8 text-cta-dark">Actualités</a>
           </li>
           <li>
-            <a href="/" class="text-cta-dark leading-8">Agenda</a>
+            <a href="/" class="leading-8 text-cta-dark">Agenda</a>
           </li>
           <li>
-            <a href="/" class="text-cta-dark leading-8">Prendre Rdv</a>
+            <a href="/" class="leading-8 text-cta-dark">Prendre Rdv</a>
           </li>
         </ul>
         <label for="checkboxShortCut" class="icon-menu-mobile cursor-pointer">
-            <i style="font-size: 1.5rem;" class="fa fa-plane" aria-hidden="true"></i>
-            <span class="text-menu-mobile">Raccourcis</span>
+          <i
+            style="font-size: 1.5rem"
+            class="fa fa-plane"
+            aria-hidden="true"
+          ></i>
+          <span class="text-menu-mobile">Raccourcis</span>
         </label>
       </li>
     </ul>
@@ -51,11 +75,11 @@ const shortCutOpen = ref(false);
 </template>
 <style>
 .icon-menu-mobile {
-  @apply my-4 flex flex-col flex-wrap justify-center items-center font-montserrat-semi-bold
+  @apply my-4 flex flex-col flex-wrap items-center justify-center font-montserrat-semi-bold;
 }
 
 .text-menu-mobile {
-  @apply text-xs
+  @apply text-xs;
 }
 
 #shortcutlink:hover ~ ul {
@@ -67,7 +91,7 @@ const shortCutOpen = ref(false);
 }
 
 .musshadow {
-  box-shadow: 0 -0.125rem .45rem rgba(0, 0, 0, .75);
+  box-shadow: 0 -0.125rem 0.45rem rgba(0, 0, 0, 0.75);
 }
 
 #checkboxShortCut {

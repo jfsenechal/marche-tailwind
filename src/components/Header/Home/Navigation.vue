@@ -7,14 +7,16 @@ defineEmits(["open-search"]);
 <template>
   <nav>
     <ul class="hidden xl:flex" id="navigationTop">
-      <li class="nav-top font-montserrat-semi-bold displaymenu transition-all duration-500">
+      <li
+        class="nav-top displaymenu font-montserrat-semi-bold transition-all duration-500"
+      >
         <a href="#">
           <IconMenuVivreSvg />
           Vivre à Marche
         </a>
         <NavigationVivre />
       </li>
-      <li class="nav-top text-cta-dark font-montserrat-semi-bold">
+      <li class="nav-top font-montserrat-semi-bold text-cta-dark">
         <a href="#">E-guichet</a>
       </li>
       <li class="nav-top font-montserrat-semi-bold">
@@ -40,7 +42,7 @@ defineEmits(["open-search"]);
 <style>
 li.nav-top {
   @apply p-3 text-cta-dark
-  transition-shadow duration-300 ease-in-out
+  transition-shadow duration-300 ease-in-out;
 }
 
 li.nav-top:hover {

@@ -25,7 +25,7 @@
       <li><a href="#">CONTACT</a></li>
     </ul>
   </header>
-  <p style="position:relative;top:60px;width:80%;margin:auto auto;">
+  <p style="position: relative; top: 60px; width: 80%; margin: auto auto">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   </p>
 </template>

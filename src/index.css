@@ -11,21 +11,21 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-        @apply scroll-pt-3 scroll-smooth font-montserrat-regular text-base;
-        /* see https://www.getrevue.co/profile/shrutibalasa/issues/did-you-know-about-scroll-padding-easy-solution-to-fixed-header-problem-1325973 */
-    }
+  html {
+    @apply scroll-pt-3 scroll-smooth font-montserrat-regular text-base;
+    /* see https://www.getrevue.co/profile/shrutibalasa/issues/did-you-know-about-scroll-padding-easy-solution-to-fixed-header-problem-1325973 */
+  }
 
-    body {
-        @apply grid min-h-screen text-gray-800 antialiased;
-        grid-template-rows: 1fr auto;
-    }
+  body {
+    @apply grid min-h-screen text-gray-800 antialiased;
+    grid-template-rows: 1fr auto;
+  }
 
-    img {
-        @apply w-full object-cover;
-    }
+  img {
+    @apply w-full object-cover;
+  }
 
-    /*   #headerTop  {
+  /*   #headerTop  {
            outline: red 1px solid;
        }
 
@@ -37,4 +37,3 @@
            outline: blue 1px solid;
        }*/
 }
-

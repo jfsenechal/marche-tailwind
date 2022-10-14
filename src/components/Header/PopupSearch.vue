@@ -9,7 +9,7 @@ const peoples = [
   { id: 4, name: "Marge Simpson", url: "#" },
   { id: 5, name: "Maggie Simpson", url: "#" },
   { id: 5, name: "Lisa Simpson", url: "#" },
-  { id: 5, name: "Abraham Simpson", url: "#" }
+  { id: 5, name: "Abraham Simpson", url: "#" },
 ];
 
 const { searchIsOpen } = defineProps(["searchIsOpen"]);
@@ -19,8 +19,8 @@ const filteredPeople = computed(() =>
   query.value === ""
     ? []
     : peoples.filter((person) => {
-      return person.name.toLowerCase().includes(query.value.toLowerCase());
-    })
+        return person.name.toLowerCase().includes(query.value.toLowerCase());
+      })
 );
 
 function onSelect(person) {
@@ -28,9 +28,16 @@ function onSelect(person) {
 }
 </script>
 <template>
-  <div class="z-10 transition-all "
-       :class="searchIsOpen ? 'relative opacity-100 ease-in duration-200 ':'hidden opacity-0 ease-out duration-300'"
-       role="dialog" aria-modal="true">
+  <div
+    class="z-10 transition-all"
+    :class="
+      searchIsOpen
+        ? 'relative opacity-100 duration-200 ease-in '
+        : 'hidden opacity-0 duration-300 ease-out'
+    "
+    role="dialog"
+    aria-modal="true"
+  >
     <!--
       Background backdrop, show/hide based on modal state.
 
@@ -42,11 +49,16 @@ function onSelect(person) {
         To: "opacity-0"
     -->
     <div
-      class="fixed inset-0 bg-gray-500 bg-opacity-25 transition-opacity backdrop-blur"
+      class="fixed inset-0 bg-gray-500 bg-opacity-25 backdrop-blur transition-opacity"
     ></div>
 
-    <div class="fixed inset-0 z-10 overflow-y-auto p-4 sm:p-6 md:p-20"
-         :class="searchIsOpen ? 'ease-in duration-200 opacity-100 scale-100':'ease-out duration-300 opacity-0 scale-95'"
+    <div
+      class="fixed inset-0 z-10 overflow-y-auto p-4 sm:p-6 md:p-20"
+      :class="
+        searchIsOpen
+          ? 'scale-100 opacity-100 duration-200 ease-in'
+          : 'scale-95 opacity-0 duration-300 ease-out'
+      "
     >
       <!--
         Command palette, show/hide based on modal state.
