@@ -1,6 +1,12 @@
 <script setup>
 //https://tailwindui.com/components/application-ui/navigation/command-palettes
-import { computed, ref, defineProps } from "vue";
+import { computed, ref, defineProps, defineEmits } from "vue";
+
+const emit = defineEmits(["open-search"]);
+
+function updateOpenSearch() {
+  emit("open-search");
+}
 
 const peoples = [
   { id: 1, name: "Leslie Alexander", url: "#" },
@@ -9,7 +15,7 @@ const peoples = [
   { id: 4, name: "Marge Simpson", url: "#" },
   { id: 5, name: "Maggie Simpson", url: "#" },
   { id: 5, name: "Lisa Simpson", url: "#" },
-  { id: 5, name: "Abraham Simpson", url: "#" },
+  { id: 5, name: "Abraham Simpson", url: "#" }
 ];
 
 const { searchIsOpen } = defineProps(["searchIsOpen"]);
@@ -19,8 +25,8 @@ const filteredPeople = computed(() =>
   query.value === ""
     ? []
     : peoples.filter((person) => {
-        return person.name.toLowerCase().includes(query.value.toLowerCase());
-      })
+      return person.name.toLowerCase().includes(query.value.toLowerCase());
+    })
 );
 
 function onSelect(person) {
@@ -73,15 +79,25 @@ function onSelect(person) {
       <div
         class="mx-auto max-w-xl transform rounded-xl bg-white p-2 shadow-2xl ring-1 ring-black ring-opacity-5 transition-all"
       >
-        <input
-          type="text"
-          v-model="query"
-          class="w-full rounded-md border-0 bg-gray-100 px-4 py-2.5 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm"
-          placeholder="Search..."
-          role="combobox"
-          aria-expanded="false"
-          aria-controls="options"
-        />
+        <div class="flex flex-row items-start justify-between">
+          <input
+            type="text"
+            v-model="query"
+            class="w-full rounded-md border-0 bg-gray-100 px-4 py-2.5 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm"
+            placeholder="Search..."
+            role="combobox"
+            aria-expanded="false"
+            aria-controls="options"
+          />
+          <button class="w-32 " @click.prevent="$emit('open-search')">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor"
+                 class="w-6 h-6 inline-block">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+            <span class="font-montserrat-semi-bold text-cta-dark">Fermer</span>
+          </button>
+        </div>
 
         <!-- Results, show/hide based on command palette state. -->
         <ul
