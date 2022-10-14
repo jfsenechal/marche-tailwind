@@ -5,8 +5,8 @@ const shortCutOpen = ref(false);
 </script>
 <template>
   <nav class="fixed bottom-0 top-auto right-0 left-0 musshadow xl:hidden">
-    <ul class="flex justify-evenly items-center bg-cta-dark text-white">
-      <li class="">
+    <ul class="grid grid-cols-4 justify-evenly items-center bg-cta-dark text-white zer">
+      <li>
         <a href="/" class="icon-menu-mobile">
           <i style="font-size: 1.5rem;" class="fa fa-home" aria-hidden="true"></i>
           <span class="text-menu-mobile">Accueil</span>
@@ -21,7 +21,7 @@ const shortCutOpen = ref(false);
       <li>
         <a href="/administration/contacter-la-commune/" class="icon-menu-mobile">
           <i style="font-size: 1.5rem;" class="fa fa-phone" aria-hidden="true"></i>
-          <span class="text-menu-mobile">La Commune</span>
+          <span class="text-menu-mobile">Ma Commune</span>
         </a>
       </li>
       <li>
@@ -73,5 +73,4 @@ const shortCutOpen = ref(false);
 #checkboxShortCut {
   display: none;
 }
-
 </style>

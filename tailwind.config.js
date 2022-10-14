@@ -2,6 +2,9 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx,vue}"],
+  safelist: [
+    "text-sante", "text-citoyen", "text-sport", "text-culture", "text-administration", "text-enfance", "text-tourisme", "text-social", "text-economie"
+  ],
   theme: {
     extend: {
       fontFamily: {

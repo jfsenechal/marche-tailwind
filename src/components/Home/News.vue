@@ -28,7 +28,7 @@ onMounted(() => {
 });
 </script>
 <template>
-  <h2 class="text-center lg:text-left p-4 font-montserrat-bold text-2xl text-cta-dark">Actualités</h2>
+  <h2 class="text-center lg:text-left py-2 px-4 xl:p-4 font-montserrat-bold text-2xl text-cta-dark">Actualités</h2>
   <ul class="grid grid-cols-1 xl:grid-cols-[repeat(3,minmax(0,1fr))] gap-2">
     <li
       v-for="item in actus.slice(0,6)"
@@ -49,7 +49,7 @@ onMounted(() => {
               {{ item.blog.capitalize() }}
             </span>
           <h3
-            class="font-montserrat-semi-bold text-md text-cta-dark group-hover:text-cta-light"
+            class="font-montserrat-semi-bold text-base xl:text-md text-cta-dark group-hover:text-cta-light"
           >
             {{ item.post_title }}
           </h3>
