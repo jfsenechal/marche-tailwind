@@ -1,8 +1,8 @@
 <script setup>
-import MenuMobile from "@/components/Mobile/MenuMobile.vue";
-import MenuD from "@/components/Draft/MenuD.vue";
+
+import MenuShortcut from "@/components/Draft/MenuShortcut.vue";
 </script>
 
 <template>
-  <MenuMobile />
+  <MenuShortcut />
 </template>
