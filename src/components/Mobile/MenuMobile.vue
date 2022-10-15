@@ -53,24 +53,27 @@ const shortCutOpen = ref(false);
       </li>
       <li>
         <input type="checkbox" id="checkboxShortCut" />
-        <ul
-          class="absolute bottom-16 -ml-8 flex max-h-0 flex-col items-start justify-center overflow-hidden bg-white p-0 shadow-2xl transition-all duration-700"
-        >
-          <li>
-            <a href="/" class="inline-block leading-8 text-cta-dark"
-            >E-guichet</a
-            >
-          </li>
-          <li>
-            <a href="/" class="leading-8 text-cta-dark">Actualités</a>
-          </li>
-          <li>
-            <a href="/" class="leading-8 text-cta-dark">Agenda</a>
-          </li>
-          <li>
-            <a href="/" class="leading-8 text-cta-dark">Prendre Rdv</a>
-          </li>
-        </ul>
+        <div class="absolute max-h-044 bottom-20 -ml-10 right-1 shadow-lg z-30">
+          <ul
+            class="p-2 pb-6 bg-white flex flex-col items-start justify-center transition-all duration-700"
+          >
+            <li>
+              <a href="/" class="inline-block leading-8 text-cta-dark"
+              >E-guichet</a
+              >
+            </li>
+            <li>
+              <a href="/" class="leading-8 text-cta-dark">Actualités</a>
+            </li>
+            <li>
+              <a href="/" class="leading-8 text-cta-dark">Agenda</a>
+            </li>
+            <li>
+              <a href="/" class="leading-8 text-cta-dark">Prendre Rdv</a>
+            </li>
+          </ul>
+          <div class="z-10 absolute -bottom-[0.7rem] right-4 h-8 w-8 rotate-45 bg-white"></div>
+        </div>
         <label for="checkboxShortCut" class="icon-menu-mobile cursor-pointer">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                stroke="currentColor" class="w-6 h-6">
@@ -97,7 +100,7 @@ const shortCutOpen = ref(false);
   @apply max-h-52 p-4;
 }
 
-#checkboxShortCut:checked ~ ul {
+#checkboxShortCut:checked ~ div,ul {
   @apply max-h-52 p-4;
 }
 
