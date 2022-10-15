@@ -1,4 +1,5 @@
 <script setup>
+import HeaderMobileSearch from "@/components/Mobile/HeaderMobileSearch.vue";
 defineEmits(["open-search"]);
 </script>
 <template>
@@ -8,13 +9,12 @@ defineEmits(["open-search"]);
       <path stroke-linecap="round" stroke-linejoin="round"
             d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
     </svg>
-    <span class="text-menu-mobile2">Rechercher</span>
   </a>
 </template>
 
 <style>
 .icon-menu-mobile2 {
-  @apply my-4 flex xl:hidden items-center justify-center font-montserrat-semi-bold text-sante;
+  @apply my-4 w-full flex xl:hidden items-center justify-center font-montserrat-semi-bold text-sante;
 }
 
 .text-menu-mobile2 {
