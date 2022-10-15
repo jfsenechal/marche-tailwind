@@ -1,5 +1,4 @@
 <script setup>
-import HeaderMobileSearch from "@/components/Mobile/HeaderMobileSearch.vue";
 defineEmits(["open-search"]);
 </script>
 <template>

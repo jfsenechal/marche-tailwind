@@ -66,8 +66,8 @@ const widgets = [
         </h3>
         <span
           class="relative -bottom-20 pt-4 text-lg text-white transition-all delay-300 duration-700 group-hover:bottom-0"
+          v-html="item.intro"
         >
-          {{ item.intro }}
         </span>
       </a>
     </div>

@@ -36,7 +36,7 @@ function formatLocality() {
 </script>
 <template>
   <h2
-    class="p-4 text-center font-montserrat-bold text-2xl text-cta-dark lg:text-left"
+    class="py-2 px-4 xl:p-4 text-center font-montserrat-bold text-2xl text-cta-dark lg:text-left"
   >
     Agenda
   </h2>

@@ -35,7 +35,7 @@ onMounted(() => {
   >
     Actualités
   </h2>
-  <ul class="grid grid-cols-1 gap-2 xl:grid-cols-[repeat(3,minmax(0,1fr))]">
+  <ul class="pt-2 xl:pt-0 grid grid-cols-1 gap-2 xl:grid-cols-[repeat(3,minmax(0,1fr))]">
     <li
       v-for="item in actus.slice(0, 6)"
       :id="item.ID"
@@ -46,13 +46,13 @@ onMounted(() => {
         href="{{item.url}}"
         class="group grid grid-cols-2 overflow-hidden xl:block"
       >
-        <div class="bg-linear">
+
           <img
             :src="item.post_thumbnail_url"
             alt=""
-            class="h-32 w-full rounded-t-lg opacity-100 transition-all duration-700 group-hover:scale-105 group-hover:opacity-60 lg:h-40"
+            class="justify-self-center self-center h-32 w-full rounded-t-lg opacity-100 transition-all duration-700 group-hover:scale-105 group-hover:opacity-60 lg:h-40"
           />
-        </div>
+
         <div class="ml-2 flex flex-col items-start justify-center xl:p-4">
           <span
             :class="
@@ -63,7 +63,7 @@ onMounted(() => {
             {{ item.blog.capitalize() }}
           </span>
           <h3
-            class="xl:text-md font-montserrat-semi-bold text-base text-cta-dark group-hover:text-cta-light"
+            class="xl:text-md xl:font-montserrat-semi-bold text-sm text-cta-dark group-hover:text-cta-light"
           >
             {{ item.post_title }}
           </h3>
