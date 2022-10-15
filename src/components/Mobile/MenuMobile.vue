@@ -53,9 +53,9 @@ const shortCutOpen = ref(false);
       </li>
       <li>
         <input type="checkbox" id="checkboxShortCut" />
-        <div class="absolute max-h-044 bottom-20 -ml-10 right-1 shadow-lg z-30">
+        <div class="absolute max-h-044 bottom-20 -ml-10 right-1 shadow-lg z-30 opacity-0">
           <ul
-            class="p-2 pb-6 bg-white flex flex-col items-start justify-center transition-all duration-700"
+            class="w-max p-2 pb-6 bg-white flex flex-col items-start justify-center transition-all duration-700"
           >
             <li>
               <a href="/" class="inline-block leading-8 text-cta-dark"
@@ -72,7 +72,7 @@ const shortCutOpen = ref(false);
               <a href="/" class="leading-8 text-cta-dark">Prendre Rdv</a>
             </li>
           </ul>
-          <div class="z-10 absolute -bottom-[0.7rem] right-4 h-8 w-8 rotate-45 bg-white"></div>
+          <div class="z-10 absolute -bottom-[0.5rem] right-4 h-6 w-6 rotate-45 bg-white"></div>
         </div>
         <label for="checkboxShortCut" class="icon-menu-mobile cursor-pointer">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -100,8 +100,9 @@ const shortCutOpen = ref(false);
   @apply max-h-52 p-4;
 }
 
-#checkboxShortCut:checked ~ div,ul {
-  @apply max-h-52 p-4;
+#checkboxShortCut:checked ~ div {
+ /* @apply max-h-52 p-4;*/
+  @apply opacity-100;
 }
 
 .musshadow {
