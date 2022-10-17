@@ -22,17 +22,6 @@ function getEvents() {
 onMounted(() => {
   getEvents();
 });
-
-function formatDate(dateObject) {
-  console.log("date: " + dateObject.date);
-  let date = new Date(dateObject.date);
-  console.log("object" + date);
-  return "01";
-}
-
-function formatLocality() {
-  return "Marche-en-Famenne";
-}
 </script>
 <template>
   <h2
