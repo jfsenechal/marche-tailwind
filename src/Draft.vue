@@ -25,15 +25,15 @@ onMounted(() => {
 </script>
 
 <template>
-  <nav class="hidden fixed bg-cta-dark top-16 left-0 right-0 bottom-auto pb-4 w-full">
-    <ul class="flex flex-col items-stretch justify-start h-auto mt-3 box-border max-w-[50%]">
+  <nav class="fixed bg-cta-dark top-0 bottom-0 left-0 right-0 h-full xl:h-auto xl:top-16 xl:bottom-auto xl:pb-4 w-full">
+    <ul class="flex flex-col items-start xl:items-stretch justify-start h-full xl:h-auto mt-3 box-border xl:max-w-[50%]">
       <li
         v-for="item in mainItems"
         :data-top-id="item.blogid"
         :key="item.blogid"
-        class="py-1 initial flex flex-col basis-full hover:bg-white font-montserrat-semi-bold leading-8 text-white"
+        class="py-1 initial flex flex-col xl:basis-full hover:bg-white font-montserrat-semi-bold leading-10 xl:leading-8 text-white"
         :class="item.colorhover">
-        <a href="/" class="mr-6 whitespace-nowrap ml-auto">{{ item.name }}</a>
+        <a href="/" class="ml-6 xl:mr-6 whitespace-nowrap xl:ml-auto">{{ item.name }}</a>
       </li>
     </ul>
   </nav>
