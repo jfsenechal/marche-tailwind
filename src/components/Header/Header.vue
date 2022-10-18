@@ -1,7 +1,7 @@
 <script setup>
 import { defineEmits } from "vue";
-import Navigation from "@/components/Header/Home/Navigation.vue";
-import IconesSocial from "@/components/Header/Home/IconesSocial.vue";
+import Navigation from "@/components/Header/Navigation.vue";
+import IconesSocial from "@/components/Header/IconesSocial.vue";
 import IconeSearchHeaderMobile from "@/components/Mobile/IconeSearchHeaderMobile.vue";
 
 const emit = defineEmits(["open-search"]);

@@ -1,6 +1,6 @@
 <script setup>
-import NavigationVivre from "@/components/Header/Home/NavigationVivre.vue";
-import IconMenuVivreSvg from "@/components/Header/Home/IconMenuVivreSvg.vue";
+import NavigationVivre from "@/components/Header/NavigationVivre.vue";
+import IconMenuVivreSvg from "@/components/Header/IconMenuVivreSvg.vue";
 
 defineEmits(["open-search"]);
 </script>

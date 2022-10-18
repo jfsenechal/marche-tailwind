@@ -1,7 +1,7 @@
 <script setup>
 import ShortCut from "@/components/Footer/ShortCut.vue";
 import Copyright from "@/components/Footer/Copyright.vue";
-import IconesSocial from "@/components/Header/Home/IconesSocial.vue";
+import IconesSocial from "@/components/Header/IconesSocial.vue";
 </script>
 <template>
   <footer

@@ -6,8 +6,8 @@ import Agenda from "@/components/Homepage/Agenda.vue";
 import Widgets from "@/components/Homepage/Widgets.vue";
 import Footer from "@/components/Footer/Footer.vue";
 import Partners from "@/components/Homepage/Partners.vue";
-import Header from "@/components/Header/Home/Header.vue";
-import PopupSearch from "@/components/Header/PopupSearch.vue";
+import Header from "@/components/Header/Header.vue";
+import PopupSearch from "@/components/Header/Search/PopupSearch.vue";
 import MenuMobile from "@/components/Mobile/MenuMobile.vue";
 
 const searchIsOpen = ref(false);
