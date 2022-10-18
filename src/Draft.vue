@@ -1,6 +1,7 @@
 <script setup>
 import { onMounted, ref } from "vue";
 import NavigationVivreTitleMobile from "@/components/Mobile/NavigationVivreTitleMobile.vue";
+import NavigationBackMenuMobile from "@/components/Mobile/NavigationBackMenuMobile.vue";
 
 const mainItems = ref([]);
 
@@ -54,11 +55,14 @@ onMounted(() => {
           <div
             :id="'second-id-' + item.blogid"
             class="xl:hidden left-full bg-white xl:bg-cta-dark absolute top-0 bottom-0 xl:left-1/2 right-0 group-hover:bg-white transition-all duration-700">
-            <ul class="w-full p-8 grid grid-cols-1 xl:grid-cols-2" id="sousmenu">
+            <NavigationBackMenuMobile>
+              {{ item.name }}
+            </NavigationBackMenuMobile>
+            <ul class="w-full pl-4 pb-4 xl:p-8 grid grid-cols-1 xl:grid-cols-2" id="sousmenu">
               <li
                 v-for="child in item.items"
                 :key="child.ID"
-                class="text-cta-dark font-montserrat-regular "
+                class="text-cta-dark font-montserrat-regular"
                 :class="item.colorhover">
                 <a :href="child.url">
                   {{ child.title }}
@@ -100,6 +104,6 @@ li[data-top-id='11']:hover div,
 li[data-top-id='12']:hover div,
 li[data-top-id='13']:hover div,
 li[data-top-id='14']:hover div {
-  @apply opacity-100 bg-white block;
+  @apply xl:opacity-100 xl:bg-white xl:block;
 }
 </style>
