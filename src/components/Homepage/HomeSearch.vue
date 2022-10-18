@@ -1,8 +1,8 @@
 <!-- https://play.tailwindcss.com/SvBc6xaRWJ -->
 <script setup>
-import FormSearch from "@/components/Home/FormSearch.vue";
-import IconsShortCut from "@/components/Home/IconsShortCut.vue";
-import Wave from "@/components/Home/Wave.vue";
+import FormSearch from "@/components/Homepage/FormSearch.vue";
+import IconsShortCut from "@/components/Homepage/IconsShortCut.vue";
+import Wave from "@/components/Homepage/Wave.vue";
 </script>
 <template>
   <section
@@ -13,8 +13,8 @@ import Wave from "@/components/Home/Wave.vue";
     >
       Bienvenue <span class="lg:hidden"><br /></span> à Marche-en-Famenne
     </h1>
-    <FormSearch />
-    <IconsShortCut />
+    <FormSearch/>
+    <IconsShortCut/>
     <Wave />
   </section>
 </template>
