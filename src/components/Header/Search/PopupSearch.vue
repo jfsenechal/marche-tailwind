@@ -1,6 +1,6 @@
 <script setup>
 //https://tailwindui.com/components/application-ui/navigation/command-palettes
-import { computed, ref, defineProps, defineEmits } from "vue";
+import { computed, ref } from "vue";
 
 const emit = defineEmits(["open-search"]);
 

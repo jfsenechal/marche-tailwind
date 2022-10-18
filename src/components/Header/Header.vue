@@ -1,5 +1,4 @@
 <script setup>
-import { defineEmits } from "vue";
 import Navigation from "@/components/Header/Navigation.vue";
 import IconesSocial from "@/components/Header/IconesSocial.vue";
 import IconeSearchHeaderMobile from "@/components/Mobile/IconeSearchHeaderMobile.vue";
