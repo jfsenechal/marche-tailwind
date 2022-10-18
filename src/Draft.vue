@@ -21,10 +21,18 @@ function getItems() {
     });
 }
 
-function greet(blogid) {
+function openSousMenu(blogid, action) {
   console.log(blogid);
-  var el = document.querySelector("#second-id-" + blogid);
-  el.style.left = "0";
+  console.log(action);
+  var sousmenu = document.querySelector("#second-id-" + blogid);
+  if (action === "close") {
+    sousmenu.style.left = "100%";
+    sousmenu.style.zIndex = "-1";
+  }
+  if (action === "open") {
+    sousmenu.style.left = "0";
+    sousmenu.style.zIndex = "20";
+  }
 }
 
 onMounted(() => {
@@ -34,7 +42,7 @@ onMounted(() => {
 
 <template>
   <nav
-    class="hidden fixed bg-cta-dark top-0 bottom-0 left-0 right-0 h-full xl:h-auto xl:top-16 xl:bottom-auto xl:pb-4 w-full">
+    class="fixed bg-cta-dark top-0 bottom-0 left-0 right-0 h-full xl:h-auto xl:top-16 xl:bottom-auto xl:pb-4 w-full">
     <ul
       class="flex flex-col items-start xl:items-stretch justify-start h-full xl:h-auto mt-3 box-border xl:max-w-[50%]">
       <NavigationVivreTitleMobile />
@@ -45,32 +53,32 @@ onMounted(() => {
         class="py-1 initial w-full xl:w-auto flex flex-col xl:basis-full hover:bg-white font-montserrat-semi-bold leading-10 xl:leading-8 text-white"
         :class="item.colorhover">
         <a href="/"
-           @click.prevent="greet(item.blogid)"
+           @click.prevent="openSousMenu(item.blogid, 'open')"
            class="flex justify-between items-center xl:inline ml-6 mr-6 whitespace-nowrap xl:ml-auto">
           <span>{{ item.name }}</span>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                stroke="currentColor" class="xl:hidden w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
           </svg>
-          <div
-            :id="'second-id-' + item.blogid"
-            class="xl:hidden left-full bg-white xl:bg-cta-dark absolute top-0 bottom-0 xl:left-1/2 right-0 group-hover:bg-white transition-all duration-700">
-            <NavigationBackMenuMobile>
-              {{ item.name }}
-            </NavigationBackMenuMobile>
-            <ul class="w-full pl-4 pb-4 xl:p-8 grid grid-cols-1 xl:grid-cols-2" id="sousmenu">
-              <li
-                v-for="child in item.items"
-                :key="child.ID"
-                class="text-cta-dark font-montserrat-regular"
-                :class="item.colorhover">
-                <a :href="child.url">
-                  {{ child.title }}
-                </a>
-              </li>
-            </ul>
-          </div>
         </a>
+        <div
+          :id="'second-id-' + item.blogid"
+          class="xl:hidden left-full bg-white xl:bg-cta-dark absolute top-0 bottom-0 xl:left-1/2 right-0 group-hover:bg-white transition-all duration-700">
+          <NavigationBackMenuMobile @close-menu="openSousMenu" :blogid="item.blogid">
+            {{ item.name }}
+          </NavigationBackMenuMobile>
+          <ul class="w-full pl-4 pb-4 xl:p-8 grid grid-cols-1 xl:grid-cols-2" id="sousmenu">
+            <li
+              v-for="child in item.items"
+              :key="child.ID"
+              class="text-cta-dark font-montserrat-regular"
+              :class="item.colorhover">
+              <a :href="child.url">
+                {{ child.title }}
+              </a>
+            </li>
+          </ul>
+        </div>
       </li>
     </ul>
   </nav>
