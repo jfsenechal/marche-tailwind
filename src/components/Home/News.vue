@@ -18,13 +18,6 @@ function getNews() {
       console.warn("Something went wrong.", err);
     });
 }
-
-Object.defineProperty(String.prototype, "capitalize", {
-  value: function () {
-    return this.charAt(0).toUpperCase() + this.slice(1);
-  },
-  enumerable: false,
-});
 onMounted(() => {
   getNews();
 });
@@ -60,7 +53,7 @@ onMounted(() => {
               item.colorTailwind
             "
           >
-            {{ item.blog.capitalize() }}
+            {{ item.blog }}
           </span>
           <h3
             class="xl:text-md xl:font-montserrat-semi-bold text-sm text-cta-dark group-hover:text-cta-light"
