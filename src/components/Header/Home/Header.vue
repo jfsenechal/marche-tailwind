@@ -12,7 +12,7 @@ function updateOpenSearch() {
 </script>
 <template>
   <header
-    class="relative z-10 flex h-20 w-full items-center justify-end p-6 shadow-xl"
+    class="fixed flex h-20 w-full items-center justify-end p-6 bg-white shadow-xl"
     id="headerTop"
   >
     <img src="images/img_logo.png" alt="logo" class="xl:mr-auto h-10 w-16 xl:h-14 xl:w-24" />

@@ -25,7 +25,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <nav class="fixed bg-cta-dark top-20 left-0 right-0 bottom-auto pb-4 w-full">
+  <nav class="hidden fixed bg-cta-dark top-16 left-0 right-0 bottom-auto pb-4 w-full">
     <ul class="flex flex-col items-stretch justify-start h-auto mt-3 box-border max-w-[50%]">
       <li
         v-for="item in mainItems"
@@ -41,7 +41,7 @@ onMounted(() => {
             <li
               v-for="child in item.items"
               :key="child.ID"
-              class="text-cta-dark"
+              class="text-cta-dark font-montserrat-regular "
               :class="item.colorhover">
               <a :href="child.url">{{ child.title }}</a>
             </li>
