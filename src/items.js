@@ -25,7 +25,7 @@ export const items = [
   },
   {
     title: "Enfance-Jeunesse",
-    color: "hover:text-jeunesse",
+    color: "hover:text-enfance",
     id: 5,
     childs: [{ title: "Crèches" }, { title: "Activités" }],
   },

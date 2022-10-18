@@ -49,7 +49,7 @@ module.exports = {
         citoyen: "#FF7200FF",
         culture: "#002F2FFF",
         economie: "#0098DBFF",
-        jeunesse: "#00B092FF",
+        enfance: "#00B092FF",
         sante: "#D71F85FF",
         sport: "#98C02DFF",
         social: "#CB0044FF",

@@ -4,7 +4,7 @@ const items = [
   { title: "Citoyen", color: "hover:text-citoyen", id: 2 },
   { title: "Culture", color: "hover:text-culture", id: 3 },
   { title: "Économie", color: "hover:text-economie", id: 4 },
-  { title: "Enfance-Jeunesse", color: "hover:text-jeunesse", id: 5 },
+  { title: "Enfance-Jeunesse", color: "hover:text-enfance", id: 5 },
   { title: "Santé", color: "hover:text-sante", id: 6 },
   { title: "Social", color: "hover:text-social", id: 7 },
   { title: "Sport", color: "hover:text-sport", id: 8 },
