@@ -52,7 +52,7 @@ onMounted(() => {
           </svg>
           <div
             :id="'second-id-' + item.blogid"
-            class="left-full bg-white xl:bg-cta-dark absolute top-0 bottom-0 xl:left-1/2 right-0 group-hover:bg-white transition-all duration-700">
+            class="xl:hidden left-full bg-white xl:bg-cta-dark absolute top-0 bottom-0 xl:left-1/2 right-0 group-hover:bg-white transition-all duration-700">
             <ul class="w-full p-8 grid grid-cols-1 xl:grid-cols-2" id="sousmenu">
               <li
                 v-for="child in item.items"
