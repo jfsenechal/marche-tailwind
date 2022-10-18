@@ -8,7 +8,7 @@ defineEmits(["open-search"]);
   <nav>
     <ul class="hidden xl:flex" id="navigationTop">
       <li
-        class="nav-top displaymenu font-montserrat-semi-bold transition-all duration-500"
+        class="nav-top font-montserrat-semi-bold transition-all duration-500 btn-vivre"
       >
         <a href="#">
           <IconMenuVivreSvg />
@@ -53,7 +53,7 @@ li.nav-top:hover {
   box-shadow: 0 -3px 0 0 #4ae0c7 inset;
 }
 
-.displaymenu:hover .showme {
-  display: grid;
+.btn-vivre:hover > nav {
+  display: block;
 }
 </style>
