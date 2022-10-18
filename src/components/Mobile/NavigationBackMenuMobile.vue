@@ -9,6 +9,21 @@ function backMenu() {
     emit("close-menu", props.blogid, "close");
   }
 }
+
+function openSousMenu(blogid, action) {
+  console.log(blogid);
+  console.log(action);
+  var sousmenu = document.querySelector("#second-id-" + blogid);
+  if (action === "close") {
+    sousmenu.style.left = "100%";
+    sousmenu.style.zIndex = "-1";
+  }
+  if (action === "open") {
+    sousmenu.style.left = "0";
+    sousmenu.style.zIndex = "20";
+  }
+}
+
 </script>
 <template>
   <h3 class="text-lg pl-6 pt-6 text-administration font-montserrat-semi-bold">
