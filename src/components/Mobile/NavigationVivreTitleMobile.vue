@@ -1,7 +1,7 @@
 <template>
   <li
-    class="py-1 initial w-full xl:w-auto flex flex-col xl:basis-full font-montserrat-semi-bold leading-10 xl:leading-8 text-white">
-    <h3 class="flex justify-between items-center ml-6 mr-6 whitespace-nowrap xl:hidden">
+    class="xl:hidden py-1 initial w-full xl:w-auto flex flex-col xl:basis-full font-montserrat-semi-bold leading-10 xl:leading-8 text-white">
+    <h3 class="flex justify-between items-center ml-6 mr-6 whitespace-nowrap">
       <span>Vivre à Marche</span>
       <button>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
