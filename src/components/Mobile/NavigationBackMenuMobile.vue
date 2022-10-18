@@ -1,8 +1,22 @@
+<script setup>
+const props = defineProps(["blogid"]);
+const emit = defineEmits(["close-menu"]);
+
+function backMenu() {
+  console.log(props.blogid);
+  if (props.blogid > 0) {
+    console.log("close");
+    emit("close-menu", props.blogid, "close");
+  }
+}
+</script>
 <template>
   <h3 class="text-lg pl-6 pt-6 text-administration font-montserrat-semi-bold">
     <slot></slot>
   </h3>
-  <a href="/" class="flex w-full flex-row items-center pl-6 py-4">
+  <a href="/"
+     class="flex w-full flex-row items-center pl-6 py-4"
+     @click="backMenu">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
          stroke="currentColor"
          class="w-6 h-6 text-cta-light">
