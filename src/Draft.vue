@@ -1,5 +1,6 @@
 <script setup>
 import { onMounted, ref } from "vue";
+
 const mainItems = ref([]);
 
 function getItems() {
@@ -17,11 +18,12 @@ function getItems() {
       console.warn("Something went wrong.", err);
     });
 }
+
 Object.defineProperty(String.prototype, "capitalize", {
-  value: function () {
+  value: function() {
     return this.charAt(0).toUpperCase() + this.slice(1);
   },
-  enumerable: false,
+  enumerable: false
 });
 onMounted(() => {
   getItems();
@@ -41,7 +43,7 @@ onMounted(() => {
         <div
           :data-menu-id="item.blogid"
           class="hidden absolute top-0 bottom-0 left-1/2 right-0 group-hover:bg-white">
-          <ul class="w-full p-8">
+          <ul class="w-full p-8 grid grid-cols-2" id="sousmenu">
             <li
               v-for="child in item.items"
               :key="child.ID"
@@ -58,6 +60,21 @@ onMounted(() => {
 <style>
 li.initial {
   position: initial;
+}
+
+.entry.D a:not([href*="http://css-tricks"]) {
+}
+
+#sousmenu a:not([href^='https://www.marche.be'])::after {
+  background-image: url("../images/external.svg");
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-size: 100%;
+  margin-inline-start: 0.8rem;
+  opacity: 0.8;
 }
 
 li[data-top-id='1']:hover > div,
