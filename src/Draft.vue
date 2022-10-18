@@ -26,14 +26,21 @@ onMounted(() => {
 
 <template>
   <nav class="fixed bg-cta-dark top-0 bottom-0 left-0 right-0 h-full xl:h-auto xl:top-16 xl:bottom-auto xl:pb-4 w-full">
-    <ul class="flex flex-col items-start xl:items-stretch justify-start h-full xl:h-auto mt-3 box-border xl:max-w-[50%]">
+    <ul
+      class="flex flex-col items-start xl:items-stretch justify-start h-full xl:h-auto mt-3 box-border xl:max-w-[50%]">
       <li
         v-for="item in mainItems"
         :data-top-id="item.blogid"
         :key="item.blogid"
-        class="py-1 initial flex flex-col xl:basis-full hover:bg-white font-montserrat-semi-bold leading-10 xl:leading-8 text-white"
+        class="py-1 initial w-full xl:w-auto flex flex-col xl:basis-full hover:bg-white font-montserrat-semi-bold leading-10 xl:leading-8 text-white"
         :class="item.colorhover">
-        <a href="/" class="ml-6 xl:mr-6 whitespace-nowrap xl:ml-auto">{{ item.name }}</a>
+        <a href="/" class="flex justify-between items-center xl:inline ml-6 mr-6 whitespace-nowrap xl:ml-auto">
+          <span>{{ item.name }}</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+               stroke="currentColor" class="xl:hidden w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </a>
       </li>
     </ul>
   </nav>
