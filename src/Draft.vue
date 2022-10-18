@@ -31,7 +31,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="bg-cta-dark fixed inset-0 overflow-hidden w-full">
+  <nav class="bg-cta-dark fixed inset-0 overflow-hidden w-full">
     <ul class="flex flex-col items-stretch justify-start h-auto mt-3 box-border max-w-[50%]">
       <li
         v-for="item in mainItems"
@@ -55,7 +55,7 @@ onMounted(() => {
         </div>
       </li>
     </ul>
-  </div>
+  </nav>
 </template>
 <style>
 li.initial {
