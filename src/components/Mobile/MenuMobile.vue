@@ -1,7 +1,5 @@
 <script setup>
-import { ref } from "vue";
 
-const shortCutOpen = ref(false);
 </script>
 <template>
   <nav class="musshadow fixed bottom-0 top-auto right-0 left-0 xl:hidden">
