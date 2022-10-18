@@ -1,5 +1,5 @@
 <template>
-  <h3 class="text-xl text-administration font-montserrat-semi-bold">
+  <h3 class="text-lg pl-6 pt-6 text-administration font-montserrat-semi-bold">
     <slot></slot>
   </h3>
   <a href="/" class="flex w-full flex-row items-center pl-6 py-4">
