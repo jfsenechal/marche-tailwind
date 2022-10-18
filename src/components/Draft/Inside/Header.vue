@@ -1,5 +1,5 @@
 <script setup>
-import Navigation from "@/components/Header/Inside/Navigation.vue";
+import Navigation from "@/components/Draft/Inside/Navigation.vue";
 import IconesSocial from "@/components/Header/Home/IconesSocial.vue";
 </script>
 <template>
