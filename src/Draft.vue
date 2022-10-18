@@ -32,10 +32,11 @@ onMounted(() => {
 </script>
 
 <template>
-  <nav class="hidden fixed bg-cta-dark top-0 bottom-0 left-0 right-0 h-full xl:h-auto xl:top-16 xl:bottom-auto xl:pb-4 w-full">
+  <nav
+    class="hidden fixed bg-cta-dark top-0 bottom-0 left-0 right-0 h-full xl:h-auto xl:top-16 xl:bottom-auto xl:pb-4 w-full">
     <ul
       class="flex flex-col items-start xl:items-stretch justify-start h-full xl:h-auto mt-3 box-border xl:max-w-[50%]">
-      <NavigationVivreTitleMobile/>
+      <NavigationVivreTitleMobile />
       <li
         v-for="item in mainItems"
         :data-top-id="item.blogid"
@@ -87,21 +88,18 @@ li.initial {
   opacity: 0.8;
 }
 
-li[data-top-id='1']:hover > div,
-li[data-top-id='2']:hover > div,
-li[data-top-id='3']:hover > div,
-li[data-top-id='4']:hover > div,
-li[data-top-id='5']:hover > div,
-li[data-top-id='6']:hover > div,
-li[data-top-id='7']:hover > div,
-li[data-top-id='8']:hover > div,
-li[data-top-id='11']:hover > div,
-li[data-top-id='12']:hover > div,
-li[data-top-id='13']:hover > div,
-li[data-top-id='14']:hover > div {
+li[data-top-id='1']:hover div,
+li[data-top-id='2']:hover div,
+li[data-top-id='3']:hover div,
+li[data-top-id='4']:hover div,
+li[data-top-id='5']:hover div,
+li[data-top-id='6']:hover div,
+li[data-top-id='7']:hover div,
+li[data-top-id='8']:hover div,
+li[data-top-id='11']:hover div,
+li[data-top-id='12']:hover div,
+li[data-top-id='13']:hover div,
+li[data-top-id='14']:hover div {
   @apply opacity-100 bg-white block;
- /* opacity: 100;
-  background-color: white;
-  display: block;*/
 }
 </style>
