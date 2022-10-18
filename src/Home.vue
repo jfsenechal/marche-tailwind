@@ -1,11 +1,11 @@
 <script setup>
 import { ref } from "vue";
-import HomeSearch from "@/components/Home/HomeSearch.vue";
-import News from "@/components/Home/News.vue";
-import Agenda from "@/components/Home/Agenda.vue";
-import Widgets from "@/components/Home/Widgets.vue";
+import HomeSearch from "@/components/Homepage/HomeSearch.vue";
+import News from "@/components/Homepage/News.vue";
+import Agenda from "@/components/Homepage/Agenda.vue";
+import Widgets from "@/components/Homepage/Widgets.vue";
 import Footer from "@/components/Footer/Footer.vue";
-import Partners from "@/components/Home/Partners.vue";
+import Partners from "@/components/Homepage/Partners.vue";
 import Header from "@/components/Header/Home/Header.vue";
 import PopupSearch from "@/components/Header/PopupSearch.vue";
 import MenuMobile from "@/components/Mobile/MenuMobile.vue";
