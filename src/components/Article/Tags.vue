@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+//https://www.getrevue.co/profile/shrutibalasa/issues/where-is-inline-flex-used-1394402
+</script>
 <template>
   <div class="pt-4">
     <ul class="flex">
