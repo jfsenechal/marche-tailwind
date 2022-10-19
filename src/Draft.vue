@@ -35,10 +35,12 @@ function toggleSubMenu(blogid, action) {
 
 function toggleMenu(action) {
   console.log(action);
-  var menu = document.querySelector("#main-menu");
-  console.log(menu)
+  const menu = document.querySelector("#main-menu");
+  const checkbox = document.querySelector("#checkboxMenu");
+
   if (action === "close") {
     menu.style.display = "none";
+    checkbox.checked = false
   }
   if (action === "open") {
     menu.style.display = "block";
@@ -77,7 +79,7 @@ onMounted(() => {
           <NavigationBackMenuMobile @toggle-sub-menu="toggleSubMenu" :blogid="item.blogid">
             {{ item.name }}
           </NavigationBackMenuMobile>
-          <ul class="w-full pl-4 pb-4 xl:p-8 grid grid-cols-1 xl:grid-cols-2" id="sousmenu">
+          <ul class="w-full pl-4 pb-4 xl:p-8 grid grid-cols-1 xl:grid-cols-2">
             <li
               v-for="child in item.items"
               :key="child.ID"
