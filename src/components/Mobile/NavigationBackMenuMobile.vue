@@ -1,12 +1,12 @@
 <script setup>
 const props = defineProps(["blogid"]);
-const emit = defineEmits(["close-menu"]);
+const emit = defineEmits(["toggle-sub-menu"]);
 
 function backMenu() {
   console.log(props.blogid);
   if (props.blogid > 0) {
     console.log("close");
-    emit("close-menu", props.blogid, "close");
+    emit("toggle-sub-menu", props.blogid, "close");
   }
 }
 </script>
