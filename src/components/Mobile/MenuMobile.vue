@@ -1,5 +1,5 @@
 <script setup>
-
+import ShortCutMenuMobile from "@/components/Mobile/ShortCutMenuMobile.vue";
 </script>
 <template>
   <nav class="musshadow fixed bottom-0 top-auto right-0 left-0 xl:hidden">
@@ -28,13 +28,14 @@
         </a>
       </li>
       <li>
-        <a href="#" for="more" class="icon-menu-mobile">
+        <input type="checkbox" id="checkboxMenu" />
+        <label for="checkboxMenu" class="icon-menu-mobile cursor-pointer">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
           <span class="text-menu-mobile">Menu</span>
-        </a>
+        </label>
       </li>
       <li>
         <a
@@ -51,27 +52,7 @@
       </li>
       <li>
         <input type="checkbox" id="checkboxShortCut" />
-        <div class="absolute max-h-044 bottom-20 -ml-10 right-1 shadow-lg z-30 opacity-0">
-          <ul
-            class="w-max p-2 pb-6 bg-white flex flex-col items-start justify-center transition-all duration-700"
-          >
-            <li>
-              <a href="/" class="inline-block leading-8 text-cta-dark"
-              >E-guichet</a
-              >
-            </li>
-            <li>
-              <a href="/" class="leading-8 text-cta-dark">Actualités</a>
-            </li>
-            <li>
-              <a href="/" class="leading-8 text-cta-dark">Agenda</a>
-            </li>
-            <li>
-              <a href="/" class="leading-8 text-cta-dark">Prendre Rdv</a>
-            </li>
-          </ul>
-          <div class="z-10 absolute -bottom-[0.5rem] right-4 h-6 w-6 rotate-45 bg-white"></div>
-        </div>
+        <ShortCutMenuMobile />
         <label for="checkboxShortCut" class="icon-menu-mobile cursor-pointer">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                stroke="currentColor" class="w-6 h-6">
@@ -91,23 +72,21 @@
 
 .text-menu-mobile {
   @apply text-xs font-montserrat-light;
-
-}
-
-#shortcutlink:hover ~ ul {
-  @apply max-h-52 p-4;
 }
 
 #checkboxShortCut:checked ~ div {
- /* @apply max-h-52 p-4;*/
   @apply opacity-100;
+}
+
+#checkboxMenu:checked ~ div {
+  @apply block;
 }
 
 .musshadow {
   box-shadow: 0 -0.125rem 0.45rem rgba(0, 0, 0, 0.75);
 }
 
-#checkboxShortCut {
+#checkboxShortCut, #checkboxMenu {
   display: none;
 }
 </style>
