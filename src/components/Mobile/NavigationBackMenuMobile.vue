@@ -11,11 +11,11 @@ function backMenu() {
 }
 </script>
 <template>
-  <h3 class="text-lg pl-6 pt-6 text-administration font-montserrat-semi-bold">
+  <h3 class="text-lg pl-6 pt-6 text-administration font-montserrat-semi-bold xl:hidden">
     <slot></slot>
   </h3>
   <a href="/"
-     class="flex w-full flex-row items-center pl-6 py-4"
+     class="flex w-full flex-row items-center pl-6 py-4 xl:hidden"
      @click.prevent="backMenu">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
          stroke="currentColor"
