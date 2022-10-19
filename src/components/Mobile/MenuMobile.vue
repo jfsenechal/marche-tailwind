@@ -1,5 +1,6 @@
 <script setup>
 import ShortCutMenuMobile from "@/components/Mobile/ShortCutMenuMobile.vue";
+import NavigationVivre from "@/components/Header/NavigationVivre.vue";
 </script>
 <template>
   <nav class="musshadow fixed bottom-0 top-auto right-0 left-0 xl:hidden">
@@ -29,6 +30,7 @@ import ShortCutMenuMobile from "@/components/Mobile/ShortCutMenuMobile.vue";
       </li>
       <li>
         <input type="checkbox" id="checkboxMenu" />
+        <NavigationVivre/>
         <label for="checkboxMenu" class="icon-menu-mobile cursor-pointer">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                stroke="currentColor" class="w-6 h-6">
@@ -78,7 +80,7 @@ import ShortCutMenuMobile from "@/components/Mobile/ShortCutMenuMobile.vue";
   @apply opacity-100;
 }
 
-#checkboxMenu:checked ~ div {
+#checkboxMenu:checked ~ nav {
   @apply block;
 }
 
