@@ -8,7 +8,6 @@ import Footer from "@/components/Footer/Footer.vue";
 import Partners from "@/components/Homepage/Partners.vue";
 import Header from "@/components/Header/Header.vue";
 import PopupSearch from "@/components/Header/Search/PopupSearch.vue";
-import MenuMobile from "@/components/Mobile/MenuMobile.vue";
 
 const searchIsOpen = ref(false);
 
@@ -39,5 +38,4 @@ function updateSearch() {
     </section>
   </main>
   <Footer />
-  <MenuMobile />
 </template>

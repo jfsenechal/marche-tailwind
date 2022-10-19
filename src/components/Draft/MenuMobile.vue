@@ -1,5 +1,5 @@
 <script setup>
-import ShortCutMenuMobile from "@/components/Mobile/ShortCutMenuMobile.vue";
+import ShortCutMenuMobile from "@/components/Header/Navigation/ShortCutMenuMobile.vue";
 import NavigationVivre from "@/components/Header/NavigationVivre.vue";
 </script>
 <template>
