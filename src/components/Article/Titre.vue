@@ -1,19 +1,20 @@
 <script setup>
-import { ArrowLeftIcon } from "@heroicons/vue/24/solid";
 </script>
 <template>
   <div class="flex items-center">
-    <ArrowLeftIcon class="mr-4 h-6 w-6 text-blue-500" />
-    <a href="/" class="font-montserrat-bold text-cta-light"
-      >Retour à Actualités</a
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+         class="text-cta-light w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+    </svg>
+    <a href="/" class="ml-2 font-montserrat-semi-bold text-cta-light">
+      Retour à Actualités</a>
   </div>
 
-  <h2 class="pt-4 font-montserrat-bold text-2xl leading-7 text-slate-500">
+  <h2 class="pt-4 font-montserrat-semi-bold text-xl leading-7 text-cta-dark">
     Rénovation piétonnier centre-ville
   </h2>
 
   <span class="block pt-4 font-montserrat-semi-bold text-citoyen">
-    Citoyen
+    Vivre à Marche
   </span>
 </template>
