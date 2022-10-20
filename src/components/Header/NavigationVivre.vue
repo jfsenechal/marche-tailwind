@@ -80,7 +80,7 @@ onMounted(() => {
         <div
           :id="'second-id-' + item.blogid"
           class="xl:hidden left-full bg-white xl:bg-cta-dark absolute top-0 bottom-0 xl:left-1/2 right-0 group-hover:bg-white transition-all duration-700">
-          <NavigationBackMenuMobile @toggle-sub-menu="toggleSubMenu" :blogid="item.blogid">
+          <NavigationBackMenuMobile @toggle-sub-menu="toggleSubMenu" :item="item">
             {{ item.name }}
           </NavigationBackMenuMobile>
           <ul class="w-full pl-4 pb-4 xl:p-8 grid grid-cols-1 xl:grid-cols-2">

@@ -1,17 +1,16 @@
 <script setup>
-const props = defineProps(["blogid"]);
+const { item } = defineProps(["item"]);
 const emit = defineEmits(["toggle-sub-menu"]);
 
 function backMenu() {
-  console.log(props.blogid);
-  if (props.blogid > 0) {
-    console.log("close");
-    emit("toggle-sub-menu", props.blogid, "close");
+  if (item.blogid > 0) {
+    emit("toggle-sub-menu", item.blogid, "close");
   }
 }
 </script>
 <template>
-  <h3 class="text-lg pl-6 pt-6 text-administration font-montserrat-semi-bold xl:hidden">
+  <h3
+    :class="'text-lg pl-6 pt-6 font-montserrat-semi-bold xl:hidden ' + item.color">
     <slot></slot>
   </h3>
   <a href="/"
