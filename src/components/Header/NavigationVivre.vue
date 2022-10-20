@@ -21,34 +21,32 @@ function getItems() {
     });
 }
 
+/**
+ * Ouvre et ferme le sous menu d'un onglet de vivre
+ * @param blogid
+ * @param action
+ */
 function toggleSubMenu(blogid, action) {
-  console.log(blogid);
-  console.log(action);
   var sousmenu = document.querySelector("#second-id-" + blogid);
   if (action === "close") {
     sousmenu.style.left = "100%";
   }
   if (action === "open") {
     sousmenu.style.left = "0";
-    //sousmenu.classList.remove('left-full');
-    console.log(sousmenu.id)
-    console.log(sousmenu.style.left)
   }
-  console.log(sousmenu.style.left)
-
 }
 
+/**
+ * Ouvre et ferme menu vivre en version mobile
+ * @param action
+ */
 function toggleMenu(action) {
-  console.log(action);
-  const menu = document.querySelector("#main-menu");
-  const checkbox = document.querySelector("#checkboxMenu");
-
+  const menu = document.querySelector("#menu-vivre");
   if (action === "close") {
-    menu.style.display = "none";
-    checkbox.checked = false
+    menu.style.top = "100%";
   }
   if (action === "open") {
-    menu.style.display = "block";
+    menu.style.top = 0;
   }
 }
 
@@ -59,10 +57,11 @@ onMounted(() => {
 
 <template>
   <nav
-    class="hidden fixed bg-cta-dark top-0 bottom-0 left-0 right-0 h-full xl:h-auto xl:top-16 xl:bottom-auto xl:pb-4 w-full" id="main-menu">
+    class="xl:hidden fixed bg-cta-dark top-full bottom-0 left-0 right-0 h-full xl:h-auto xl:top-16 xl:bottom-auto xl:pb-4 w-full transition-all duration-500"
+    id="menu-vivre">
     <ul
       class="flex flex-col items-start xl:items-stretch justify-start h-full xl:h-auto mt-3 box-border xl:max-w-[50%]">
-      <NavigationVivreTitleMobile  @toggle-menu="toggleMenu" />
+      <NavigationVivreTitleMobile @toggle-menu="toggleMenu" />
       <li
         v-for="item in mainItems"
         :data-top-id="item.blogid"

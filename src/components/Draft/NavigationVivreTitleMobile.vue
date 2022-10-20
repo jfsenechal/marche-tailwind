@@ -1,9 +1,7 @@
 <script setup>
-const props = defineProps(["blogid"]);
 const emit = defineEmits(["toggle-menu"]);
 
 function toggleMenu() {
-    console.log("close");
     emit("toggle-menu", "close");
 }
 </script>

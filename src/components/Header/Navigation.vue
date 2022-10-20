@@ -12,13 +12,12 @@ function updateOpenSearch() {
   emit("open-search");
 }
 
-function toggleMainMenu() {
-  console.log("dfdfdf");
-  const menu = document.querySelector("#main-menu");
-  console.log(menu.style.display);
-  menu.style.display = "block";
-  console.log(menu.style.display);
-  console.log(menu);
+/**
+ * Open main menu mobile
+ */
+function openMenuVivre() {
+  const menu = document.querySelector("#menu-vivre");
+  menu.style.top = "0";
 }
 </script>
 <template>
@@ -34,7 +33,7 @@ function toggleMainMenu() {
           Vivre à Marche
         </a>
         <label for="checkboxMenu" class="xl:hidden icon-menu-mobile cursor-pointer">
-          <button name="menu" @click="toggleMainMenu">
+          <button name="menu" @click="openMenuVivre">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                  stroke="currentColor" class="w-6 h-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -70,10 +69,6 @@ li.nav-top:hover {
 
 .text-menu-mobile {
   @apply text-xs font-montserrat-light;
-}
-
-#checkboxMenu:checked ~ nav {
-  @apply block;
 }
 
 .musshadow {
