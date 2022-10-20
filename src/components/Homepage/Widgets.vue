@@ -40,7 +40,7 @@ const widgets = [
 </script>
 <template>
   <div
-    class="grid grid-cols-1 gap-2 pt-6 xl:grid-cols-[repeat(5,1fr)]"
+    class="grid grid-cols-1 gap-2 pt-6 xl:grid-cols-[repeat(5,1fr)] relative -z-10"
     id="widgets"
   >
     <div
