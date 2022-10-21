@@ -82,6 +82,5 @@ onMounted(() => {
       </li>
     </ul>
   </main>
-
   <Footer />
 </template>
