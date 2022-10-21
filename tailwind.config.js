@@ -11,7 +11,7 @@ module.exports = {
     "text-enfance",
     "text-tourisme",
     "text-social",
-    "text-economie",
+    "text-economie"
   ],
   theme: {
     extend: {
@@ -19,30 +19,30 @@ module.exports = {
         montserrat: ["Montserrat", ...defaultTheme.fontFamily.sans],
         "montserrat-medium": [
           "montserrat-medium",
-          ...defaultTheme.fontFamily.sans,
+          ...defaultTheme.fontFamily.sans
         ],
         "montserrat-thin": ["montserrat-thin", ...defaultTheme.fontFamily.sans],
         "montserrat-light": [
           "montserrat-light",
-          ...defaultTheme.fontFamily.sans,
+          ...defaultTheme.fontFamily.sans
         ],
         "montserrat-extra-light": [
           "montserrat-extra-light",
-          ...defaultTheme.fontFamily.sans,
+          ...defaultTheme.fontFamily.sans
         ],
         "montserrat-regular": [
           "montserrat-regular",
-          ...defaultTheme.fontFamily.sans,
+          ...defaultTheme.fontFamily.sans
         ],
         "montserrat-bold": ["montserrat-bold", ...defaultTheme.fontFamily.sans],
         "montserrat-semi-bold": [
           "montserrat-semi-bold",
-          ...defaultTheme.fontFamily.sans,
+          ...defaultTheme.fontFamily.sans
         ],
         "montserrat-extra-bold": [
           "montserrat-extra-bold",
-          ...defaultTheme.fontFamily.sans,
-        ],
+          ...defaultTheme.fontFamily.sans
+        ]
       },
       colors: {
         administration: "#82786FFF",
@@ -56,16 +56,16 @@ module.exports = {
         tourisme: "#8A5A9DFF",
         cta: {
           light: "#4ae0c7",
-          dark: "#487F89FF",
+          dark: "#487F89FF"
         },
-        greylight: "#dee2e6",
+        greylight: "#dee2e6"
       },
     },
     plugins: [
       require("@tailwindcss/forms"),
       require("@tailwindcss/typography"),
       require("@tailwindcss/line-clamp"),
-      require("@tailwindcss/aspect-ratio"),
-    ],
-  },
+      require("@tailwindcss/aspect-ratio")
+    ]
+  }
 };

@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="justify-self-end xl:justify-self-start xl:row-start-2 xl:row-end-2 xl:col-start-3 xl:col-end-4">
+  <div class="justify-self-end xl:justify-self-start xl:row-start-2 xl:row-end-3 xl:col-start-3 xl:col-end-4">
     <h4 class="text-cta-dark">Partagez l'article via</h4>
     <div class="mt-6 flex h-8">
       <a
