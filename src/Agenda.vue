@@ -36,7 +36,7 @@ function updateSearch() {
 <template>
   <Header @open-search="updateSearch" />
   <PopupSearch @open-search="updateSearch" :searchIsOpen="searchIsOpen" />
-  <main class="container mt-24 xl:mt-28 mx-auto mb-8">
+  <main class="container px-4 mt-24 xl:mt-28 mx-auto mb-8">
     <div class="flex items-center mb-2">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
            class="text-cta-light w-6 h-6">
@@ -58,14 +58,14 @@ function updateSearch() {
       >
         <a
           href="{{item.url}}"
-          class="group grid grid-cols-2 overflow-hidden xl:block"
+          class="group grid grid-cols-1 xl:grid-cols-2 overflow-hidden xl:block"
         >
           <img
             :src="item.images[0]"
             alt=""
             class="justify-self-center self-center h-32 w-full rounded-t-lg opacity-100 transition-all duration-700 group-hover:scale-105 group-hover:opacity-60 lg:h-40"
           />
-          <div class="grid grid-cols-[8rem,minmax(0,1fr)] my-2">
+          <div class="grid grid-cols-[6rem,1fr] xl:grid-cols-[8rem,1fr] my-2">
             <div
               class="flex flex-col items-center justify-center border-x transition-all duration-700 group-hover:bg-cta-light group-hover:text-white"
             >
