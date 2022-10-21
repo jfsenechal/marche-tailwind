@@ -17,12 +17,10 @@ function updateSearch() {
 </script>
 <template>
   <Header @open-search="updateSearch" />
-  <PopupSearch  @open-search="updateSearch" :searchIsOpen="searchIsOpen" />
+  <PopupSearch @open-search="updateSearch" :searchIsOpen="searchIsOpen" />
   <HomeSearch />
   <main>
-    <section
-      class="mx-2 mx-auto grid grid-cols-1 xl:mx-40 xl:grid-cols-[60%,40%] xl:gap-4"
-    >
+    <section class="mx-2 mx-auto grid grid-cols-1 xl:mx-40 xl:grid-cols-[60%,40%] xl:gap-4">
       <div>
         <News />
       </div>
