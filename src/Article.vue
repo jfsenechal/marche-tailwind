@@ -20,13 +20,9 @@ function updateSearch() {
   <Header @open-search="updateSearch" />
   <PopupSearch @open-search="updateSearch" :searchIsOpen="searchIsOpen" />
   <article
-    class="container grid grid-cols-1 xl:flex w-full items-start mt-24 xl:mt-28 mx-auto place-content-center px-4">
+    class="container grid grid-cols-1 xl:grid-cols-3 xl:grid-rows-4 w-full items-start mt-24 xl:mt-28 mx-auto place-content-center px-4">
     <Titre />
     <Image />
-    <Tags />
-    <Body />
-    <Share />
-    <SeeAlso />
   </article>
   <Footer />
 </template>
