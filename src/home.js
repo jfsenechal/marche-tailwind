@@ -1,5 +1,5 @@
 import { createApp } from "vue";
-import Home from "./Home.vue";
+import Homepage from "./Homepage.vue";
 import "./index.css";
 
-createApp(Home).mount("#app");
+createApp(Homepage).mount("#app");
