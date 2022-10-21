@@ -1,7 +1,6 @@
 <script setup>
 import { onMounted, ref } from "vue";
 import Header from "@/components/Header/Header.vue";
-import Titre from "@/components/Article/Titre.vue";
 import PopupSearch from "@/components/Header/Search/PopupSearch.vue";
 import Footer from "@/components/Footer/Footer.vue";
 
