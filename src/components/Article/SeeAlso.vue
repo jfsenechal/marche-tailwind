@@ -12,7 +12,7 @@
               <img src="images/BEA-r_long.jpg" alt="img" class="h-28 w-28" />
             </div>
             <div
-              class="rounded-r-md border-t border-r border-b border-gray-200 bg-white"
+              class="rounded-r-md border-t border-r border-b border-gray-200 bg-white w-full"
             >
               <div
                 class="flex h-full flex-col justify-between px-4 py-4 text-sm"
