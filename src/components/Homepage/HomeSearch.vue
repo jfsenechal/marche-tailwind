@@ -29,6 +29,6 @@ import Wave from "@/components/Homepage/Wave.vue";
       rgba(1, 31, 22, 0.38),
       rgba(0, 75, 142, 0.38)
     ),
-    url(../images/bh_home.jpg);
+    url(../images/bh_home2.jpg);
 }
 </style>
