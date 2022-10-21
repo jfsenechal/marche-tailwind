@@ -23,6 +23,9 @@ function updateSearch() {
     class="container grid grid-cols-1 xl:grid-cols-3 xl:grid-rows-4 w-full items-start mt-24 xl:mt-28 mx-auto place-content-center px-4">
     <Titre />
     <Image />
+    <Tags />
+    <Body />
+    <Share />
   </article>
   <Footer />
 </template>
