@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="mr-4 h-80 w-2/3 overflow-hidden">
+  <div class="my-2 xl:mr-4 h-60 xl:h-80 xl:w-2/3 overflow-hidden">
     <picture>
       <img
         src="images/Pietonnier-renovation.jpg"

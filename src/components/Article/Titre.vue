@@ -10,7 +10,7 @@
       Retour à Actualités</a>
   </div>
 
-  <h2 class="pt-4 font-montserrat-semi-bold text-xl leading-7 text-cta-dark">
+  <h2 class="pt-4 font-montserrat-semi-bold text-base xl:text-xl leading-7 text-cta-dark">
     Rénovation piétonnier centre-ville
   </h2>
 

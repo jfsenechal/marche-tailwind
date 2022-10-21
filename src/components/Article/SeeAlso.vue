@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="mt-6">
+  <div class="my-6">
     <h4 class="font-montserrat-bold text-cta-dark">Consultez aussi</h4>
     <div class="mt-6">
       <ul role="list" class="mt-3">

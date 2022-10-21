@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="">
+  <div class="justify-self-end">
     <h4 class="text-cta-dark">Partagez l'article via</h4>
     <div class="mt-6 flex h-8">
       <a
