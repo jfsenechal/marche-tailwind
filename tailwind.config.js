@@ -58,8 +58,9 @@ module.exports = {
           light: "#4ae0c7",
           dark: "#487F89FF"
         },
+        greydark: "#232222",
         greylight: "#dee2e6"
-      },
+      }
     },
     plugins: [
       require("@tailwindcss/forms"),
