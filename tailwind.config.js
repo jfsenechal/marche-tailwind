@@ -60,7 +60,8 @@ module.exports = {
           primary: "#487F89"
         },
         greydark: "#232222",
-        greylight: "#dee2e6"
+        greylight: "#dee2e6",
+        greylighter: "#ededec"
       }
     },
     plugins: [
