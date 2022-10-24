@@ -56,7 +56,8 @@ module.exports = {
         tourisme: "#8A5A9DFF",
         cta: {
           light: "#4ae0c7",
-          dark: "#487F89FF"
+          dark: "#487F89FF",
+          primary: "#487F89"
         },
         greydark: "#232222",
         greylight: "#dee2e6"
