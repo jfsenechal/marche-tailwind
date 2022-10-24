@@ -1,10 +1,10 @@
 <script setup>
-import { onMounted, ref } from "vue";
+import { ref } from "vue";
 import Header from "@/components/Header/Header.vue";
 import PopupSearch from "@/components/Header/Search/PopupSearch.vue";
 import Footer from "@/components/Footer/Footer.vue";
-
-import { articles } from "@/posts";
+import Categories from "@/components/Folder/Categories.vue";
+import Posts from "@/components/Folder/Posts.vue";
 
 const searchIsOpen = ref(false);
 
@@ -29,21 +29,9 @@ function updateSearch() {
       Cultes – Laïcité – Cimetières
     </h2>
 
-    <ul class="pt-6 grid grid-cols-1 gap-2 xl:grid-cols-2 my-2">
-      <li
-        v-for="item in articles"
-        :key="item.id"
-        class="rounded-lg shadow-lg p-4">
-        <a
-          href="{{item.link}}"
-          class="flex flex-col justify-between items-start">
-              <span class="font-montserrat-semi-bold text-lg text-cta-dark">
-                {{ item.title.rendered }}
-              </span>
-              <span class="font-montserrat-light text-sm text-greydark" v-html="item.excerpt.rendered"></span>
-        </a>
-      </li>
-    </ul>
+    <Categories />
+    <Posts />
+
   </main>
   <Footer />
 </template>
