@@ -9,8 +9,8 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
-      images: fileURLToPath(new URL("./public/images", import.meta.url)),
-    },
+      images: fileURLToPath(new URL("./public/images", import.meta.url))
+    }
   },
   build: {
     assetsDir: "zeze",
@@ -19,7 +19,13 @@ export default defineConfig({
         // main: dirname(fileURLToPath(import.meta.url + "index.html")),
         main: new URL("index.html", import.meta.url).pathname,
         home: new URL("home.html", import.meta.url).pathname,
-      },
-    },
-  },
+        folder: new URL("folder.html", import.meta.url).pathname,
+        carto: new URL("carto.html", import.meta.url).pathname,
+        bottin: new URL("bottin.html", import.meta.url).pathname,
+        article: new URL("article.html", import.meta.url).pathname,
+        agenda: new URL("agenda.html", import.meta.url).pathname,
+        actu: new URL("actu.html", import.meta.url).pathname
+      }
+    }
+  }
 });
