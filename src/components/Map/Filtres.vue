@@ -39,8 +39,8 @@ onMounted(() => {
       </summary>
       <ul class="bg-greylight text-cta-dark w-full block">
         <li v-for="child in item.elements" :key="child.id"
-            class="p-4 hover:text-cta-light ">
-          <a href="#" @click.prevent="">{{ child.name }}</a>
+            class="py-2 hover:text-cta-light flex flex-col items-stretch">
+          <button @click.prevent="" class="flex-grow block h-full w-full border border-red-500">{{ child.name }}</button>
         </li>
       </ul>
     </details>
