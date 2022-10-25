@@ -1,6 +1,6 @@
 import { createApp } from "vue";
-import Agenda from "./Agenda.vue";
+import Agenda from "../Agenda.vue";
 
-import "./index.css";
+import "../index.css";
 
 createApp(Agenda).mount("#app");

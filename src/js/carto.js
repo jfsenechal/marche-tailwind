@@ -1,6 +1,6 @@
 import { createApp } from "vue";
-import Carto from "./Carto.vue";
+import Carto from "../Carto.vue";
 
-import "./index.css";
+import "../index.css";
 
 createApp(Carto).mount("#app");

@@ -1,6 +1,6 @@
 import { createApp } from "vue";
-import Article from "./Article.vue";
+import Article from "../Article.vue";
 
-import "./index.css";
+import "../index.css";
 
 createApp(Article).mount("#app");
