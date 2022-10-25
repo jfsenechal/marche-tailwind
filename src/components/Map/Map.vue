@@ -1,14 +1,17 @@
 <script setup>
 import { onMounted } from "vue";
 import Map from "ol/Map";
+import KML from "ol/format/KML";
 import View from "ol/View";
 import OSM from "ol/source/OSM";
 import XYZ from "ol/source/XYZ";
 import { fromLonLat } from "ol/proj";
 import Point from "ol/geom/Point";
+import TileJSON from "ol/source/TileJSON";
 import Feature from "ol/Feature";
 import { Icon, Style } from "ol/style";
 import { Tile as TileLayer, Vector as VectorLayer } from "ol/layer";
+import {ZoomToExtent, defaults as defaultControls} from 'ol/control';
 import VectorSource from "ol/source/Vector";
 
 function init() {
@@ -20,6 +23,13 @@ function init() {
     { id: 4, coordinates: [49.136010, 6.199630] },
     { id: 5, coordinates: [49.105563, 6.182234] }
   ];
+
+  const vectorKML = new VectorLayer({
+    source: new VectorSource({
+      url: "data/kml/2012-02-10.kml",
+      format: new KML()
+    })
+  });
 
   let longitude = 50.226484;
   let latitude = 5.342961;
@@ -33,7 +43,7 @@ function init() {
       image: new Icon({
         color: "#BADA55",
         crossOrigin: "anonymous",
-          src: "public/images/square.svg"
+        src: "public/images/square.svg"
       })
     })
   );
@@ -46,9 +56,20 @@ function init() {
     source: vectorSource
   });
 
+  const rasterLayer = new TileLayer({
+    source: new TileJSON({
+      url: "https://a.tiles.mapbox.com/v3/aj.1x1-degrees.json?secure=1",
+      crossOrigin: ""
+    })
+  });
+
+  const attributions =
+    "&copy; <a href=\\\"http://osm.org/copyright\\\">OpenStreetMap</a> contributors";
+
   let titleXYZ = new TileLayer({
     source: new XYZ({
-      url: "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+      url: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+      attributions: attributions
     })
   });
 
@@ -59,7 +80,7 @@ function init() {
   new Map({
     layers: [titleXYZ, vectorLayer],
     view: new View({
-      center:  fromLonLat([latitude, longitude]),
+      center: fromLonLat([latitude, longitude]),
       zoom: 12
     }),
     target: "openmap"
@@ -67,20 +88,12 @@ function init() {
 
 }
 
-function init2() {
-  /* L.tileLayer("https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png", {
-     attribution: "&copy; <a href=\"http://osm.org/copyright\">OpenStreetMap</a> contributors",
-     minZoom: 1,
-     maxZoom: 20
-   }).addTo(map);*/
-}
-
 onMounted(() => {
   init();
 });
 </script>
 <template>
-  <div class="border border-cta-dark w-full" id="openmap" style="width: 100%; height: 40rem;">
+  <div class="border border-cta-dark/2 w-full" id="openmap" style="width: 100%; height: 40rem;">
 
   </div>
 </template>

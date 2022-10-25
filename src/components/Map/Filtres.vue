@@ -26,21 +26,21 @@ onMounted(() => {
 });
 </script>
 <template>
-  <div class="mx-4">
+  <div class="ml-4 flex flex-col">
     <details v-for="(item, index) in items" :key="index"
-             class="border border-cta-dark open:bg-cta-dark open:text-white px-4">
-      <summary class="list-none	flex items-center cursor-pointer">
+             class="border border-cta-dark/2 open:bg-cta-dark open:text-white ">
+      <summary class="list-none	flex items-center cursor-pointer whitespace-nowrap ">
         <i
-          class="mesicones block h-12 w-12 bg-[length:1.25rem_1.25rem] bg-center bg-no-repeat xl:h-14 xl:w-14 xl:bg-[length:2.25rem_2.25rem]"
+          class="h-12 w-12 bg-[length:1.0rem_1.0rem] bg-center bg-no-repeat xl:h-14 xl:w-14 xl:bg-[length:1.75rem_1.75rem]"
           :class="item.icone"
         >
         </i>
-        <span>{{ item.name }}</span>
+        <span class="px-6">{{ item.name }}</span>
       </summary>
-      <ul class="bg-greylight">
-        <li v-for="(child, index2) in item.elements" :key="child.id"
-            class="p-4">
-          {{ child.name }}
+      <ul class="bg-greylight text-cta-dark w-full block">
+        <li v-for="child in item.elements" :key="child.id"
+            class="p-4 hover:text-cta-light ">
+          <a href="#" @click.prevent="">{{ child.name }}</a>
         </li>
       </ul>
     </details>

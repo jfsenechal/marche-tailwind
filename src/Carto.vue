@@ -29,7 +29,7 @@ function updateSearch() {
       Carte dynamique
     </h2>
 
-    <div class="flex ">
+    <div class="flex mt-4 ">
     <Filtres />
     <Map />
     </div>
