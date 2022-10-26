@@ -1,3 +1,4 @@
+<!-- https://dribbble.com/ -->
 <template>
   <form name="searching" class="mx-auto hidden lg:flex lg:w-[35rem]">
     <label class="block" for="search">
