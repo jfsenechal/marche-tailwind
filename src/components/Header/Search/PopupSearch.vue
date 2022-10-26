@@ -1,33 +1,42 @@
 <script setup>
 //https://tailwindui.com/components/application-ui/navigation/command-palettes
-import { computed, ref } from "vue";
+import { ref, watch } from "vue";
+import { onClickOutside } from "@vueuse/core";
 
-const emit = defineEmits(["open-search"]);
-
-function updateOpenSearch() {
-  emit("open-search");
-}
-
-const peoples = [
-  { id: 1, name: "Leslie Alexander", url: "#" },
-  { id: 2, name: "Bart Simpson", url: "#" },
-  { id: 3, name: "Homer Simpson", url: "#" },
-  { id: 4, name: "Marge Simpson", url: "#" },
-  { id: 5, name: "Maggie Simpson", url: "#" },
-  { id: 5, name: "Lisa Simpson", url: "#" },
-  { id: 5, name: "Abraham Simpson", url: "#" }
-];
-
+const emit = defineEmits(["open-search", "close-search"]);
+const target = ref(null);
+const results = ref([]);
 const { searchIsOpen } = defineProps(["searchIsOpen"]);
-
 const query = ref("");
-const filteredPeople = computed(() =>
-  query.value === ""
-    ? []
-    : peoples.filter((person) => {
-      return person.name.toLowerCase().includes(query.value.toLowerCase());
+
+onClickOutside(target, function(event) {
+  console.log(event);
+  emit("close-search");
+});
+
+
+watch(query, async (newQuestion, oldQuestion) => {
+  console.log(newQuestion);
+  if (newQuestion.length > 3) {
+    search(newQuestion);
+  }
+});
+
+function search(s) {
+  fetch("https://www.marche.be/api/search.php?s=" + s)
+    .then(function(response) {
+      // The API call was successful!
+      return response.json();
     })
-);
+    .then(function(data) {
+      // This is the JSON from our response
+      results.value = data;
+    })
+    .catch(function(err) {
+      // There was an error
+      console.warn("Something went wrong.", err);
+    });
+}
 
 function onSelect(person) {
   window.location = person.url;
@@ -58,9 +67,9 @@ function onSelect(person) {
       class="fixed inset-0 bg-gray-500 bg-opacity-25 backdrop-blur transition-opacity"
     ></div>
 
-    <div
-      class="fixed inset-0 z-10 overflow-y-auto p-4 sm:p-6 md:p-20"
-      :class="
+    <div ref="target"
+         class="fixed inset-0 z-10 overflow-y-auto p-4 sm:p-6 md:p-20"
+         :class="
         searchIsOpen
           ? 'scale-100 opacity-100 duration-200 ease-in'
           : 'scale-95 opacity-0 duration-300 ease-out'
@@ -107,20 +116,20 @@ function onSelect(person) {
         >
           <!-- Active: "bg-indigo-600 text-white" -->
           <li
-            v-for="people in filteredPeople"
-            :id="'option-' + people.id"
-            :value="people"
-            class="cursor-default select-none rounded-md px-4 py-2 hover:bg-indigo-600 hover:text-white"
+            v-for="result in results"
+            :id="'option-' + result.id"
+            :value="result.id"
+            class="cursor-default select-none rounded-md px-4 py-2 hover:bg-cta-dark hover:text-white"
             role="option"
             tabindex="-1"
           >
-            {{ people.name }}
+            <a :href="result.url">{{ result.name }}</a>
           </li>
         </ul>
 
         <!-- Empty state, show/hide based on command palette state. -->
         <div
-          v-if="query !== '' && filteredPeople.length === 0"
+          v-if="query !== '' && results.length === 0"
           class="py-14 px-4 text-center sm:px-14"
         >
           <!-- Heroicon name: outline/users -->
@@ -140,7 +149,7 @@ function onSelect(person) {
             />
           </svg>
           <p class="mt-4 text-sm text-gray-900">
-            No people found using that search term.
+            Aucun résultat
           </p>
         </div>
       </div>
