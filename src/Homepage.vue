@@ -11,13 +11,25 @@ import PopupSearch from "@/components/Header/Search/PopupSearch.vue";
 
 const searchIsOpen = ref(false);
 
-function updateSearch() {
-  searchIsOpen.value = !searchIsOpen.value;
+function openSearch() {
+  console.log("open");
+  console.log(searchIsOpen.value);
+  if (searchIsOpen.value === false) {
+    searchIsOpen.value = true;
+  }
+}
+
+function closeSearch() {
+  console.log("close");
+  if (searchIsOpen.value === true) {
+    console.log("close2");
+    searchIsOpen.value = false;
+  }
 }
 </script>
 <template>
-  <Header @open-search="updateSearch" />
-  <PopupSearch @open-search="updateSearch" :searchIsOpen="searchIsOpen" />
+  <Header @close-search=closeSearch @open-search="openSearch" />
+  <PopupSearch @close-search=closeSearch @open-search="openSearch" :searchIsOpen="searchIsOpen" />
   <HomeSearch />
   <main>
     <section class="mx-2 mx-auto grid grid-cols-1 xl:mx-40 xl:grid-cols-[60%,40%] xl:gap-4">

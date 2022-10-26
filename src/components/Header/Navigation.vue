@@ -6,10 +6,14 @@ import NavIconSearchMobile from "@/components/Header/Navigation/NavIconSearchMob
 import NavIconCommuneShortCutMobile from "@/components/Header/Navigation/NavIconCommuneShortCutMobile.vue";
 import NavItemsXl from "@/components/Header/Navigation/NavItemsXl.vue";
 
-defineEmits(["open-search"]);
+const emit = defineEmits(["open-search", "close-search"]);
 
-function updateOpenSearch() {
+function openSearch() {
   emit("open-search");
+}
+
+function closeSearch() {
+  emit("close-search");
 }
 
 /**
@@ -44,7 +48,7 @@ function openMenuVivre() {
         <NavigationVivre />
       </li>
       <NavIconCommuneShortCutMobile />
-      <NavItemsXl @open-search="updateOpenSearch" />
+      <NavItemsXl @open-search="openSearch" />
     </ul>
   </nav>
 </template>
