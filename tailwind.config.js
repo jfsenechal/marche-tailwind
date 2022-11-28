@@ -62,6 +62,11 @@ module.exports = {
         greydark: "#232222",
         greylight: "#dee2e6",
         greylighter: "#ededec"
+      },
+      objectPosition: {
+        "top-center": "top center",
+        "center-center": "center center",
+        "bottom-center": "bottom center"
       }
     },
     plugins: [

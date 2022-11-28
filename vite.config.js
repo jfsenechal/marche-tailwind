@@ -9,7 +9,8 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
-      images: fileURLToPath(new URL("./public/images", import.meta.url))
+      images: fileURLToPath(new URL("./public/images", import.meta.url)),
+      fonts: fileURLToPath(new URL("./src/assets/fonts", import.meta.url))
     }
   },
   build: {
