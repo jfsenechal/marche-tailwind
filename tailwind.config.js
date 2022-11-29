@@ -57,7 +57,6 @@ module.exports = {
         cta: {
           light: "#4ae0c7",
           dark: "#487F89FF",
-          primary: "#487F89"
         },
         grey: {
           dark: "#232222",

@@ -26,7 +26,7 @@ onMounted(() => {
 <template>
 
   <select name="category"
-          class="xl:hidden flex border border-cta-primary p-2 mt-3 font-montserrat-semi-bold bg-white mx-auto">
+          class="xl:hidden flex border border-cta-dark p-2 mt-3 font-montserrat-semi-bold bg-white mx-auto">
     <option v-for="item in categories" :key="item.cat_ID" :value="item.cat_ID">
       {{ item.name }}
     </option>

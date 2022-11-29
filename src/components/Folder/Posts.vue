@@ -35,7 +35,7 @@ onMounted(() => {
               <h3 class="font-montserrat-semi-bold text-sm xl:text-lg text-cta-dark hover:text-cta-light">
                 {{ item.post_title }}
               </h3>
-        <span class="mt-2 font-montserrat-light text-sm text-cta-primary" v-html="item.excerpt"></span>
+        <span class="mt-2 font-montserrat-light text-sm text-cta-dark" v-html="item.excerpt"></span>
       </a>
     </li>
   </ul>
