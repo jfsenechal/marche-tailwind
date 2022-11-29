@@ -21,7 +21,7 @@ import Wave from "@/components/Homepage/Wave.vue";
 <style>
 .bghome-image3 {
   background-image: linear-gradient(rgba(1, 31, 22, 0.7), rgba(0, 75, 142, 0.7)),
-    url(../images/bh_home.jpg);
+    url(images/bh_home.jpg);
 }
 .bghome-image {
   background-image: linear-gradient(
@@ -29,6 +29,6 @@ import Wave from "@/components/Homepage/Wave.vue";
       rgba(1, 31, 22, 0.38),
       rgba(0, 75, 142, 0.38)
     ),
-    url(../images/bh_home2.jpg);
+    url(images/bh_home2.jpg);
 }
 </style>
