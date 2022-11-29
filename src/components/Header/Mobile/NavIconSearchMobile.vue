@@ -40,18 +40,34 @@ const leftproperty = 'left-full'
           <span class="font-montserrat-semi-bold text-cta-dark">Fermer</span>
         </button>
         <hr class="border-b border-cta-dark/50 m-3 w-full"/>
-        <div class="w-full max-w-lg lg:max-w-xs">
-          <label for="search" class="sr-only">Rechercher</label>
+        <form class="flex">
           <div class="relative">
-            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-              <!-- Heroicon name: mini/magnifying-glass -->
-              <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd" />
+            <input
+              class="h-10 rounded-lg border border-cta-dark pr-10 text-sm placeholder-gray-300 focus:z-10"
+              placeholder="Rechercher..."
+              type="text"
+            />
+
+            <button
+              type="submit"
+              class="absolute inset-y-0 right-0 mr-px rounded-r-lg p-2 text-gray-600"
+            >
+              <span class="sr-only">Submit Search</span>
+              <svg
+                class="h-5 w-5"
+                fill="currentColor"
+                viewbox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  fill-rule="evenodd"
+                ></path>
               </svg>
-            </div>
-            <input id="search" name="search" class="block w-full rounded-md border border-gray-300 bg-white py-2 pl-10 pr-3 leading-5 placeholder-gray-500 focus:border-indigo-500 focus:placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm" placeholder="Chercher" type="search">
+            </button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </li>
