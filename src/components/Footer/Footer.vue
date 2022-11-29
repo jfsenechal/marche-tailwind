@@ -27,7 +27,7 @@ import IconesSocial from "@/components/Header/IconesSocial.vue";
         Du lundi au jeudi : de 8h à 12h et de 13h à 17h<br />
         Vendredi : de 8h à 12h et de 13h à 15h<br />
       </div>
-      <IconesSocial />
+      <IconesSocial color="text-white"/>
     </div>
     <Copyright />
   </footer>
