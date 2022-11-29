@@ -13,7 +13,7 @@ function closeSearch() {
 </script>
 <template>
   <header
-    class="fixed flex h-20 w-full items-center justify-end p-6 bg-white shadow-md"
+    class="fixed flex h-20 w-full items-center justify-end p-6 bg-white shadow-md z-20"
     id="headerTop"
   >
     <a href="/" class="mr-auto">

@@ -45,7 +45,7 @@ const partners = [
 ];
 </script>
 <template>
-  <div class="bg-partner relative -z-10">
+  <div class="bg-partner relative">
     <div class="mx-auto flex flex-wrap items-center justify-between gap-2">
       <a
         v-for="item in partners"
