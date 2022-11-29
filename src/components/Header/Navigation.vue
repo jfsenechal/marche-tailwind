@@ -1,10 +1,10 @@
 <script setup>
 import NavigationVivre from "@/components/Header/NavigationVivre.vue";
 import IconMenuVivreSvg from "@/components/Header/IconMenuVivreSvg.vue";
-import NavIconHomeMobile from "@/components/Header/Navigation/NavIconHomeMobile.vue";
-import NavIconSearchMobile from "@/components/Header/Navigation/NavIconSearchMobile.vue";
-import NavIconCommuneShortCutMobile from "@/components/Header/Navigation/NavIconCommuneShortCutMobile.vue";
-import NavItemsXl from "@/components/Header/Navigation/NavItemsXl.vue";
+import NavIconHomeMobile from "@/components/Header/Mobile/NavIconHomeMobile.vue";
+import NavIconSearchMobile from "@/components/Header/Mobile/NavIconSearchMobile.vue";
+import NavIconCommuneShortCutMobile from "@/components/Header/Mobile/NavIconCommuneShortCutMobile.vue";
+import NavItemsXl from "@/components/Header/NavItemsXl.vue";
 
 const emit = defineEmits(["open-search", "close-search"]);
 

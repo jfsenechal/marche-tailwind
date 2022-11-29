@@ -1,5 +1,5 @@
 <script setup>
-import ShortCutMenuMobile from "@/components/Header/Navigation/ShortCutMenuMobile.vue";</script>
+import ShortCutMenuMobile from "@/components/Header/Mobile/ShortCutMenuMobile.vue";</script>
 <template>
   <li class="xl:hidden">
     <a

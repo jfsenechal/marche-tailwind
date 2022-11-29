@@ -1,7 +1,7 @@
 <script setup>
 import { onMounted, ref } from "vue";
 import NavigationVivreTitleMobile from "@/components/Draft/NavigationVivreTitleMobile.vue";
-import NavigationBackMenuMobile from "@/components/Header/Navigation/NavigationBackMenuMobile.vue";
+import NavigationBackMenuMobile from "@/components/Header/Mobile/NavigationBackMenuMobile.vue";
 
 const mainItems = ref([]);
 
@@ -105,7 +105,7 @@ li.initial {
 }
 
 #sousmenu a:not([href^='https://www.marche.be'])::after {
-  background-image: url("../images/external.svg");
+  background-image: url("images/external.svg");
   content: "";
   display: inline-block;
   vertical-align: middle;
