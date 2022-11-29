@@ -14,7 +14,6 @@ onClickOutside(target, function(event) {
   emit("close-search");
 });
 
-
 watch(query, async (newQuestion, oldQuestion) => {
   console.log(newQuestion);
   if (newQuestion.length > 3) {
@@ -36,10 +35,6 @@ function search(s) {
       // There was an error
       console.warn("Something went wrong.", err);
     });
-}
-
-function onSelect(person) {
-  window.location = person.url;
 }
 </script>
 <template>
@@ -98,7 +93,7 @@ function onSelect(person) {
             aria-expanded="false"
             aria-controls="options"
           />
-          <button class="w-32 " @click.prevent="$emit('open-search')">
+          <button class="w-32 " @click.prevent="$emit('close-search')">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                  stroke="currentColor"
                  class="w-6 h-6 inline-block">
@@ -123,7 +118,7 @@ function onSelect(person) {
             role="option"
             tabindex="-1"
           >
-            <a :href="result.url">{{ result.name }}</a>
+            <a :href="result.url" class="flex flex-grow">{{ result.name }}</a>
           </li>
         </ul>
 
