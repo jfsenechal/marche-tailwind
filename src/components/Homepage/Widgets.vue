@@ -31,7 +31,7 @@ const widgets = [
   },
   {
     title: "Avis de décès",
-    intro: "Annonces nécrologiques de notre commune",
+    intro: "Annonces nécrologiques <br> de notre commune",
     class: "bg-img-widgets-5",
     url: "/",
     id: 5,
@@ -40,7 +40,7 @@ const widgets = [
 </script>
 <template>
   <div
-    class="grid grid-cols-1 gap-2 pt-6 xl:grid-cols-[repeat(5,1fr)] relative -z-10"
+    class="grid grid-cols-1 gap-2 pt-6 xl:grid-cols-[repeat(5,1fr)] relative"
     id="widgets"
   >
     <div
