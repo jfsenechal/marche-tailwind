@@ -52,11 +52,14 @@ onMounted(() => {
     </li>
   </ul>
   <a
-    class="mt-4 ml-auto mr-2 block block w-56 items-center justify-center font-montserrat-semi-bold text-cta-light transition-all duration-700 hover:mr-8"
+    class="mt-4 ml-auto mr-2 flex justify-between items-center w-52 font-montserrat-semi-bold text-cta-light transition-all duration-700 hover:mr-8"
     href="/"
     title="Tout l'agenda"
   >
     Tout l'agenda
-    <i class="fa fa-chevron-right ml-4 h-16 w-16" aria-hidden="true"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+         class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/>
+    </svg>
   </a>
 </template>
