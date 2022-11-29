@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted, ref } from "vue";
-import NavigationVivreTitleMobile from "@/components/Draft/NavigationVivreTitleMobile.vue";
+import NavigationVivreTitleMobile from "@/components/Header/Mobile/NavigationVivreTitleMobile.vue";
 import NavigationBackMenuMobile from "@/components/Header/Mobile/NavigationBackMenuMobile.vue";
 
 const mainItems = ref([]);
