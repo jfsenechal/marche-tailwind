@@ -36,32 +36,31 @@ onMounted(() => {
     >
       <a
         href="{{item.url}}"
-        class="group grid grid-cols-2 overflow-hidden xl:block">
+        class="group grid grid-cols-1 overflow-hidden xl:block">
 
         <img
           :src="item.post_thumbnail_url"
           alt=""
           class="justify-self-center self-center h-32 w-full rounded-t-lg opacity-100 transition-all duration-700 group-hover:scale-105 group-hover:opacity-60 lg:h-40"
         />
-
-        <div class="ml-2 flex flex-col items-start justify-center xl:p-4">
-          <span
+        <div class="ml-2 flex flex-col items-start justify-around h-24 xl:p-4">
+          <h3
+            class="xl:text-md xl:font-montserrat-semi-bold text-base text-cta-dark group-hover:text-cta-light">
+            {{ item.post_title }}
+          </h3>
+           <span
             :class="
-              'my-1 block font-montserrat-medium text-xs' +
+              'my-1 block font-montserrat-light text-xs self-end ' +
               item.colorTailwind
             ">
             {{ item.blog }}
           </span>
-          <h3
-            class="xl:text-md xl:font-montserrat-semi-bold text-sm text-cta-dark group-hover:text-cta-light">
-            {{ item.post_title }}
-          </h3>
         </div>
       </a>
     </li>
   </ul>
   <a
-    class="ml-auto mr-2 flex justify-between items-center w-52 pt-4 font-montserrat-semi-bold text-cta-light transition-all duration-700 hover:mr-8"
+    class="my-4 ml-auto mr-2 flex justify-between items-center w-52 font-montserrat-semi-bold text-cta-light transition-all duration-700 hover:mr-8"
     href="/"
     title="Plus d'actualités">
     <span>Plus d'actualités</span>

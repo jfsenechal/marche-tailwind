@@ -52,7 +52,7 @@ onMounted(() => {
     </li>
   </ul>
   <a
-    class="mt-4 ml-auto mr-2 flex justify-between items-center w-52 font-montserrat-semi-bold text-cta-light transition-all duration-700 hover:mr-8"
+    class="my-4 ml-auto mr-2 flex justify-between items-center w-52 font-montserrat-semi-bold text-cta-light transition-all duration-700 hover:mr-8"
     href="/"
     title="Tout l'agenda"
   >
