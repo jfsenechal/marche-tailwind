@@ -31,7 +31,7 @@ onMounted(() => {
       class="rounded-lg p-2 xl:p-4">
       <a
         :href="item.url"
-        class="flex flex-col justify-between items-start border border-greylight shadow-md p-4 block min-h-[6rem]">
+        class="flex flex-col justify-between items-start border border-grey-light shadow-md p-4 block min-h-[6rem]">
               <h3 class="font-montserrat-semi-bold text-sm xl:text-lg text-cta-dark hover:text-cta-light">
                 {{ item.post_title }}
               </h3>

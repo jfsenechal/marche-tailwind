@@ -59,9 +59,11 @@ module.exports = {
           dark: "#487F89FF",
           primary: "#487F89"
         },
-        greydark: "#232222",
-        greylight: "#dee2e6",
-        greylighter: "#ededec"
+        grey: {
+          dark: "#232222",
+          light: "#dee2e6",
+          lighter: "#ededec"
+        }
       },
       objectPosition: {
         "top-center": "top center",

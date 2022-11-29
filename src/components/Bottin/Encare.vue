@@ -11,7 +11,7 @@
         class="object-top"
       />
     </picture>
-    <div class="bg-greylighter flex flex-col justify-around p-4">
+    <div class="bg-grey-lighter flex flex-col justify-around p-4">
 
       <address class="flex flex-col">
         <span class="font-montserrat-bold">Adresse</span>

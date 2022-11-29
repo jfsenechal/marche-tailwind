@@ -70,7 +70,7 @@ onMounted(() => {
             >
               {{ item.post_title }}
             </h3>
-            <span class="text-greydark text-sm font-montserrat-light">{{ item.post_excerpt }}</span>
+            <span class="text-grey-dark text-sm font-montserrat-light">{{ item.post_excerpt }}</span>
             <span
               :class="
               'my-1 block font-montserrat-medium text-xs xl:text-base ' +

@@ -33,7 +33,7 @@ onMounted(() => {
     <li v-for="item in events.slice(0, 5)" class="">
       <a
         href="#"
-        class="group my-2 grid grid-cols-[6rem,1fr] rounded-lg border border-greylight/50 text-cta-dark transition-all duration-700 hover:border-cta-light xl:grid-cols-[10rem,1fr]"
+        class="group my-2 grid grid-cols-[6rem,1fr] rounded-lg border border-grey-light/50 text-cta-dark transition-all duration-700 hover:border-cta-light xl:grid-cols-[10rem,1fr]"
       >
         <div
           class="flex flex-col items-center justify-center border-x transition-all duration-700 group-hover:bg-cta-light group-hover:text-white"
