@@ -31,7 +31,7 @@ function openMenuVivre() {
       <NavIconHomeMobile />
       <NavIconSearchMobile />
       <li
-        class="nav-top xl:font-montserrat-semi-bold xl:transition-all xl:duration-500 btn-vivre py-12 ">
+        class="nav-top xl:font-montserrat-semi-bold xl:transition-all xl:duration-500 btn-vivre xl:py-12 ">
         <a href="#" class="hidden xl:flex">
           <IconMenuVivreSvg />
           Vivre à Marche
