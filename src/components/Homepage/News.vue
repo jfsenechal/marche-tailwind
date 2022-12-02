@@ -70,8 +70,3 @@ onMounted(() => {
     </svg>
   </a>
 </template>
-<style>
-.bg-linear {
-  background-color: rgba(74, 224, 199, 0.55);
-}
-</style>
