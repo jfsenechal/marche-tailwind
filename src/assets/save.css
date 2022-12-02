@@ -1,0 +1,78 @@
+
+.bghome-image {
+  background-image: linear-gradient(
+      90deg,
+      rgba(1, 31, 22, 0.38),
+      rgba(0, 75, 142, 0.38)
+    ),
+    url(images/bh_home2.jpg);
+}
+
+.bg-partner {
+  background-color: #ededec;
+}
+
+
+li.nav-top {
+  @apply xl:p-3 xl:text-cta-dark
+  xl:transition-shadow xl:duration-300 xl:ease-in-out;
+}
+
+li.nav-top:hover {
+  box-shadow: 0 -3px 0 0 #4ae0c7 inset;
+}
+
+.btn-vivre:hover > nav {
+  @apply xl:block
+}
+
+.icon-menu-mobile {
+  @apply my-4 flex flex-col flex-wrap items-center justify-center font-montserrat-semi-bold;
+}
+
+.text-menu-mobile {
+  @apply text-xs font-montserrat-light;
+}
+
+.musshadow {
+  box-shadow: 0 -0.125rem 0.45rem rgba(0, 0, 0, 0.75);
+}
+
+li.initial {
+  position: initial;
+}
+
+#sousmenu a:not([href^='https://www.marche.be'])::after {
+  background-image: url("images/external.svg");
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-size: 100%;
+  margin-inline-start: 0.8rem;
+  opacity: 0.8;
+}
+
+li[data-top-id='1']:hover div,
+li[data-top-id='2']:hover div,
+li[data-top-id='3']:hover div,
+li[data-top-id='4']:hover div,
+li[data-top-id='5']:hover div,
+li[data-top-id='6']:hover div,
+li[data-top-id='7']:hover div,
+li[data-top-id='8']:hover div,
+li[data-top-id='11']:hover div,
+li[data-top-id='12']:hover div,
+li[data-top-id='13']:hover div,
+li[data-top-id='14']:hover div {
+  @apply xl:opacity-100 xl:bg-white xl:block;
+}
+
+#checkboxShortCut:checked ~ div {
+  @apply opacity-100;
+}
+
+#checkboxShortCut {
+  display: none;
+}
