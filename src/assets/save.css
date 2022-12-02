@@ -12,9 +12,8 @@
   background-color: #ededec;
 }
 
-
 li.nav-top {
-  @apply xl:p-3 xl:text-cta-dark
+  @apply xl:px-3 xl:text-cta-dark
   xl:transition-shadow xl:duration-300 xl:ease-in-out;
 }
 
