@@ -25,13 +25,13 @@ function openMenuVivre() {
 }
 </script>
 <template>
-  <nav class="musshadow fixed bottom-0 top-auto right-0 left-0 xl:static xl:shadow-none">
-    <ul class="grid grid-cols-5 items-center justify-evenly bg-cta-dark text-white xl:flex xl:bg-white xl:text-cta-dark"
+  <nav class="h-20 musshadow fixed bottom-0 top-auto right-0 left-0 xl:static xl:shadow-none">
+    <ul class="h-20 grid grid-cols-5 items-center justify-evenly bg-cta-dark text-white xl:flex xl:bg-white xl:text-cta-dark"
         id="navigationTop">
       <NavIconHomeMobile />
       <NavIconSearchMobile />
       <li
-        class="nav-top xl:font-montserrat-semi-bold xl:transition-all xl:duration-500 btn-vivre">
+        class="nav-top xl:font-montserrat-semi-bold xl:transition-all xl:duration-500 btn-vivre py-12 ">
         <a href="#" class="hidden xl:flex">
           <IconMenuVivreSvg />
           Vivre à Marche
@@ -55,7 +55,7 @@ function openMenuVivre() {
 <style>
 
 li.nav-top {
-  @apply xl:p-3 xl:text-cta-dark
+  @apply px-3 xl:text-cta-dark
   xl:transition-shadow xl:duration-300 xl:ease-in-out;
 }
 
