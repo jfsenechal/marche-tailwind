@@ -19,7 +19,7 @@
               >
                 <a
                   href="#"
-                  class="block font-semibold text-cta-dark group-hover:text-cta-light"
+                  class="block font-semi-bold text-cta-dark group-hover:text-cta-light"
                 >
                   Journée du Bien-Être Animal (25 septembre)</a
                 >
@@ -43,7 +43,7 @@
               >
                 <a
                   href="#"
-                  class="block font-semibold text-cta-dark group-hover:text-cta-light"
+                  class="block font-semi-bold text-cta-dark group-hover:text-cta-light"
                 >
                   Journée du Bien-Être Animal (25 septembre)</a
                 >
@@ -67,7 +67,7 @@
               >
                 <a
                   href="#"
-                  class="block font-semibold text-cta-dark group-hover:text-cta-light"
+                  class="block font-semi-bold text-cta-dark group-hover:text-cta-light"
                 >
                   Journée du Bien-Être Animal (25 septembre)</a
                 >
