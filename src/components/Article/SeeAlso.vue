@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="my-6 xl:row-start-4 xl:row-end-5 xl:col-start-3 xl:col-end-4">
+  <div class="my-6 xl:row-start-4 xl:row-end-6 xl:col-start-3 xl:col-end-4">
     <h4 class="font-montserrat-bold text-cta-dark">Consultez aussi</h4>
     <div class="mt-6">
       <ul role="list" class="mt-3 flex flex-col gap-2">
